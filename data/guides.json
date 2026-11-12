@@ -3,98 +3,356 @@
   "_note": "Fiches écrites à la main à partir des chiffres mesurés et de la description du créateur (12 nov. 2026). Elles ne se mettent pas à jour seules : à relire quand une patch note touche le perso.",
   "mistery": {
     "resume": "Un all-rounder façon Mario : poids moyen (98), des smashs qui tuent tôt et une remontée correcte. Son jeu tourne autour du four (B bas), qui transforme ses pizzas gelées en pizzas brûlantes.",
-    "forces": ["Smash avant qui tue dès 70 % (30 % chargé à fond), un des meilleurs du jeu", "Aérien bas météore (20 %), très fort près du bord", "Pizza gelée (B) qui fige un instant : de quoi lancer un smash derrière"],
-    "faiblesses": ["Le four explose au bout de 10 s, MISTER Y compris s'il est à côté", "B côté (Dunk) une seule fois par saut"],
-    "conseils": ["Pose le four (B bas) en début d'échange et attire l'adversaire près de lui avant qu'il saute", "Pizza gelée puis smash avant : le combo de base pour tuer"]
+    "forces": [
+      "Smash avant qui tue dès 70 % (30 % chargé à fond), un des meilleurs du jeu",
+      "Aérien bas météore (20 %), très fort près du bord",
+      "Pizza gelée (B) qui fige un instant : de quoi lancer un smash derrière"
+    ],
+    "faiblesses": [
+      "Le four explose au bout de 10 s, MISTER Y compris s'il est à côté",
+      "B côté (Dunk) une seule fois par saut"
+    ],
+    "conseils": [
+      "Pose le four (B bas) en début d'échange et attire l'adversaire près de lui avant qu'il saute",
+      "Pizza gelée puis smash avant : le combo de base pour tuer"
+    ],
+    "speciaux": {
+      "n": "Une pizza lancée à plat comme un frisbee (6 %, jusqu'à 9 m). Encore gelée, elle fige celui qu'elle touche au sol (jusqu'à 0,5 s à 100 %). Une seule à la fois. Avec le four posé, elle sort brûlante du four à la place et enflamme.",
+      "s": "Il bondit, attrape ce qu'il croise et l'écrase au sol comme un dunk (17 %) : météore en l'air, onde à l'atterrissage. Une fois par saut.",
+      "u": "Un four apparaît sous ses pieds et sa chaleur le propulse (9,7 m de haut, 10,9 m de côté) ; les flammes brûlent ceux qui sont dessous. Chute sans défense après.",
+      "d": "Pose un four devant lui pour 10 s (il casse après 16 % de coups adverses). Tant qu'il est là, chaque B fait sortir une pizza brûlante par sa porte, de plus en plus vite (12 à 24 m/s). Prévient 2 s avant d'exploser (2,7 m autour, MISTER Y compris)."
+    }
   },
   "nysos": {
     "resume": "Un juge au marteau, gabarit Link. Tout tourne autour de LA NOTE SUR 10 : chaque adversaire a une note, et plus elle est basse, plus le marteau fait mal (jusqu'à ×1,3). À 0, le smash avant enterre.",
-    "forces": ["Le corbeau (B haut) se pilote librement : 11,6 m de haut et plus de 20 m de côté, il peut revenir de très loin", "REWIND (B côté) renvoie l'adversaire là où il était une seconde plus tôt : parfait pour le renvoyer dans le vide quand il remonte", "Son marteau devient de plus en plus fort au fil du combat"],
-    "faiblesses": ["La note remonte quand l'adversaire le touche : se faire frapper le rend plus faible", "Assis en première écoute (B bas), il prend 30 % de dégâts en plus"],
-    "conseils": ["Évite les échanges perdants au début : chaque coup reçu remonte la note de l'adversaire", "Garde REWIND pour le moment où l'adversaire remonte sur le terrain"]
+    "forces": [
+      "Le corbeau (B haut) se pilote librement : 11,6 m de haut et plus de 20 m de côté, il peut revenir de très loin",
+      "REWIND (B côté) renvoie l'adversaire là où il était une seconde plus tôt : parfait pour le renvoyer dans le vide quand il remonte",
+      "Son marteau devient de plus en plus fort au fil du combat"
+    ],
+    "faiblesses": [
+      "La note remonte quand l'adversaire le touche : se faire frapper le rend plus faible",
+      "Assis en première écoute (B bas), il prend 30 % de dégâts en plus"
+    ],
+    "conseils": [
+      "Évite les échanges perdants au début : chaque coup reçu remonte la note de l'adversaire",
+      "Garde REWIND pour le moment où l'adversaire remonte sur le terrain"
+    ],
+    "speciaux": {
+      "n": "Une punchline dans une bulle de chat qui vole (4,5 %, jusqu'à 9 m). Une seule à la fois.",
+      "s": "REWIND : une onde qui renvoie l'adversaire là où il était une seconde plus tôt (position et vitesse, pas ses %), en 16 frames. Idéal pour renvoyer dans le vide celui qui remontait. Le même adversaire ne peut être renvoyé qu'une fois toutes les 2,5 s.",
+      "u": "Un corbeau l'attrape et il vole librement au stick pendant 1,7 s (9,4 m/s de côté, 7,8 m/s en montée) : 11,6 m de haut, plus de 20 m de côté. [X] de nouveau le lâche ; sinon le corbeau fatigue. Chute sans défense après.",
+      "d": "Assis sur sa chaise tant que [X] est tenu : il charge son prochain smash, jusqu'à +30 % en 2,3 s assis. Attention : assis, il prend 30 % de dégâts en plus."
+    }
   },
   "lidra": {
     "resume": "La maîtresse du jeu, gabarit Robin : plus lente, mais ses sorts comptent. Chaque spécial lance un dé à 20 faces : 1 = échec critique (le sort se retourne contre elle), 20 = critique ×2.",
-    "forces": ["Smash haut à 32,5 %, KO dès 109 % (59 % chargé)", "Smash avant KO dès 84 % (41 % chargé)", "L'inspiration (B bas) fait lancer le prochain dé deux fois et garde le meilleur"],
-    "faiblesses": ["Ses spéciaux sont au hasard : sa sacoche de dés fait de 0 à 7 %, sa charge de 0 à 12 % selon le dé", "Plus lente que la moyenne"],
-    "conseils": ["Gagne de l'inspiration (prendre un coup de 8 % ou plus, ou provoquer) avant de compter sur un spécial important", "Pour tuer, fie-toi aux smashs, pas aux dés"]
+    "forces": [
+      "Smash haut à 32,5 %, KO dès 109 % (59 % chargé)",
+      "Smash avant KO dès 84 % (41 % chargé)",
+      "L'inspiration (B bas) fait lancer le prochain dé deux fois et garde le meilleur"
+    ],
+    "faiblesses": [
+      "Ses spéciaux sont au hasard : sa sacoche de dés fait de 0 à 7 %, sa charge de 0 à 12 % selon le dé",
+      "Plus lente que la moyenne"
+    ],
+    "conseils": [
+      "Gagne de l'inspiration (prendre un coup de 8 % ou plus, ou provoquer) avant de compter sur un spécial important",
+      "Pour tuer, fie-toi aux smashs, pas aux dés"
+    ],
+    "speciaux": {
+      "n": "Une poignée de dés lancés au sol : les adversaires glissent dessus. Le dé à 20 faces décide de la force : de 0 % (échec critique, le sort lui revient dessus) à 7 % sur nos 8 essais, 5,9 % en moyenne.",
+      "s": "La charge héroïque : elle galope sur un cheval-bâton et embroche ce qui passe (jusqu'à 12 %, KO dès 221 % sur un bon dé). Une fois par saut. Le dé s'applique aussi : de 0 à 12 % selon le tirage.",
+      "u": "Trois figurants la soulèvent avec un dragon en tissu, puis s'épuisent et la lâchent : 8,4 m de haut. De 8,3 à 12,5 % de dégâts selon le dé. Chute sans défense après.",
+      "d": "Dépense une inspiration : le prochain dé est lancé deux fois et garde le meilleur. Sans inspiration, elle provoque pour en gagner une (payé à la frame 62, un coup l'annule). Inspiration : 3 au plus, aussi gagnée en recevant un coup de 8 % ou plus."
+    }
   },
   "krono": {
     "resume": "Rapide (il se déplace comme Sheik) et tout en coups de pied. Une boule d'énergie qu'il charge et garde comme Mewtwo, un dash éclair, et 5 s d'invisibilité.",
-    "forces": ["Smash avant KO dès 80 % (38 % chargé), smash haut à 26 %", "La boule d'énergie se garde : il peut la sortir chargée au bon moment", "5 s d'invisibilité (B bas) pour surprendre"],
-    "faiblesses": ["Le dash éclair (B côté) le laisse sans défense et coûte 40 frames s'il rate", "Remontée moyenne (7,8 m)"],
-    "conseils": ["Charge la boule pendant les temps morts et garde-la pour punir", "Ne lance le dash éclair que si tu es sûr de toucher"]
+    "forces": [
+      "Smash avant KO dès 80 % (38 % chargé), smash haut à 26 %",
+      "La boule d'énergie se garde : il peut la sortir chargée au bon moment",
+      "5 s d'invisibilité (B bas) pour surprendre"
+    ],
+    "faiblesses": [
+      "Le dash éclair (B côté) le laisse sans défense et coûte 40 frames s'il rate",
+      "Remontée moyenne (7,8 m)"
+    ],
+    "conseils": [
+      "Charge la boule pendant les temps morts et garde-la pour punir",
+      "Ne lance le dash éclair que si tu es sûr de toucher"
+    ],
+    "speciaux": {
+      "n": "La boule d'énergie se charge comme celle de Mewtwo et se garde : relâche pour la garder en réserve, rappuie pour la tirer. Le robot ne la tire pas (0 % mesuré) : sa vraie force dépend de la charge.",
+      "s": "Dash éclair : il traverse environ 5 m en un éclair (52 m/s, frames 10 à 15) et frappe sur son trajet (7 %). Une fois par saut, chute sans défense après, et +40 frames s'il rate.",
+      "u": "Bulle prison : elle avale un adversaire et l'emporte avec lui, assis en tailleur ; [A] la fait exploser, sinon elle éclate à la fin. Remontée de 7,8 m.",
+      "d": "Invisible pendant 5 s, puis 5 s de recharge. Ne fait pas de dégâts : sert à surprendre."
+    }
   },
   "pandrezz": {
     "resume": "Un rockeur barbu beaucoup trop fort. Il charge des kamehameha à mains nues et appelle ses potes CD-Man et Vinylman.",
-    "forces": ["Pandrezz-ha (B maintenu) : 25 % et KO dès 79 %, un des projectiles les plus forts du jeu", "Coups rapides : jab, aérien neutre et aérien avant sortent en 5 frames", "Smash haut et bas KO dès 55 % chargés", "Bonne remontée (11,1 m) avec le Pandrezz-ha fusée"],
-    "faiblesses": ["Le Pandrezz-ha doit être maintenu longtemps : d'un seul appui il ne fait que 3,5 %", "Son smash avant (en code) fait peu de dégâts"],
-    "conseils": ["Charge le Pandrezz-ha de loin, lâche-le quand l'adversaire atterrit ou remonte", "Pour tuer au corps à corps, préfère le smash haut ou bas"]
+    "forces": [
+      "Pandrezz-ha (B maintenu) : 25 % et KO dès 79 %, un des projectiles les plus forts du jeu",
+      "Coups rapides : jab, aérien neutre et aérien avant sortent en 5 frames",
+      "Smash haut et bas KO dès 55 % chargés",
+      "Bonne remontée (11,1 m) avec le Pandrezz-ha fusée"
+    ],
+    "faiblesses": [
+      "Le Pandrezz-ha doit être maintenu longtemps : d'un seul appui il ne fait que 3,5 %",
+      "Son smash avant (en code) fait peu de dégâts"
+    ],
+    "conseils": [
+      "Charge le Pandrezz-ha de loin, lâche-le quand l'adversaire atterrit ou remonte",
+      "Pour tuer au corps à corps, préfère le smash haut ou bas"
+    ],
+    "speciaux": {
+      "n": "Le Pandrezz-ha : un kamehameha à mains nues qu'il faut maintenir pour le charger. Chargé : 25 % et KO dès 79 %, un des projectiles les plus forts du jeu. D'un seul appui : à peine 3,5 %.",
+      "s": "Appelle CD-Man, qui lance ses disques (12 %, jusqu'à 13 m). CD-Man se repose 1,5 s avant de pouvoir revenir.",
+      "u": "Le Pandrezz-ha fusée : il se propulse avec son rayon (21,3 %, KO dès 147 %) : 11,1 m de haut, 13 m de côté. Chute sans défense après.",
+      "d": "Appelle Vinylman, qui tombe du ciel et scratche tout le monde (23 %). Vinylman se repose 2 s avant de pouvoir revenir."
+    }
   },
   "bido": {
     "resume": "Le deuxième poids lourd (120) : gros dégâts, grosses éjections, plus lent. Il cogne avec son matériel de muscu, et celui que son bisou touche, c'est lui qui le dirige quelques secondes.",
-    "forces": ["Smash avant KO dès 69 % (29 % chargé), un des smashs les plus forts du jeu", "Très dur à éjecter (poids 120)", "Énorme remontée : le ballon-cœur monte à plus de 18 m"],
-    "faiblesses": ["Lent au sol", "Le bisou (B) fait peu de dégâts : il sert à contrôler, pas à frapper"],
-    "conseils": ["Bisou, puis amène l'adversaire au bord ou devant un smash", "Dans la salle de muscu (B bas), [A] fait un pump : ses coups font plus mal ensuite"]
+    "forces": [
+      "Smash avant KO dès 69 % (29 % chargé), un des smashs les plus forts du jeu",
+      "Très dur à éjecter (poids 120)",
+      "Énorme remontée : le ballon-cœur monte à plus de 18 m"
+    ],
+    "faiblesses": [
+      "Lent au sol",
+      "Le bisou (B) fait peu de dégâts : il sert à contrôler, pas à frapper"
+    ],
+    "conseils": [
+      "Bisou, puis amène l'adversaire au bord ou devant un smash",
+      "Dans la salle de muscu (B bas), [A] fait un pump : ses coups font plus mal ensuite"
+    ],
+    "speciaux": {
+      "n": "Un bisou qui vole loin (jusqu'à 13 m, 4 %) : celui qu'il touche est charmé et c'est BIDO qui le dirige, de 1 s (à 0 %) à 2 s (dès 150 %). Ne marche pas sur une victime en l'air ou déjà sous un statut.",
+      "s": "La corde à sauter en fouet (16 %), courte portée mais sort vite (frame 7).",
+      "u": "Le ballon-cœur l'emporte très haut : 18,4 m de haut et 25 m de côté, la deuxième meilleure remontée du jeu (13,6 %, KO dès 178 %). Chute sans défense après.",
+      "d": "Pose une salle de muscu pour 12 s. Dedans, [A] fait un pump : pendant 8 s ses coups font +20 %, il grossit un peu et encaisse les petits coups sans broncher. [X] bas à côté d'un haltère : il le lance."
+    }
   },
   "gimsou": {
     "resume": "Le plus lourd du jeu avec MÉLUCHE et KAARIZ (126), gabarit Bowser. Une canne de dandy en or et un jab qui sort en 3 frames.",
-    "forces": ["Jab en 3 frames et tilt bas en 5 : très rapide pour un lourd", "Smash avant KO dès 70 % (30 % chargé)", "Le plus dur à éjecter du jeu"],
-    "faiblesses": ["Remontée courte (9,3 m)", "Gros gabarit : facile à toucher"],
-    "conseils": ["Le flash du paparazzi (B, 21 %) punit de loin", "Ne t'éloigne pas trop du bord : sa remontée pardonne peu"]
+    "forces": [
+      "Jab en 3 frames et tilt bas en 5 : très rapide pour un lourd",
+      "Smash avant KO dès 70 % (30 % chargé)",
+      "Le plus dur à éjecter du jeu"
+    ],
+    "faiblesses": [
+      "Remontée courte (9,3 m)",
+      "Gros gabarit : facile à toucher"
+    ],
+    "conseils": [
+      "Le flash du paparazzi (B, 21 %) punit de loin",
+      "Ne t'éloigne pas trop du bord : sa remontée pardonne peu"
+    ],
+    "speciaux": {
+      "n": "Paparazzi : il pose un flash sur trépied (6 s) qui flashe toutes les 0,8 s celui qui approche à moins de 3,2 m (21 % au total sur la mesure). Un à la fois, il casse après 10 % de coups.",
+      "s": "Un zombie sort du sol devant lui (0,4 s), marche vers l'ennemi (2,8 m/s), l'attrape et le frappe (11 %). Il reste 5,5 s, un seul à la fois, et casse au premier coup.",
+      "u": "Podium : un podium pousse sous ses pieds et le projette (9,3 m), en frappant au-dessus (7 %). Chute sans défense après.",
+      "d": "J'me tire : un bond en arrière, puis une basket en or lancée vers l'avant (7 %, jusqu'à 9 m). Une fois par saut : utile pour reprendre ses distances."
+    }
   },
   "aurele": {
     "resume": "Un perso de manga, gabarit Ryu : des coups précis et un katana pour les smashs. Son BASIQUE (B maintenu) est un projectile qui tue.",
-    "forces": ["BASIQUE chargé : 17,7 % et KO dès 67 %", "Jab en 3 frames, aérien neutre en 4", "Le yokai garde du corps (B bas) frappe avec ses smashs pendant 8 s", "Bonne remontée (12,2 m) avec le yokai"],
-    "faiblesses": ["Lent en course (7,8 m/s)", "BASIQUE est faible d'un seul appui (6 %) : il faut le charger"],
-    "conseils": ["Charge BASIQUE de loin pour forcer l'adversaire à venir", "Pose le yokai avant d'attaquer : vous frappez à deux"]
+    "forces": [
+      "BASIQUE chargé : 17,7 % et KO dès 67 %",
+      "Jab en 3 frames, aérien neutre en 4",
+      "Le yokai garde du corps (B bas) frappe avec ses smashs pendant 8 s",
+      "Bonne remontée (12,2 m) avec le yokai"
+    ],
+    "faiblesses": [
+      "Lent en course (7,8 m/s)",
+      "BASIQUE est faible d'un seul appui (6 %) : il faut le charger"
+    ],
+    "conseils": [
+      "Charge BASIQUE de loin pour forcer l'adversaire à venir",
+      "Pose le yokai avant d'attaquer : vous frappez à deux"
+    ],
+    "speciaux": {
+      "n": "BASIQUE : un coup de poing tout simple. Tenu jusqu'à 1 s, il se charge : de 6 % d'un appui à 17,7 % et KO dès 67 % chargé à fond.",
+      "s": "Repas de famille : une table glisse vers l'ennemi (au plus 1,6 s) et une assiette s'envole toutes les 13 frames (15 % au total, jusqu'à 9 m). Une à la fois.",
+      "u": "Un yokai lumineux l'emporte, assis dessus (9,2 %) : 12,2 m de haut. Chute sans défense après.",
+      "d": "Le yokai garde du corps apparaît dans son dos pour 8 s : à chaque smash, il frappe avec lui (devant, au-dessus ou derrière selon le smash). Il meurt après 15 % de coups, puis 8 s avant de pouvoir le rappeler (4 s s'il est parti tout seul)."
+    }
   },
   "jsan": {
     "resume": "Il ne se bat presque jamais lui-même : son shiba fait tout le travail pendant qu'il vapote. Son nuage de vape le rend invisible, et le chien surgit de dedans.",
-    "forces": ["Tilt haut à 19 %, sortie en 4 frames", "Aérien bas (le chien) KO dès 157 %", "Le nuage de vape (B) le cache et tend une embuscade"],
-    "faiblesses": ["Peu de coups qui tuent tôt", "Si le chien est perdu ou sonné, une partie de son kit ne marche plus"],
-    "conseils": ["Joue autour du nuage : attire l'adversaire dedans pour que le chien morde", "Le caca (B bas) fait glisser : pose-le sur le chemin de l'adversaire"]
+    "forces": [
+      "Tilt haut à 19 %, sortie en 4 frames",
+      "Aérien bas (le chien) KO dès 157 %",
+      "Le nuage de vape (B) le cache et tend une embuscade"
+    ],
+    "faiblesses": [
+      "Peu de coups qui tuent tôt",
+      "Si le chien est perdu ou sonné, une partie de son kit ne marche plus"
+    ],
+    "conseils": [
+      "Joue autour du nuage : attire l'adversaire dedans pour que le chien morde",
+      "Le caca (B bas) fait glisser : pose-le sur le chemin de l'adversaire"
+    ],
+    "speciaux": {
+      "n": "Nuage de vape : un nuage épais qui reste 4 s là où il l'a soufflé. Dedans, J'san est invisible ; un adversaire qui s'approche se fait mordre par le shiba qui en jaillit (7 %, deux fois par nuage au plus).",
+      "s": "Va chercher ! : le shiba fonce devant et ramène (4,2 %). Ça sert surtout à placer le chien.",
+      "u": "Shiba-hélico : la queue du chien fait hélice et l'emporte (18,9 %, KO dès 369 %) : 8,4 m de haut. Chute sans défense après.",
+      "d": "Caca ! : le shiba fait sa crotte derrière lui. Elle reste jusqu'à ce qu'un adversaire marche dedans : il glisse, tombe, se fait mal et reste au sol 3 s. Quatre au plus, la plus vieille disparaît."
+    }
   },
   "epektase": {
     "resume": "Le guitariste : il cogne avec sa Flying V, fouette avec son carré Hermès et sort des solos ravageurs.",
-    "forces": ["La meilleure remontée du jeu : le saut du rockeur (B haut) monte à presque 24 m et va à 35 m de côté", "Jab en 3 frames, aérien neutre en 4", "Smash avant KO dès 79 % (37 % chargé)"],
-    "faiblesses": ["Plutôt léger (92)", "Ses spéciaux de loin font peu de dégâts"],
-    "conseils": ["Va chercher l'adversaire loin hors du terrain : tu reviendras toujours", "L'ampli (B bas) fait résonner ses coups de guitare : place-le avant d'échanger"]
+    "forces": [
+      "La meilleure remontée du jeu : le saut du rockeur (B haut) monte à presque 24 m et va à 35 m de côté",
+      "Jab en 3 frames, aérien neutre en 4",
+      "Smash avant KO dès 79 % (37 % chargé)"
+    ],
+    "faiblesses": [
+      "Plutôt léger (92)",
+      "Ses spéciaux de loin font peu de dégâts"
+    ],
+    "conseils": [
+      "Va chercher l'adversaire loin hors du terrain : tu reviendras toujours",
+      "L'ampli (B bas) fait résonner ses coups de guitare : place-le avant d'échanger"
+    ],
+    "speciaux": {
+      "n": "Solo ravageur : sept notes qui fusent puis une grosse note finale (environ 8 % en tout, jusqu'à 9 m). Elles ne font pas broncher : elles grattent des %. Résonnent dans l'ampli s'il est posé.",
+      "s": "Power chord : un gros coup devant lui (9 %) plus un accord qui traverse tout et attire (7 %) : 16 % au total. Résonne aussi dans l'ampli.",
+      "u": "Saut du rockeur : il monte sur un balai qu'il pilote librement au stick pendant 2,5 s : 23,8 m de haut et 34,7 m de côté, la meilleure remontée du jeu. Bouclier pour descendre ; après 2 s, n'importe quel bouton le rend libre de ses mouvements.",
+      "d": "Ampli : posé pour 10 s (il casse après 16 % de coups). Ses B et B côté y résonnent et repartent de l'ampli, jusqu'à 14 m."
+    }
   },
   "jolavert": {
     "resume": "Jeune et frais, gabarit Ness : les coups électriques de LA GRÈVE et une fusée verte qu'on pilote.",
-    "forces": ["Jab en 3 frames, tilt bas et aérien neutre en 4", "Smash avant KO dès 80 % (38 % chargé)", "Jeune et frais (B bas) : se soigne et devient plus rapide 6 s"],
-    "faiblesses": ["Sa remontée dépend entièrement de la fusée : il faut la diriger puis la ramener sur lui pour qu'elle le lance", "Peu de dégâts de loin"],
-    "conseils": ["Entraîne-toi à la fusée verte en salle d'entraînement : c'est elle qui décide s'il survit", "Garde Jeune et frais pour après un gros coup reçu"]
+    "forces": [
+      "Jab en 3 frames, tilt bas et aérien neutre en 4",
+      "Smash avant KO dès 80 % (38 % chargé)",
+      "Jeune et frais (B bas) : se soigne et devient plus rapide 6 s"
+    ],
+    "faiblesses": [
+      "Sa remontée dépend entièrement de la fusée : il faut la diriger puis la ramener sur lui pour qu'elle le lance",
+      "Peu de dégâts de loin"
+    ],
+    "conseils": [
+      "Entraîne-toi à la fusée verte en salle d'entraînement : c'est elle qui décide s'il survit",
+      "Garde Jeune et frais pour après un gros coup reçu"
+    ],
+    "speciaux": {
+      "n": "Le 23 : un gros « 23 » vert lancé en cloche qui rebondit sur le sol et sur ceux qu'il touche (8 %, jusqu'à 13 m). Un à la fois.",
+      "s": "Glissade : une glissade basse qui fauche et fait décoller la victime, un bon début de combo (9 %, sort en 6 frames). En l'air, il plonge en biais puis glisse. Une fois par saut.",
+      "u": "Fusée verte : il flotte et dirige une fusée au stick (12,5 m/s, 1,3 s au plus). S'il la ramène sur lui (après 12 frames), elle le lance comme une fusée humaine à 24 m/s (environ 9,5 m), et un ennemi sur sa route prend de lourds dégâts. Ratée (elle touche quelqu'un, le sol, ou s'éteint) : il tombe. Le robot n'arrive pas à la piloter : remontée non mesurée.",
+      "d": "Jeune et frais : 3 % soignés d'un coup, puis 6 s plus rapide (×1,25) et un tiers de recul en moins quand on le touche. Recharge 15 s."
+    }
   },
   "anyme": {
     "resume": "Petit et nerveux, gabarit Pikachu. Tout tourne autour du BAD BUZZ : B bas maintenu remplit une jauge ; pleine, son prochain smash qui touche frappe beaucoup plus fort.",
-    "forces": ["Jab en 3 frames, aérien neutre en 4", "Avec la jauge pleine, ses smashs tuent bien plus tôt que les chiffres affichés", "Jauge pleine : B bas de nouveau = une grosse explosion autour de lui"],
-    "faiblesses": ["Léger (84) : il meurt tôt", "Sans la jauge, ses smashs tuent tard (smash avant dès 96 %)", "Remontée courte (6,4 m)"],
-    "conseils": ["Remplis la jauge dès que tu as de l'espace, et garde-la pour le smash qui tue", "Reste près du centre : il ne revient pas de loin"]
+    "forces": [
+      "Jab en 3 frames, aérien neutre en 4",
+      "Avec la jauge pleine, ses smashs tuent bien plus tôt que les chiffres affichés",
+      "Jauge pleine : B bas de nouveau = une grosse explosion autour de lui"
+    ],
+    "faiblesses": [
+      "Léger (84) : il meurt tôt",
+      "Sans la jauge, ses smashs tuent tard (smash avant dès 96 %)",
+      "Remontée courte (6,4 m)"
+    ],
+    "conseils": [
+      "Remplis la jauge dès que tu as de l'espace, et garde-la pour le smash qui tue",
+      "Reste près du centre : il ne revient pas de loin"
+    ],
+    "speciaux": {
+      "n": "La notif en feu : lancée en cloche, elle colle à l'adversaire et pique trois fois en brûlant (7,2 %). Une à la fois.",
+      "s": "La montée en flèche : il fonce tout droit, sa courbe de stats derrière lui (8 %, KO dès 328 %). Une fois par saut.",
+      "u": "Le buzz : une nuée de cœurs et de notifications l'emporte en petits coups, le dernier éjecte (3,2 %). Seulement 6,4 m de haut : une des remontées les plus courtes. Chute sans défense après.",
+      "d": "Le bad buzz : [X] bas maintenu remplit une jauge, qui se garde. Pleine, son prochain smash qui touche frappe beaucoup plus fort et éjecte bien plus loin, puis la jauge se vide. Ou bien, jauge pleine, [X] bas de nouveau : une grosse explosion autour de lui (3,4 m)."
+    }
   },
   "tung": {
     "resume": "La bûche à la batte. Un tambour bat le tempo au-dessus de lui : un coup lancé pile sur le temps fait ×1,4 et part sans temps mort.",
-    "forces": ["Le métronome : bien joué en rythme, il frappe 40 % plus fort que ses chiffres", "Kentongan (B bas, 3 ondes) : 18,2 %", "Bonne remontée (12,2 m)"],
-    "faiblesses": ["Hors du rythme, ses smashs tuent tard (smash avant dès 106 %)", "Lent en course (7,5 m/s)"],
-    "conseils": ["Écoute le tambour et lance tes coups sur le temps : c'est tout son jeu", "La batte-boomerang (B côté) touche à l'aller et au retour"]
+    "forces": [
+      "Le métronome : bien joué en rythme, il frappe 40 % plus fort que ses chiffres",
+      "Kentongan (B bas, 3 ondes) : 18,2 %",
+      "Bonne remontée (12,2 m)"
+    ],
+    "faiblesses": [
+      "Hors du rythme, ses smashs tuent tard (smash avant dès 106 %)",
+      "Lent en course (7,5 m/s)"
+    ],
+    "conseils": [
+      "Écoute le tambour et lance tes coups sur le temps : c'est tout son jeu",
+      "La batte-boomerang (B côté) touche à l'aller et au retour"
+    ],
+    "speciaux": {
+      "n": "Tung, tung, tung : trois coups de batte rapprochés (19 % en tout, courte portée).",
+      "s": "Batte-boomerang : la batte part devant et revient, elle touche à l'aller et au retour (16 %, jusqu'à 4 m).",
+      "u": "Réveil Sahur : il monte de 12,2 m (5 %). Chute sans défense après.",
+      "d": "Kentongan : trois ondes qui partent devant lui (18,2 %, jusqu'à 9 m). Comme tous ses coups, lancé pile sur le temps de la musique (à 0,06 s près), il fait ×1,4 et part sans temps mort."
+    }
   },
   "natou": {
     "resume": "Légère et à l'aise de loin, gabarit Duck Hunt : son chien fait le travail. Il mord les chevilles, et si quelqu'un le frappe, il entre 6 s en rage.",
-    "forces": ["Jab en 3 frames, attaque en course en 5", "Le chien attaque en même temps qu'elle", "LA BALLE (B) : le chien mord à l'aller et au retour"],
-    "faiblesses": ["Légère (89)", "Après sa rage, le chien boude 3 s"],
-    "conseils": ["Garde le chien entre toi et l'adversaire", "Si l'adversaire frappe le chien, profite des 6 s de rage pour attaquer"]
+    "forces": [
+      "Jab en 3 frames, attaque en course en 5",
+      "Le chien attaque en même temps qu'elle",
+      "LA BALLE (B) : le chien mord à l'aller et au retour"
+    ],
+    "faiblesses": [
+      "Légère (89)",
+      "Après sa rage, le chien boude 3 s"
+    ],
+    "conseils": [
+      "Garde le chien entre toi et l'adversaire",
+      "Si l'adversaire frappe le chien, profite des 6 s de rage pour attaquer"
+    ],
+    "speciaux": {
+      "n": "La balle : elle lance une balle, le chien fonce la chercher (16 m/s) et mord ce qu'il croise à l'aller et au retour (4 % par morsure, 13 % mesurés).",
+      "s": "La promenade : le chien détale et elle est traînée derrière lui à 15 m/s (12 %, KO dès 282 %). Sur un bord, il s'arrête net mais elle continue. Une fois par saut.",
+      "u": "La queue-hélico : le chien fait tourner sa queue et l'emporte, pendue à la laisse (7,5 %) : 9,4 m de haut. Chute sans défense après.",
+      "d": "Personne ne touche au chien : B bas l'envoie sur une cible (il mord toutes les 0,7 s, 5 s au plus) ou le rappelle. Il ne meurt jamais. Si quelqu'un le frappe : 6 s de rage pour NATOU (coups ×1,35, vitesse ×1,2), puis le chien boude 3 s."
+    }
   },
   "sundai": {
     "resume": "La gameuse de légende, gabarit Shulk. Elle remplit sa mana en frappant ; pleine, B bas fait tomber un coffre, et ses objets (bottes, heaume, arme, cape) se cumulent jusqu'à sa mort.",
-    "forces": ["Smash avant KO dès 70 % (30 % chargé)", "Jab en 3 frames, tilt bas et aérien neutre en 4", "Elle devient plus forte à chaque coffre ouvert"],
-    "faiblesses": ["Ouvrir un coffre demande 2 s devant lui : vulnérable", "Tous ses objets sont perdus à sa mort"],
-    "conseils": ["Ouvre les coffres quand l'adversaire est loin ou éjecté", "Plus elle survit longtemps, plus elle est forte : joue prudemment avec des objets"]
+    "forces": [
+      "Smash avant KO dès 70 % (30 % chargé)",
+      "Jab en 3 frames, tilt bas et aérien neutre en 4",
+      "Elle devient plus forte à chaque coffre ouvert"
+    ],
+    "faiblesses": [
+      "Ouvrir un coffre demande 2 s devant lui : vulnérable",
+      "Tous ses objets sont perdus à sa mort"
+    ],
+    "conseils": [
+      "Ouvre les coffres quand l'adversaire est loin ou éjecté",
+      "Plus elle survit longtemps, plus elle est forte : joue prudemment avec des objets"
+    ],
+    "speciaux": {
+      "n": "La boule de mana : un sort qui coûte 34 de mana (trois d'affilée depuis une barre pleine), 9 % jusqu'à 13 m. Sans assez de mana, rien ne part. La mana ne remonte qu'en frappant : 60 % infligés pour la remplir.",
+      "s": "La charge du tank : bouclier devant, elle fonce sans s'arrêter aux petits coups, attrape l'adversaire et le plaque au sol (14 %, KO dès 257 %). Ratée, elle est punissable. Une fois par saut.",
+      "u": "La monture volante : une créature moitié aigle moitié lion l'attrape et l'emporte (6,5 %) : 8,8 m de haut. Chute sans défense après.",
+      "d": "Le butin : toute sa mana, pleine, fait tomber un coffre (il reste 15 s). Elle l'ouvre en restant devant 2 s et gagne un objet au hasard (gris, vert, bleu, violet ou orange légendaire) : bottes (vitesse), heaume (pas de recul aux petits coups), arme (dégâts), cape (sauts en plus). Les objets se cumulent jusqu'à sa mort. Un adversaire qui reste devant 2 s le lui pique."
+    }
   },
   "zera": {
     "resume": "Le patron qui organise tout, gabarit Pac-Man. Ses % infligés remplissent une cagnotte ; à 25, 50 et 75 %, un défi donne un bonus, et pleine, elle donne +15 % pendant 6 s.",
-    "forces": ["Smash avant KO dès 84 % (41 % chargé)", "Des bonus qui s'accumulent au fil du combat (soin, vitesse, pluie de pièces)"],
-    "faiblesses": ["La cagnotte (B) fait peu de dégâts tant qu'elle n'est pas remplie", "Kit qui demande du temps pour monter en puissance"],
-    "conseils": ["Frappe beaucoup pour remplir la cagnotte, puis déclenche OBJECTIF ATTEINT ! (B bas) avant d'aller tuer", "Réussis les défis des paliers : leurs bonus changent le combat"]
+    "forces": [
+      "Smash avant KO dès 84 % (41 % chargé)",
+      "Des bonus qui s'accumulent au fil du combat (soin, vitesse, pluie de pièces)"
+    ],
+    "faiblesses": [
+      "La cagnotte (B) fait peu de dégâts tant qu'elle n'est pas remplie",
+      "Kit qui demande du temps pour monter en puissance"
+    ],
+    "conseils": [
+      "Frappe beaucoup pour remplir la cagnotte, puis déclenche OBJECTIF ATTEINT ! (B bas) avant d'aller tuer",
+      "Réussis les défis des paliers : leurs bonus changent le combat"
+    ],
+    "speciaux": {
+      "n": "La cagnotte : ses % infligés remplissent une jauge de dons (environ 72 % infligés pour la remplir). B la vide en pluie de pièces devant lui, d'autant plus forte qu'elle est pleine. Vide, il ne fait presque rien (1 % mesuré).",
+      "s": "Le chèque géant : il fonce avec un chèque devant lui qui fauche et repousse (9 %, KO dès 255 %). Une fois par saut.",
+      "u": "La scène qui monte : une scène hydraulique le soulève et la caisse en bas frappe (10,4 %, sort en 3 frames) : 8,8 m de haut. Chute sans défense après.",
+      "d": "OBJECTIF ATTEINT ! : confettis et une onde qui repousse ceux qui collent. Cagnotte pleine : elle est vidée et donne 6 s de coups +15 %, puis 6 s d'attente. Les paliers à 25, 50 et 75 % lancent des défis (« 3 coups en 5 s », « un smash »…) ; réussis, ils donnent un soin de 10 %, 6 s de vitesse ×1,25 ou une pluie de pièces."
+    }
   }
 }
