@@ -1,6 +1,6 @@
 {
   "_version": "4e280d8f6fed4613dbc736b9e6751344d61618ce",
-  "_note": "Fiches écrites à la main à partir des chiffres mesurés et de la description du créateur (12 nov. 2026). Elles ne se mettent pas à jour seules : à relire quand une patch note touche le perso.",
+  "_note": "Fiches et notes des spéciaux écrites à la main en lisant le code du jeu et à partir des chiffres mesurés (12 nov. 2026, version 4e280d8). À refaire pour un perso quand une patch note touche ses spéciaux.",
   "mistery": {
     "resume": "Un all-rounder façon Mario : poids moyen (98), des smashs qui tuent tôt et une remontée correcte. Son jeu tourne autour du four (B bas), qui transforme ses pizzas gelées en pizzas brûlantes.",
     "forces": [
@@ -824,7 +824,7 @@
     }
   },
   "antwan": {
-    "resume": "L'intankable : le plus léger du jeu (76) et le plus lent au sol (6,2 m/s), mais cinq sauts en l'air et une forme d'abeille qui vole partout.",
+    "resume": "L'intankable : le plus léger du jeu (76) et un des plus lents au sol (6,2 m/s), mais cinq sauts en l'air et une forme d'abeille qui vole partout.",
     "speciaux": {
       "n": "Le dard : un dard d'abeille lancé droit devant (5 %, jusqu'à 13 m). Un à la fois.",
       "s": "LE CUT : une coupure de montage, l'image saute ; il disparaît et réapparaît environ 4,4 m plus loin en frappant (9 %, KO dès 258 %). Une fois par saut.",
@@ -839,6 +839,51 @@
       "s": "Confusion : une lévitation qui soulève l'adversaire juste devant lui (6 %).",
       "u": "Envol : ses petites ailes d'ange l'emportent (8,4 %, KO dès 261 %) : 7 m de haut, 11,5 m de côté. Chute sans défense après.",
       "d": "Sainte 808 : une enceinte sacrée tombe du ciel devant lui, très bassy (17 %, jusqu'à 6 m), mais elle arrive tard (frame 41)."
+    }
+  },
+  "bagarri": {
+    "resume": "Le late-show, léger (84) : tous ses coups font +12 %. Son bureau arrête les projectiles, et à côté de lui, un invité absent du match surgit et lance son spécial.",
+    "speciaux": {
+      "n": "Les fiches : trois fiches d'animateur lancées en éventail (8,1 %, jusqu'à 6 m).",
+      "s": "Le jeu coolos : un buzzer surgit entre lui et l'adversaire le plus proche, « 3, 2, 1… », puis il reste actif 2,5 s : le premier qui le frappe gagne. Lui : un coup gratuit en confettis. L'adversaire : MAX BAGARRI prend un gage de 8 %. Le robot ne frappe pas le buzzer : 0 % mesuré.",
+      "u": "Le canon à confettis : un canon le propulse et le souffle frappe dessous (12,7 %) : 8,5 m de haut. Chute sans défense après.",
+      "d": "Le bureau : posé 12 s, c'est une plateforme qui arrête les projectiles adverses (il casse après 18 % de coups, puis 3 s avant un autre). B bas près du bureau : l'invité chicos, un bagarreur absent du match tiré au hasard, surgit 1 s et lance une version simplifiée de son spécial."
+    }
+  },
+  "shark": {
+    "resume": "Tralalero Tralala : un requin sur trois pattes en Nike, aux morsures sanglantes, qui plonge dans la plateforme pour surgir sous ses victimes.",
+    "speciaux": {
+      "n": "Méga-morsure : une morsure qui tient sa proie (13 %, courte portée) ; dès 100 %, il la secoue.",
+      "s": "Sprint en Nike : il fonce devant lui (9 %, KO dès 248 %, jusqu'à 9 m). Une fois par saut.",
+      "u": "Saut du grand blanc : un grand saut (6,3 %) : 11,8 m de haut. Chute sans défense après.",
+      "d": "Aileron : il plonge dans la plateforme, nage dessous et surgit sous sa victime (14 %, KO dès 136 %), mais il met du temps à sortir (frame 113)."
+    }
+  },
+  "merylle": {
+    "resume": "Shatta : des tresses qui fouettent loin, une chaîne dorée qui attache l'adversaire puis le fait tourner comme un marteau, et 6 s de colère à +20 %.",
+    "speciaux": {
+      "n": "Tresse fouet : ses tresses fouettent loin devant, le bout claque fort à environ 3 m (11 %, KO dès 158 %).",
+      "s": "La chaîne-marteau : la chaîne dorée part à 3,8 m, frappe et reste attachée 4 s : l'adversaire ne peut pas s'éloigner de plus de 4,2 m. B côté de nouveau : elle le fait tourner autour d'elle (il cogne ceux qu'il rencontre), puis le lâche vers le stick ou sur un autre adversaire. 8 % mesurés pour le premier coup. Une fois par saut.",
+      "u": "Tresses-hélice : ses tresses tournent comme une hélice et la font monter (4,8 %) : 10,1 m de haut. Chute sans défense après.",
+      "d": "Sourcils froncés : 6 s de colère où ses coups font +20 %."
+    }
+  },
+  "kaariz": {
+    "resume": "Tout en or : un des plus lourds du jeu (126). Il ramasse des lingots : avec 1 à 3 lingots sur lui il est plus lourd, plus lent et frappe plus fort ; à 3, une super armure pour les 3 prochains coups. Chaque coup reçu (hors armure) en fait tomber un, que tout le monde peut voler.",
+    "speciaux": {
+      "n": "Or noir : un jet de pétrole lancé en cloche (8 %) qui fait une flaque de 7 s ; on y glisse et on reste au sol 48 frames. Deux flaques au plus.",
+      "s": "Le zoo : il charge sur un bison (11,5 m/s au sol, 10 en l'air ; environ 6 m en l'air, de quoi revenir) : 10 %, KO dès 241 %. Un coup sur lui le fait tomber du bison, 20 % plus loin ; un bouclier arrête le bison et l'étourdit 30 frames. Une fois par saut.",
+      "u": "Le puits de pétrole : un geyser d'or noir le propulse et frappe en sortant (9,1 %) : 8,9 m de haut. Chute sans défense après.",
+      "d": "Le lingot : un lingot géant tombe du ciel devant lui (19 %, KO dès 204 %) et reste 8 s au sol ; n'importe quel coup l'envoie glisser, et il le ramasse en marchant dessus."
+    }
+  },
+  "billi": {
+    "resume": "Sucré au sucre, léger (84) : il mange des donuts sur son canapé pour gonfler (jusqu'à 2 tailles de plus : plus lourd, plus fort, plus lent). Gros, son B devient une boule qui roule sur les autres.",
+    "speciaux": {
+      "n": "Le donut qui roule : lancé à ras du sol, il roule devant lui (9,5 m/s, environ 12 m) : 7 %. Un à la fois. Gros, B devient la boule : il roule lui-même sur les autres.",
+      "s": "Tête baissée : « COMMENT ÇA MON REUF ?? », il fonce tête la première (15 m/s) et rebondit sur ce qu'il percute (11 %, KO dès 172 %). Une fois par saut.",
+      "u": "Le canapé volant : assis sur son canapé, il décolle, dirigé, et ce qu'il percute prend des petits coups (14,8 %, KO dès 263 %) : 9,1 m de haut. Chute sans défense après.",
+      "d": "Le canapé : posé devant lui (10 s, cassé par 16 % de coups). B bas tout près : il s'y assoit et mange des donuts (1 % de soin toutes les 0,5 s), sans défense, et chaque donut le fait gonfler. Un adversaire projeté contre le canapé tombe assis dedans 1 s."
     }
   }
 }
