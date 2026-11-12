@@ -462,5 +462,113 @@
       "u": "Ballon géant : un ballon de basket géant l'emporte (17,3 %, KO dès 191 %) : 14 m de haut et 23,6 m de côté, une des meilleures remontées. Chute sans défense après.",
       "d": "Le vrai panier : posé au bord de l'arène pour 20 s. Un ennemi qu'il projette dans l'arceau prend un DUNK, éjecté très fort vers le haut. Panier posé, B bas tire le ballon en cloche vers l'arceau : à 3 paniers marqués, son prochain coup est un DUNK GÉANT."
     }
+  },
+  "lej": {
+    "resume": "L'ovni : un kit varié avec un scooter très rapide, un enlèvement par soucoupe et un album surprise totalement au hasard.",
+    "speciaux": {
+      "n": "Soucoupe volante : une petite soucoupe lancée qui revient comme un boomerang (9 %). Une à la fois.",
+      "s": "Roue arrière : il traverse sur un scooter en roue arrière, très vite (16 m/s pendant 38 frames) : 18 %, KO dès 268 %. Saut pour descendre. Une fois par saut.",
+      "u": "Enlevé par l'ovni : le rayon d'une soucoupe le tire vers le haut, un peu dirigeable, et ceux qui sont dedans prennent des petits coups (13,4 %, KO dès 212 %) : 9,6 m de haut. Chute sans défense après.",
+      "d": "Album surprise : quelque chose tombe du ciel entre 1,8 et 6,2 m devant lui, au hasard : un disque d'or (frappe et soigne LE J de 8 %), un vinyle piégé qui explose après 50 frames, une enceinte (4 coups de basse), un fan qui court sur l'adversaire 3,5 s… ou un flop qui lui tombe dessus. De 0 à 23 % sur nos essais, 15 % en moyenne."
+    }
+  },
+  "lemaiz": {
+    "resume": "Le critique : il étourdit, chope à distance à travers le bouclier et fait glisser. Passif Pas classique : le même coup refait contre lui fait −15 % à chaque fois (−45 % au plus), il faut varier.",
+    "speciaux": {
+      "n": "La question qui tue : une bulle « ? » qui flotte devant lui (environ 7,9 m). Touchée au sol, la victime est étourdie de 0,4 s (0 %) à 0,7 s (100 %). Une à la fois.",
+      "s": "L'interview : il tend le micro loin devant lui (de 0,9 à 2,9 m), une chope à distance qui passe le bouclier. La victime répond dans une bulle, puis il l'envoie (10 %, KO dès 183 %). Une fois par saut.",
+      "u": "Montée dans les charts : une flèche verte sort devant lui, on la vise au stick, puis elle le propulse dans cette direction (20 m/s) : 8,3 m de haut, 11 m de côté. Chute sans défense après.",
+      "d": "LA SAUCE : une flaque (rayon 1,35 m, 7 s) qui fait glisser ceux qui marchent dedans. En l'air, le pot se renverse et elle tombe. Une à la fois."
+    }
+  },
+  "emve": {
+    "resume": "Le streamer rétro, léger (85) : des notes en pixels, un speedrun qui traverse comme un bug et des alertes de dons au hasard.",
+    "speciaux": {
+      "n": "Note 8 bits : une note en pixels qui rebondit au sol devant lui (4 %, jusqu'à 9 m). Une seule à la fois depuis le 10 nov.",
+      "s": "Speedrun : il bugue, disparaît 6 frames et traverse l'ennemi comme un bug (environ 4,4 m), en frappant (18 %, KO dès 368 %). Contre un bouclier, il est arrêté net et étourdi 40 frames. Une fois par saut.",
+      "u": "Saut de plateforme : un grand saut le poing levé, des pièces à chaque petit coup (14,2 %, KO dès 238 %, sort en 4 frames) : 8,8 m de haut. Chute sans défense après.",
+      "d": "Alerte de don : un objet au hasard tombe du ciel sur l'ennemi le plus proche (à 6 m au plus) : enclume, bloc « ? », bombe 8 bits, cartouche géante, ou un cœur qui le soigne de 8 % s'il est dessous. De 2 à 13 % sur nos essais."
+    }
+  },
+  "lolobiscotto": {
+    "resume": "Piment, pastis et petit chat : portée moyenne, rapide et agile, avec une des meilleures remontées du jeu.",
+    "speciaux": {
+      "n": "Ça monte au piment : il mange un piment, jusqu'à 3. Au troisième, il recrache un souffle de feu. Le robot n'en mange qu'un, d'où 0 % mesuré.",
+      "s": "Minou gris : son chat saute sur l'adversaire (jusqu'à 13 m), s'agrippe à sa tête 2 s et griffe toutes les 11 frames (environ 11 %, 12 % mesurés).",
+      "u": "Pastis-fusée : une bouteille-fusée l'emporte (17 %, KO dès 273 %) : 12,9 m de haut et 24,8 m de côté. Chute sans défense après.",
+      "d": "Flaque de pastis : on glisse dedans (4 %). Elle, elle s'y rafraîchit."
+    }
+  },
+  "luidj": {
+    "resume": "Tristesse business : un vrai perso de distance, léger (84) mais rapide (11 m/s). Plus il est seul, plus il est fort : personne à moins de 5 m, ses notes de saxo font +40 % ; quelqu'un à moins de 2,5 m, ses coups normaux font 8 % de moins.",
+    "speciaux": {
+      "n": "Note de saxo : une note lente (6,4 m/s) qui serpente devant lui. Tenue jusqu'à 40 frames, elle grossit : de 7 % d'un appui à 15,4 % (KO dès 133 %) en la tenant. Seul à 5 m, encore +40 %. Une à la fois.",
+      "s": "Âme solitaire : son âme sort de son corps (qui reste figé), file 5,4 m devant, traverse l'ennemi en frappant puis revient (12 %, KO dès 330 %). Une fois par saut.",
+      "u": "Ballon bleu : un ballon l'emporte (dirigeable), bouscule en montant puis éclate en haut (5,2 %) : 9,2 m de haut. Chute sans défense après.",
+      "d": "Ballon de foot : au sol, il devient un ballon et ne prend plus aucun coup pendant 4 s au plus (annulable après 16 frames ; une chope l'attrape quand même). En l'air, il tombe très vite (27 m/s) en ballon, avec de lourds dégâts."
+    }
+  },
+  "dems": {
+    "resume": "Ψ : un perso lent au sol (6,2 m/s) mais avec une téléportation et un double sombre qui rejoue ses coups.",
+    "speciaux": {
+      "n": "Une lettre lancée qui change avec la charge (tenir jusqu'à 0,8 s) : Ψ petite et rapide, Ω moyenne (dès 16 frames), Δ grosse et la plus forte, qui traverse (dès 36 frames). Chargée : 14 %, KO dès 123 %, jusqu'à 13 m.",
+      "s": "Δ : un grand triangle lumineux traverse l'écran devant lui (9 %, jusqu'à 13 m). Un seul à la fois.",
+      "u": "Téléport : il disparaît et réapparaît 9,6 m plus loin dans la direction du stick, comme Zelda, avec un petit coup à l'arrivée. Chute sans défense après.",
+      "d": "Son double sombre : une copie translucide apparaît devant lui et rejoue son prochain coup (et ses enchaînements) juste après lui, à 60 % des dégâts, pendant 2,5 s au plus. Elle attend son coup 5 s, puis s'efface."
+    }
+  },
+  "tices": {
+    "resume": "L'Alsacien : rapide des poings et des pieds, des flammekueches, du rhum qui fait cracher du feu et des pets. Son combo phare : poser du gaz puis l'allumer au rhum.",
+    "speciaux": {
+      "n": "Flammekueche : lancée loin (7 %, jusqu'à 13 m), elle ralentit celui qu'elle touche.",
+      "s": "Rhum, puis feu : il boit et crache du feu (25,6 % mesurés). Le feu fait exploser le gaz de sa prout-mine : 15 % et une bonne éjection. Une fois par saut.",
+      "u": "Pet-propulsion : il s'envole sur un pet (23,4 %, KO dès 140 %) : 9,6 m de haut. Chute sans défense après.",
+      "d": "Prout-mine : un nuage de gaz (rayon 2 m) qui reste 8 s, deux au plus. Le rhum (B côté) le fait exploser."
+    }
+  },
+  "cellier": {
+    "resume": "Le testeur en colère, lourd (120) mais lent (7,3 m/s), avec trois sauts en l'air comme le Roi DaDiDou. Sa course hurlante encaisse un coup sans broncher.",
+    "speciaux": {
+      "n": "Cartouche lancée : elle rebondit au sol (7 %, jusqu'à 9 m). Une à la fois.",
+      "s": "« MAIS ILS ONT PRIS DE LA DROGUE !!?? » : il fonce en hurlant (13 m/s pendant 30 frames) et encaisse un coup sans broncher pendant la course (13 %, KO dès 139 %). Une fois par saut.",
+      "u": "La cartouche-ressort : il saute sur une cartouche géante qui le propulse (6 %) : 7,1 m de haut, une remontée courte. Chute sans défense après.",
+      "d": "La console qui plante : posée 6 s. Les adversaires à moins de 3,2 m « laguent » : de temps en temps, leur image saute et ils se retrouvent 50 cm en arrière, figés 4 frames. Elle plante après 15 % de coups ; cassée, 4 s avant d'en reposer une."
+    }
+  },
+  "micron": {
+    "resume": "Le président : billets, poudre de perlimpinpin, ascension jupitérienne et le 49.3 qui impose une loi aux adversaires.",
+    "speciaux": {
+      "n": "Pluie de billets : des billets lui tombent devant (11,5 %, sort en 8 frames).",
+      "s": "Poudre de perlimpinpin : un nuage lancé devant lui (9 %, jusqu'à 6 m) qui reste un peu plus de 3 s.",
+      "u": "Ascension jupitérienne : il monte de 10,8 m (6 %). Chute sans défense après.",
+      "d": "49.3 : une loi imposée aux adversaires pendant 6 s, selon le stick : ▲ pas de saut, ◀▶ ralentis à 65 %, ▼ zéro tir (12 %, KO dès 235 % sur l'impact). Elle traverse les boucliers."
+    }
+  },
+  "lainque": {
+    "resume": "Le randonneur, lent (6,8 m/s) : il fait glisser avec ses peaux de banane, prend des raccourcis jusque dans le vide, et ses pets font tousser ses adversaires.",
+    "speciaux": {
+      "n": "La peau de banane : il mange une banane (2 % de soin) et pose la peau (10 s), qui fait glisser et tomber. Une à la fois.",
+      "s": "Je connais un raccourci : une marche rapide qui traverse l'adversaire en le bousculant. Elle s'arrête au bord, sauf si [X] est tenu : il continue tout droit, même dans le vide, quelques pas en l'air. Tenue : 12 % mesurés.",
+      "u": "Le propulseur : un pet le propulse vers le haut et le nuage vert dessous frappe (9,1 %) : 7,3 m de haut. Chute sans défense après.",
+      "d": "LAINK A PÉTÉ : 5 s d'odeur. Qui le frappe au corps à corps tousse : ses coups au contact font 30 % de moins, et une chope sur lui rate (le choppeur tousse 30 frames). Tous les 5 pets (B bas et B haut), ALERTE INFO : 5 s d'une vraie zone d'odeur de 3,3 m qui fait tousser, à travers le bouclier."
+    }
+  },
+  "etoilaisse": {
+    "resume": "Le savant, lent au sol (6,2 m/s). Passif QUATRE À LA SUITE : 4 coups différents d'affilée qui touchent sans être touché (la chaîne se perd après 2,5 s), et le 4e fait ×1,3 +4 % et éjecte fort.",
+    "speciaux": {
+      "n": "Le buzzer : « TOP ! », une onde de choc part devant lui (13 m/s, environ 3,7 m) : 6,5 %. Une à la fois.",
+      "s": "Quatre à la suite : quatre coups rapides en avançant, de plus en plus forts (17,5 %, KO dès 186 %, sort en 5 frames). Raté en entier : 18 frames de lag en plus. Une fois par saut.",
+      "u": "BONNE RÉPONSE ! : une colonne de lumière dorée le propulse, dirigée, et bouscule ce qu'elle traverse (19,2 %, KO dès 241 %) : 8,1 m de haut. Chute sans défense après.",
+      "d": "Face-à-face : une question apparaît entre lui et l'ennemi le plus proche (3,8 m au plus) : l'ennemi est figé environ 1 s, puis il frappe d'un gros livre (11 %, KO dès 171 %). Un bouclier levé renvoie la question. Recharge 7 s."
+    }
+  },
+  "cabalito": {
+    "resume": "Le chef, un peu lourd (104) : ses coups se font à la poêle, qui cuit sur sa plaque chauffante et devient de plus en plus forte.",
+    "speciaux": {
+      "n": "Fines herbes : un nuage de persil (4 s) ; qui y reste 0,7 s s'endort (1,25 s à 100 %, un coup le réveille). Un nuage à la fois.",
+      "s": "Poêle brûlante : un coup de poêle chauffée au rouge qui brûle 3 s (14,3 %, KO dès 343 %). Si la poêle cuit sur la plaque, B côté la reprend. Une fois par saut.",
+      "u": "La cloche du chef : la cloche de plat s'envole et l'emporte (15,8 %, KO dès 268 %) : 11,1 m de haut. Chute sans défense après.",
+      "d": "Plaque chauffante : posée au sol, elle brûle et fait sauter ceux qui marchent dessus. La poêle y cuit par paliers (CRU, BLEU, SAIGNANT, À POINT, CRAMÉ), de plus en plus forte ; laissée jusqu'à BRÛLÉ, elle repart à zéro. B bas la reprend. Pendant la cuisson, il se bat à mains nues (×0,85)."
+    }
   }
 }
