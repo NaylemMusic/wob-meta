@@ -4,7 +4,7 @@ import fs from 'node:fs';
 
 // for each number: does a higher value help the fighter (+1), hurt it (-1), or neither (0)?
 const BETTER = {
-  dmg: +1, startup: -1, dur: -1, iasa: -1, landLag: -1, ko: -1, // ko: a lower % = kills earlier
+  dmg: +1, startup: -1, range: +1, dur: -1, iasa: -1, landLag: -1, ko: -1, // ko: a lower % = kills earlier
   weight: +1, runSpeed: +1, walkSpeed: +1, airSpeed: +1, airAccel: +1, groundAccel: +1, jumpVel: +1, airJumpVel: +1, airJumps: +1,
 };
 const verdict = (key, a, b) => {
@@ -30,6 +30,12 @@ export function diff(A, B) {
       const ma = a.moves[mv] || {}, mb = b.moves[mv] || {};
       for (const k of ['startup', 'dmg', 'ko', 'iasa', 'dur', 'landLag']) {
         if (!same(ma[k], mb[k])) changes.push({ what: mv, key: k, old: ma[k] ?? null, new: mb[k] ?? null, v: verdict(k, ma[k] ?? null, mb[k] ?? null) });
+      }
+    }
+    for (const sp of new Set([...Object.keys(a.specials || {}), ...Object.keys(b.specials || {})])) {
+      const sa = (a.specials || {})[sp] || {}, sb = (b.specials || {})[sp] || {};
+      for (const k of ['startup', 'dmg', 'ko', 'range']) {
+        if (!same(sa[k], sb[k])) changes.push({ what: sp, key: k, old: sa[k] ?? null, new: sb[k] ?? null, v: verdict(k, sa[k] ?? null, sb[k] ?? null) });
       }
     }
     if (changes.length) {

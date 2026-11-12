@@ -9,6 +9,7 @@ const [commit, ...only] = process.argv.slice(2);
 const base = `../cache/${commit}/src/sim/`;
 const { CHARS, CHAR_ORDER } = await import(base + 'chars/index.js');
 const { World } = await import(base + 'world.js');
+const { startMove } = await import(base + 'fighter.js');
 
 const REF = 'mistery';
 const NORMALS = ['jab1', 'ftilt', 'utilt', 'dtilt', 'smash', 'usmash', 'dsmash', 'dashattack', 'nair', 'fair', 'bair', 'uair', 'dair'];
@@ -58,6 +59,49 @@ function koPercent(charId, M) {
   return hi;
 }
 
+// ---- specials: they are code (projectiles, traps, summons…), so the fighter really performs them in the sim ----
+const SPECIALS = ['sp_n', 'sp_s', 'sp_u', 'sp_d'];
+const DISTANCES = [1, 2, 3, 4, 6, 9, 13]; // m between attacker and MISTER Y
+const WINDOW = 360; // 6 s at 60 fps, like the original guide
+
+// one go: attacker at `d` m, facing MISTER Y (at p %), launches the special once, nothing else pressed for 6 s
+function runSpecial(charId, id, d, p) {
+  const W = new World({ stage: 'training', roster: [{ slot: 0, char: charId }, { slot: 1, char: REF }], rules: { mode: 'stock', stocks: 3, minigames: false, ult: false, hazards: false }, seed: 1 });
+  W.phase = 'play';
+  for (let t = 0; t < 40; t++) W.step({}); // land on the floor first
+  const A = W.fighters[0], V = W.fighters[1], m = W.stage.main();
+  V.x = m.cx; A.x = m.cx - d; A.z = V.z = 0; A.facing = Math.PI / 2;
+  V.damage = p;
+  if (!startMove(A, W, id)) return null;
+  let first = null, ko = false;
+  for (let t = 0; t < WINDOW; t++) {
+    W.step({});
+    if (first === null && V.damage > p) first = t + 1;
+    const e = W.events.find((ev) => ev.type === 'ko' && ev.s === V.slot);
+    if (e) { ko = e.kind === 'side' || e.kind === 'top'; break; }
+  }
+  return { dmg: Math.round((V.damage - p) * 10) / 10, first, ko };
+}
+
+function measureSpecial(charId, id) {
+  let best = null, range = 0;
+  for (const d of DISTANCES) {
+    const r = runSpecial(charId, id, d, 0);
+    if (!r) return null; // cannot start from the ground
+    if (r.dmg > 0) range = d;
+    if (!best || r.dmg > best.dmg) best = { ...r, d };
+  }
+  if (!best || best.dmg <= 0) return { dmg: 0, startup: null, range: null, ko: null };
+  // KO %: at the distance where it hurts most, the lowest % at which the special alone knocks him out
+  let ko = null;
+  if (runSpecial(charId, id, best.d, MAX_P).ko) {
+    let lo = 0, hi = MAX_P;
+    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (runSpecial(charId, id, best.d, mid).ko) hi = mid; else lo = mid; }
+    ko = hi;
+  }
+  return { dmg: best.dmg, startup: best.first, range, ko };
+}
+
 const out = { commit, measuredAt: new Date().toISOString(), reference: REF, chars: {} };
 for (const id of only.length ? only : CHAR_ORDER) {
   const C = CHARS[id];
@@ -75,7 +119,9 @@ for (const id of only.length ? only : CHAR_ORDER) {
       meteor: hits.some((h) => h.spike || (h.ang ?? 0) < 0) || undefined,
     };
   }
-  out.chars[id] = { name: C.name, title: C.title, color: C.color, arch: C.arch, stats, moves };
+  const specials = {};
+  for (const k of SPECIALS) if (C.moves && C.moves[k]) specials[k] = measureSpecial(id, k);
+  out.chars[id] = { name: C.name, title: C.title, color: C.color, arch: C.arch, stats, moves, specials };
   process.stderr.write(id + ' ');
 }
 process.stdout.write(JSON.stringify(out));
