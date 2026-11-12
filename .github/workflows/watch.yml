@@ -61,4 +61,5 @@ jobs:
           git config user.name "wob-meta-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Mise à jour ${{ steps.v.outputs.commit }}"
+          git pull --rebase -X theirs || true   # the repo moved meanwhile: replay our data commit on top
           git push
