@@ -112,7 +112,7 @@ Le robot les **lance vraiment** dans la simulation (`startMove(perso, monde, 'sp
 
 ## Ce que le robot en tire (`scripts/extract.mjs`)
 
-- **Coups normaux** : lus dans les données (`f[0]`, dégâts, `iasa`, `landLag`), **KO %** par simulation (le coup le plus fort sur MISTER Y au centre de la salle d'entraînement, sans DI, KO par le côté ou le haut seulement).
+- **Coups normaux** : lus dans les données (`f[0]`, dégâts, `iasa`, `landLag`), **KO %** par simulation (le coup le plus fort sur MISTER Y au centre de la salle d'entraînement, sans DI, KO par le côté ou le haut seulement). Ceux qui sont du **code** sans zone de frappe (39 coups sur 28 persos au 12 nov. : le chien de J'san, des smashs bas…) sont lancés dans la simulation comme les spéciaux et marqués `code: true` ; `dmg: null` = la cible de test (devant, au sol) n'a pas pu être touchée.
 - **Spéciaux** : ce sont du code, donc le perso les **lance vraiment** dans la simulation, à 7 distances (1 à 13 m), 6 secondes, et on garde le meilleur résultat.
 - **Textes** : `specialsInfo` (dont le passif), `ult`, la description en tête de fichier.
 
