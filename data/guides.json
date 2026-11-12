@@ -678,5 +678,59 @@
       "u": "Le carrosse fantôme : un carrosse l'emporte, dirigeable, et ceux qu'il emporte prennent des petits coups (16 %, KO dès 205 %) : 12,5 m de haut. Chute sans défense après.",
       "d": "La plume : il écrit en l'air ; son prochain coup qui touche dans les 6 s fait ×1,5. Perdu au KO."
     }
+  },
+  "bagarra": {
+    "resume": "La bâtisseuse, un peu lourde (105) et lente (7,4 m/s) : elle construit des murs et des plateformes avec ses blocs, et son rugissement fait lâcher le bord.",
+    "speciaux": {
+      "n": "Outils en cubes : elle lance tour à tour une pioche (en cloche), une épée (tendue) et une hache (lourde) : 8 %, jusqu'à 6 m.",
+      "s": "La valse : elle danse en traversant l'écran (9,5 m/s, environ 7 m) et emporte qui elle croise comme une cavalière, puis la révérence (13 %, KO dès 263 %). Une fois par saut.",
+      "u": "Les blocs : 5 blocs sous ses pieds la font monter (6,8 m) ; un bloc tombe sur la tête de qui est dessous. Les 3 premiers restent 15 s, solides : murs et plateformes (6 à elle au plus), cassés par 12 % de coups adverses. Chute sans défense après.",
+      "d": "Le rugissement : une onde de 2,7 m qui repousse tout autour (3 %) et fait lâcher le bord à qui s'y accroche à moins de 4,5 m."
+    }
+  },
+  "dondada": {
+    "resume": "Une main lave l'autre : un rappeur aux enchaînements récompensés (TECHNIQUE !, MULTISYLLABIQUE !, INSOLENT !) et un battle qui enferme son adversaire 5 s.",
+    "speciaux": {
+      "n": "Rafale de syllabes : trois syllabes tirées à la suite, chacune un petit coup, la dernière pousse un peu (8 %).",
+      "s": "Le flow : il glisse en avant et frappe en rythme, deux coups qui emportent puis le troisième envoie (12 %, KO dès 299 %). Une fois par saut.",
+      "u": "Une main lave l'autre : deux mains géantes dorées le hissent l'une après l'autre, puis se frottent sous lui pour le dernier coup (19,9 %, KO dès 186 %) : 11,5 m de haut. Chute sans défense après.",
+      "d": "Le battle : il défie l'ennemi le plus proche (7 m au plus) dans un cercle de rap pendant 5 s, dont personne ne sort. Celui qui a pris le moins de coups gagne (plus rapide ×1,25 pendant 6 s) ; l'autre est clashé (12 % et une éjection modérée). Égalité : personne. 5 s avant le suivant."
+    }
+  },
+  "janjan": {
+    "resume": "Le beatmaker : il enregistre les projectiles adverses pour les renvoyer, rejoue ses coups en boucle, et sa boîte à rythmes refrappe toute seule.",
+    "speciaux": {
+      "n": "LE SAMPLE : il enregistre un projectile qui passe à moins de 1,7 m de lui (comme la poche du Villageois). B de nouveau le relance, 25 % plus fort. Perdu au KO. Sans projectile à prendre, le robot n'a rien mesuré.",
+      "s": "La boucle : il frappe, et la boucle rejoue le coup deux fois en écho au même endroit, toutes les 15 frames ; le dernier éjecte (13 %). Une fois par saut.",
+      "u": "Le kick : une grosse caisse sous ses pieds le propulse, un peu dirigeable (17,6 %) : 7,8 m de haut. Chute sans défense après.",
+      "d": "La boîte à rythmes : posée pour 8 s, elle rejoue son dernier coup à chaque temps (toutes les 40 frames), à 55 % des dégâts, tournée vers l'adversaire le plus proche (7 m au plus). Une à la fois, cassée par 12 % de coups, puis 3 s d'attente."
+    }
+  },
+  "morreyyy": {
+    "resume": "Le Duc, un des plus lourds du jeu (124), gabarit Ganondorf : boxe anglaise et MMA, un pitbull qui écrase et une cage pour un duel.",
+    "speciaux": {
+      "n": "Disque de platine : lancé comme un boomerang (10,5 %, KO dès 367 %).",
+      "s": "Pitbull : il se transforme, saisit l'ennemi, saute et l'écrase, comme la Koopa Klaw de Bowser (23,9 %, KO dès 115 %). Raté, il est punissable.",
+      "u": "Uppercut sauté : il attrape en montant puis écrase, comme le Dark Dive de Ganondorf (17,2 %) : 8,9 m de haut. Chute sans défense après.",
+      "d": "L'Octogone express : une cage tombe autour de lui et d'un adversaire tout proche (2,3 m au plus) : 6 s de duel où l'on rebondit sur le grillage, et ses coups y font ×1,15."
+    }
+  },
+  "nymano": {
+    "resume": "Il pleure, il ride, il sample : léger (84), toujours triste. Ses larmes font glisser, et sa tristesse pleine déclenche une crise où tout glisse.",
+    "speciaux": {
+      "n": "SP-404 : tant que [X] est tenu, il joue un sample ; ceux qui restent à moins de 4 m s'assoupissent puis s'endorment (environ 1,5 s). Pas de dégâts directs.",
+      "s": "Skate : il fonce sur sa planche (9 %, KO dès 264 %, jusqu'à 9 m). Une fois par saut.",
+      "u": "Ollie géant : un énorme ollie (10 %, KO dès 236 %) : 6,6 m de haut, 10 m de côté. Chute sans défense après.",
+      "d": "Flaque de larmes : une flaque où l'on glisse (4 %). Quand sa tristesse est pleine, la crise : 3 s où tout le monde glisse et où il va ×1,45 plus vite."
+    }
+  },
+  "bigo": {
+    "resume": "Le duo inséparable, façon Ice Climbers : on dirige BIGO, et FOLI le suit en rejouant ses commandes. FOLI a ses propres % et revient 12 s après avoir été éjecté. Seul, BIGO frappe moins loin et moins fort (dégâts ×0,62).",
+    "speciaux": {
+      "n": "Passe et frappe : chacun lance un ballon (3 % par ballon, jusqu'à 9 m).",
+      "s": "La toupie à deux : les deux frères tournent ensemble et frappent (14,3 %). Une fois par saut.",
+      "u": "La corde : FOLI monte et BIGO grimpe à la corde (5,8 %). Seul, ce n'est qu'un petit saut : 2,6 m mesurés, la pire remontée du jeu sans FOLI. Chute sans défense après.",
+      "d": "Changer de frère : le joueur dirige l'autre frère, et celui qu'il quitte devient le suiveur."
+    }
   }
 }
