@@ -1,0 +1,44 @@
+name: Surveille les patchs de World of Bagarre
+
+# Toutes les heures : si worldofbagarre.com sert une nouvelle version (/v/<commit>/), on mesure tous les persos
+# dans un conteneur sans réseau (le code du jeu y tourne isolé), on compare à la version d'avant et on publie
+# data/<commit>.json, data/latest.json et data/patchnotes.json (lus par nds-tournament.fr).
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: measure
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Version en ligne
+        id: v
+        run: |
+          C=$(node scripts/fetch.mjs)
+          echo "commit=$C" >> "$GITHUB_OUTPUT"
+          if [ -f "data/$C.json" ]; then echo "new=false" >> "$GITHUB_OUTPUT"; else echo "new=true" >> "$GITHUB_OUTPUT"; fi
+      - name: Mesure (conteneur sans réseau)
+        if: steps.v.outputs.new == 'true'
+        run: |
+          C=${{ steps.v.outputs.commit }}
+          docker run --rm --network none --read-only --cap-drop ALL --memory 2g -v "$PWD:/w:ro" -w /w/scripts node:22-alpine node extract.mjs "$C" > "data/$C.json"
+          PREV=$(node -e "try{console.log('data/'+require('./data/latest.json').file)}catch(e){}")
+          node scripts/diff.mjs "$PREV" "data/$C.json"
+      - name: Publie
+        if: steps.v.outputs.new == 'true'
+        run: |
+          git config user.name "wob-meta-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Patch ${{ steps.v.outputs.commit }}"
+          git push
