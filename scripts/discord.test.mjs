@@ -21,4 +21,5 @@ assert.equal(r.pending.length, 0);
 
 assert.equal(keep({ id: '9', timestamp: 'x', content: '', embeds: [] }), null, 'empty message ignored');
 assert.equal(keep({ id: '9', timestamp: 'x', content: 'Patch 1.2', embeds: [{ title: 'Nerfs', description: 'MISTER Y' }] }).text, 'Patch 1.2\n\nNerfs\nMISTER Y');
+assert.equal(keep({ id: '9', type: 12, timestamp: 'x', content: 'World of Bagarre #mises-à-jour' }), null, 'follow notice ignored');
 console.log('discord OK');

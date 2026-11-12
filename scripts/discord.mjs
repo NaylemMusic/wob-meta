@@ -29,6 +29,7 @@ export function attach(notes, pending) {
 
 // a Discord message → what we keep (text + the text of its embeds; a crossposted announcement keeps its content)
 export function keep(msg) {
+  if (msg.type) return null; // only normal messages (type 0): skips "channel followed" notices (type 12) and other system messages
   const parts = [msg.content || ''];
   for (const e of msg.embeds || []) parts.push([e.title, e.description].filter(Boolean).join('\n'));
   const text = parts.filter((s) => s && s.trim()).join('\n\n').trim();
