@@ -22,4 +22,6 @@ assert.equal(r.pending.length, 0);
 assert.equal(keep({ id: '9', timestamp: 'x', content: '', embeds: [] }), null, 'empty message ignored');
 assert.equal(keep({ id: '9', timestamp: 'x', content: 'Patch 1.2', embeds: [{ title: 'Nerfs', description: 'MISTER Y' }] }).text, 'Patch 1.2\n\nNerfs\nMISTER Y');
 assert.equal(keep({ id: '9', type: 12, timestamp: 'x', content: 'World of Bagarre #mises-à-jour' }), null, 'follow notice ignored');
+const fw = keep({ id: '10', type: 0, timestamp: 'forward-time', content: '', message_snapshots: [{ message: { timestamp: 'original-time', content: '', embeds: [{ title: 'Mise à jour du 12 novembre', description: '• balle' }] } }] });
+assert.deepEqual([fw.text, fw.date], ['Mise à jour du 12 novembre\n• balle', 'original-time'], 'forwarded announcement: original text and date');
 console.log('discord OK');
