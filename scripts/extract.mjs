@@ -103,7 +103,18 @@ function measureSpecial(charId, id) {
 }
 
 // up B in the air from a standstill, 4 m above the middle of the stage: how high and how far it carries (m)
+// a B haut steered with the stick (NYSOS's crow, EPEKTASE's broom, JOLAVERT's rocket) only climbs if the stick is held:
+// fly it three ways (stick up, sideways, diagonal) for up to 5 s and keep the best height and the best sideways distance
 function measureRecovery(charId) {
+  let best = null;
+  for (const [mx, my] of [[0, 0], [0, 1], [1, 0], [0.7, 0.7]]) {
+    const r = flyRecovery(charId, mx, my);
+    if (!r) return best;
+    best = best ? { up: Math.max(best.up, r.up), side: Math.max(best.side, r.side) } : r;
+  }
+  return best;
+}
+function flyRecovery(charId, mx, my) {
   const W = new World({ stage: 'training', roster: [{ slot: 0, char: charId }, { slot: 1, char: REF }], rules: { mode: 'stock', stocks: 3, minigames: false, ult: false, hazards: false }, seed: 1 });
   W.phase = 'play';
   for (let t = 0; t < 40; t++) W.step({});
@@ -113,7 +124,8 @@ function measureRecovery(charId) {
   const x0 = A.x, y0 = A.y;
   if (!startMove(A, W, 'sp_u')) return null;
   let up = 0, side = 0;
-  for (let t = 0; t < 120; t++) { W.step({}); up = Math.max(up, A.y - y0); side = Math.max(side, Math.abs(A.x - x0)); if (A.grounded && t > 5) break; }
+  const stick = { 0: { mx, my, held: 0, pressed: 0 } };
+  for (let t = 0; t < 300; t++) { W.step(stick); up = Math.max(up, A.y - y0); side = Math.max(side, Math.abs(A.x - x0)); if (A.grounded && t > 5) break; }
   return { up: Math.round(up * 10) / 10, side: Math.round(side * 10) / 10 };
 }
 
