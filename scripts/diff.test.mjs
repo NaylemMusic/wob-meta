@@ -14,4 +14,7 @@ assert.equal(c['smash.ko'], -1, 'kills later = nerf');
 assert.equal(c['nair.ko'], 1, 'starts killing = buff');
 assert.equal(n.chars.x.verdict, 'nerf');
 assert.equal(diff(A, A).added.length + Object.keys(diff(A, A).chars).length, 0, 'same version = nothing');
+const K1 = { commit: 'a', chars: { x: { name: 'X', stats: {}, moves: { smash: { ko: 70, koFull: 30 } } } } }, K2 = { commit: 'b', chars: { x: { name: 'X', stats: {}, moves: { smash: { ko: 70, koFull: 25 } } } } };
+assert.equal(diff(K1, K2).chars.x.changes[0].v, 1, 'charged smash kills earlier = buff');
+assert.equal(Object.keys(diff({ commit: 'a', chars: { x: { name: 'X', stats: {}, moves: { smash: { ko: 70 } } } } }, K1).chars).length, 0, 'koFull missing in the old file is not a change');
 console.log('diff OK');

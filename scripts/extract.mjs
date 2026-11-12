@@ -28,14 +28,14 @@ function totalDamage(hits) {
   return Math.round([...byFrame.values()].reduce((a, b) => a + b, 0) * 10) / 10;
 }
 
-function knocksOut(charId, M, h, i, p) {
+function knocksOut(charId, M, h, i, p, charge = 0) {
   const W = new World({ stage: 'training', roster: [{ slot: 0, char: charId }, { slot: 1, char: REF }], rules: { mode: 'stock', stocks: 3, minigames: false, ult: false, hazards: false }, seed: 1 });
   W.phase = 'play';
   const A = W.fighters[0], V = W.fighters[1];
   const m = W.stage.main();
   V.x = m.cx; A.x = m.cx - 1; A.z = V.z = 0;
   A.facing = Math.PI / 2; // toward +x, the victim's side
-  A.mv = { charge: 0 }; A.move = 'measure';
+  A.mv = { charge }; A.move = 'measure';
   V.damage = p;
   const hv = W.moveHitVolume(A, M, h, i);
   hv.x = V.x; hv.y = V.y + 1; hv.z = V.z;
@@ -49,33 +49,41 @@ function knocksOut(charId, M, h, i, p) {
   return false;
 }
 
-function koPercent(charId, M) {
+// charge: frames of smash charge (0 = tapped; M.charge.max = fully charged)
+function koPercent(charId, M, charge = 0) {
   const hits = (M.hits || []).filter((h) => h.dmg > 0 && !h.effect && !h.noLaunch && !h.noFlinch);
   if (!hits.length) return null;
   const { h, i } = strongest(hits);
-  if (!knocksOut(charId, M, h, i, MAX_P)) return null;
+  if (!knocksOut(charId, M, h, i, MAX_P, charge)) return null;
   let lo = 0, hi = MAX_P; // lowest p that kills, to the unit
-  while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (knocksOut(charId, M, h, i, mid)) hi = mid; else lo = mid; }
+  while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (knocksOut(charId, M, h, i, mid, charge)) hi = mid; else lo = mid; }
   return hi;
 }
 
 // ---- specials: they are code (projectiles, traps, summons…), so the fighter really performs them in the sim ----
 const SPECIALS = ['sp_n', 'sp_s', 'sp_u', 'sp_d'];
+const AIR_AIM = { nair: 'front', fair: 'front', bair: 'back', uair: 'above', dair: 'below' };
 const DISTANCES = [1, 2, 3, 4, 6, 9, 13]; // m between attacker and MISTER Y
 const WINDOW = 360; // 6 s at 60 fps, like the original guide
 
 // one go: attacker at `d` m, facing MISTER Y (at p %), launches the special once, nothing else pressed for 6 s
-function runSpecial(charId, id, d, p) {
-  const W = new World({ stage: 'training', roster: [{ slot: 0, char: charId }, { slot: 1, char: REF }], rules: { mode: 'stock', stocks: 3, minigames: false, ult: false, hazards: false }, seed: 1 });
+// opt.seed: the sim's random seed (LIDRA's die…); opt.hold: frames the special button stays held (charged/held moves);
+// opt.air: the attacker starts 3 m up; opt.where: target 'front' (default), 'back', 'above' or 'below' the attacker
+function runSpecial(charId, id, d, p, opt = {}) {
+  const W = new World({ stage: 'training', roster: [{ slot: 0, char: charId }, { slot: 1, char: REF }], rules: { mode: 'stock', stocks: 3, minigames: false, ult: false, hazards: false }, seed: opt.seed || 1 });
   W.phase = 'play';
   for (let t = 0; t < 40; t++) W.step({}); // land on the floor first
   const A = W.fighters[0], V = W.fighters[1], m = W.stage.main();
-  V.x = m.cx; A.x = m.cx - d; A.z = V.z = 0; A.facing = Math.PI / 2;
+  const where = opt.where || 'front';
+  V.x = m.cx; A.z = V.z = 0; A.facing = Math.PI / 2;
+  A.x = where === 'back' ? m.cx + d : where === 'front' ? m.cx - d : m.cx;
+  if (opt.air) { A.y += where === 'below' ? d : 3; A.vx = A.vy = 0; A.grounded = false; }
+  if (where === 'above') { V.y = A.y + d; V.vy = 0; V.grounded = false; }
   V.damage = p;
   if (!startMove(A, W, id)) return null;
   let first = null, ko = false;
   for (let t = 0; t < WINDOW; t++) {
-    W.step({});
+    W.step(opt.hold && t < opt.hold ? { 0: { mx: 0, my: 0, held: 2, pressed: 0 } } : {}); // 2 = BTN.X, the special button
     if (first === null && V.damage > p) first = t + 1;
     const e = W.events.find((ev) => ev.type === 'ko' && ev.s === V.slot);
     if (e) { ko = e.kind === 'side' || e.kind === 'top'; break; }
@@ -83,23 +91,37 @@ function runSpecial(charId, id, d, p) {
   return { dmg: Math.round((V.damage - p) * 10) / 10, first, ko };
 }
 
-function measureSpecial(charId, id) {
+function measureSpecial(charId, id, opt = {}) {
   let best = null, range = 0;
   for (const d of DISTANCES) {
-    const r = runSpecial(charId, id, d, 0);
-    if (!r) return null; // cannot start from the ground
+    const r = runSpecial(charId, id, d, 0, opt);
+    if (!r) return null; // cannot start from here (ground / air)
     if (r.dmg > 0) range = d;
     if (!best || r.dmg > best.dmg) best = { ...r, d };
   }
   if (!best || best.dmg <= 0) return { dmg: 0, startup: null, range: null, ko: null };
   // KO %: at the distance where it hurts most, the lowest % at which the special alone knocks him out
   let ko = null;
-  if (runSpecial(charId, id, best.d, MAX_P).ko) {
+  if (runSpecial(charId, id, best.d, MAX_P, opt).ko) {
     let lo = 0, hi = MAX_P;
-    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (runSpecial(charId, id, best.d, mid).ko) hi = mid; else lo = mid; }
+    while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (runSpecial(charId, id, best.d, mid, opt).ko) hi = mid; else lo = mid; }
     ko = hi;
   }
-  return { dmg: best.dmg, startup: best.first, range, ko };
+  const out = { dmg: best.dmg, startup: best.first, range, ko };
+  // random moves (LIDRA's die…): the same throw with other seeds gives other damage → keep the spread
+  const seeds = [2, 3, 4, 5, 6, 7, 8].map((seed) => (runSpecial(charId, id, best.d, 0, { ...opt, seed }) || {}).dmg ?? 0);
+  if (seeds.some((v) => v !== best.dmg)) {
+    const all = [best.dmg, ...seeds];
+    Object.assign(out, { random: true, dmgMin: Math.min(...all), dmgMax: Math.max(...all), dmgAvg: Math.round(all.reduce((a, b) => a + b, 0) / all.length * 10) / 10 });
+  }
+  return out;
+}
+
+// the best of a plain press and a held press (charged balls, held beams…): flags `held` when holding does more
+function measureBest(charId, id, M, opt = {}) {
+  const tap = measureSpecial(charId, id, opt);
+  const hold = measureSpecial(charId, id, { ...opt, hold: (M.charge && M.charge.max) || 120 });
+  return hold && hold.dmg > ((tap && tap.dmg) || 0) ? { ...hold, held: true } : tap;
 }
 
 // up B in the air from a standstill, 4 m above the middle of the stage: how high and how far it carries (m)
@@ -161,9 +183,10 @@ for (const id of only.length ? only : CHAR_ORDER) {
     if (!M.hits || !M.hits.length) {
       // a normal made of code (J'san's dog, summons…): no hit zones to read, so it is launched in the sim like a special
       if (!M.onStart && !M.onFrame) continue;
-      // shortcut: the target stands in front on the ground, so back/up/down aerials of code usually miss → null (not measured), not 0
       let s = measureSpecial(id, k);
-      if (s && !(s.dmg > 0)) s = null;
+      // an aerial of code: thrown in the air at a target where it aims (behind for bair, above for uair, below for dair)
+      if (!(s && s.dmg > 0) && AIR_AIM[k]) s = measureSpecial(id, k, { air: true, where: AIR_AIM[k] });
+      if (s && !(s.dmg > 0)) s = null; // still nothing: null (not measured), not 0
       moves[k] = { startup: s ? s.startup : null, dur: M.dur ?? null, iasa: M.iasa ?? null, landLag: M.landLag ?? M.landing ?? null, dmg: s ? s.dmg : null, ko: s ? s.ko : null, code: true };
       continue;
     }
@@ -173,11 +196,12 @@ for (const id of only.length ? only : CHAR_ORDER) {
       dur: M.dur ?? null, iasa: M.iasa ?? null, landLag: M.landLag ?? M.landing ?? null,
       dmg: totalDamage(hits),
       ko: koPercent(id, M),
+      koFull: M.charge ? koPercent(id, M, M.charge.max) : undefined, // a smash charged to the max
       meteor: hits.some((h) => h.spike || (h.ang ?? 0) < 0) || undefined,
     };
   }
   const specials = {};
-  for (const k of SPECIALS) if (C.moves && C.moves[k]) specials[k] = { ...measureSpecial(id, k), ...specialFlags(C.moves[k]) };
+  for (const k of SPECIALS) if (C.moves && C.moves[k]) specials[k] = { ...measureBest(id, k, C.moves[k]), ...specialFlags(C.moves[k]) };
   if (specials.sp_u) specials.sp_u.recovery = measureRecovery(id);
   const U = C.ult || {};
   const grab = C.moves && C.moves.grab && C.moves.grab.hits && C.moves.grab.hits[0];
