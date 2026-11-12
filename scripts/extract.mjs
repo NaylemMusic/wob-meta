@@ -145,7 +145,16 @@ for (const id of only.length ? only : CHAR_ORDER) {
   const moves = {};
   for (const k of NORMALS) {
     const M = C.moves && C.moves[k];
-    if (!M || !M.hits || !M.hits.length) continue;
+    if (!M) continue;
+    if (!M.hits || !M.hits.length) {
+      // a normal made of code (J'san's dog, summons…): no hit zones to read, so it is launched in the sim like a special
+      if (!M.onStart && !M.onFrame) continue;
+      // shortcut: the target stands in front on the ground, so back/up/down aerials of code usually miss → null (not measured), not 0
+      let s = measureSpecial(id, k);
+      if (s && !(s.dmg > 0)) s = null;
+      moves[k] = { startup: s ? s.startup : null, dur: M.dur ?? null, iasa: M.iasa ?? null, landLag: M.landLag ?? M.landing ?? null, dmg: s ? s.dmg : null, ko: s ? s.ko : null, code: true };
+      continue;
+    }
     const hits = M.hits.filter((h) => h.f);
     moves[k] = {
       startup: Math.min(...hits.map((h) => h.f[0])),
