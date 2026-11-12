@@ -1351,7 +1351,20 @@
       "s": "Dash gelé : il traverse vite, intouchable pendant le trajet (7 %), et laisse une traînée de givre de 5 s où l'on glisse et tombe (45 frames au sol). Une fois par saut.",
       "u": "Pilier de glace : un pilier le monte et frappe vers le haut (6,5 %, KO dès 218 %) : 11,9 m de haut. Chute sans défense après.",
       "d": "Contre-gel : frappé pendant la fenêtre, il pare et gèle l'attaquant dans le même bloc que FREEZE ; un projectile repart vers son lanceur."
-    }
+    },
+    "forces": [
+      "Rapide (11,2 m/s)",
+      "FREEZE gèle jusqu'à 2,85 s, puis LE CURLING",
+      "Bonne remontée (11,9 m)"
+    ],
+    "faiblesses": [
+      "Léger (91)",
+      "Ses smashs tuent tard (smash avant dès 95 %)"
+    ],
+    "conseils": [
+      "Gèle, puis frappe le bloc vers le bord ou vers les autres adversaires",
+      "Contre-gel contre les adversaires qui attaquent sans réfléchir"
+    ]
   },
   "bosslady": {
     "resume": "La patronne, légère (91) : elle donne des ordres à ses adversaires et se soigne en dansant. Remontée excellente.",
@@ -1360,7 +1373,20 @@
       "s": "Les ordres, selon le stick : ASSIS ! (étourdi 45 frames à 100 %), SAUTE ! (l'adversaire saute et perd son saut en l'air) ou RECULE ! (il recule en marchant, même hors du bord). 5 % mesurés.",
       "u": "Quartier de lune : assise sur un quartier de lune, elle s'envole (13 %) : 13,3 m de haut, 14,6 m de côté. Chute sans défense après.",
       "d": "Danse : tant que [X] est tenu, elle danse et se soigne de 3 % par seconde."
-    }
+    },
+    "forces": [
+      "Aérien avant à 31 %, un des plus gros coups du jeu",
+      "5e meilleure remontée (13,3 m)",
+      "Elle se soigne en dansant (3 % par seconde)"
+    ],
+    "faiblesses": [
+      "Légère (91) et lente au sol (7,8 m/s)",
+      "Ses smashs tuent plutôt tard (smash avant dès 78 %)"
+    ],
+    "conseils": [
+      "ASSIS ! puis ton aérien avant",
+      "Danse pour te soigner dès que l'adversaire est loin"
+    ]
   },
   "omfu": {
     "resume": "GOTNOTIME, le catcheur DJ : lourd (113) et très puissant, mais lent (7,3 m/s) et avec une remontée très courte. Ses cordes du ring empêchent les KO sur les côtés.",
@@ -1369,7 +1395,20 @@
       "s": "Scratch-onde : une onde sonore de ses platines (14 %, jusqu'à 9 m).",
       "u": "Platines-trampoline : il rebondit sur ses platines, [X] pour rebondir encore (9 %). Seulement 4 m d'un rebond : une des remontées les plus courtes. Chute sans défense après.",
       "d": "Les cordes du ring : 8 s où personne ne peut être éjecté par les côtés ; un adversaire envoyé dans les cordes rebondit et revient vers lui (à 15 m/s)."
-    }
+    },
+    "forces": [
+      "Le smash avant qui tue le plus tôt du jeu : dès 51 %, 15 % chargé à fond",
+      "Gros coups : smash haut 30 %, aérien arrière 24,4 %",
+      "Lourd (113)"
+    ],
+    "faiblesses": [
+      "Une des pires remontées du jeu (4 m d'un rebond)",
+      "Lent (7,3 m/s) et coups normaux un peu lents (5 frames au mieux)"
+    ],
+    "conseils": [
+      "Les cordes du ring empêchent les KO sur les côtés : pose-les quand tu as beaucoup de %",
+      "Ne sors jamais du terrain"
+    ]
   },
   "lena": {
     "resume": "L'icône : une traîne de gala qui tue tôt, un parfum qui ralentit, et une cabine d'essayage qui lui donne une tenue au hasard pour 10 s.",
@@ -1378,7 +1417,20 @@
       "s": "La traîne du gala : une immense traîne balaie le sol devant elle, très longue portée (environ 5 m) mais lente (14 %, KO dès 105 %). Une fois par saut.",
       "u": "Les marches du gala : des marches blanches apparaissent sous ses pas et elle les monte (6,5 %) : 8,9 m de haut. Chute sans défense après.",
       "d": "La cabine d'essayage : elle disparaît derrière un paravent et ressort environ 3 m plus loin (vers le stick) en frappant (8 à 10 %), avec une tenue au hasard pour 10 s : sport (×1,22 vitesse, coups ×0,92), gala (coups +18 %), pyjama (soigne 1 % toutes les 50 frames, coups ×0,9) ou vintage (plus lente, coups ×1,12, encaisse les petits coups). Puis 5 s avant la suivante."
-    }
+    },
+    "forces": [
+      "La traîne du gala touche à 5 m et tue dès 105 %",
+      "Smash bas à 27 %",
+      "La tenue gala : coups +18 % pendant 10 s"
+    ],
+    "faiblesses": [
+      "Légère (91)",
+      "La traîne est lente à sortir"
+    ],
+    "conseils": [
+      "Ressors de la cabine vers l'adversaire pour frapper en sortant",
+      "Parfum, puis traîne sur l'adversaire ralenti"
+    ]
   },
   "les": {
     "resume": "Omertà : un mafieux qui coupe les spéciaux de ses adversaires et met un contrat sur leur tête : 5 coups sur la cible, et le 5e fait 60 %.",
@@ -1387,7 +1439,19 @@
       "s": "La berline noire : une voiture de mafieux passe en trombe devant lui (12 %, KO dès 193 %, jusqu'à 13 m).",
       "u": "L'aigle : un aigle doré l'attrape par les mains et l'emporte, un peu dirigeable (6 %) : 11,5 m de haut. Chute sans défense après.",
       "d": "Le contrat : il désigne l'ennemi le plus proche (4,5 m au plus), une cible visible par tous pendant 10 s. Chaque coup sur la cible remplit un cran ; au 5e, CONTRAT REMPLI : ce coup fait 60 % et éjecte modérément."
-    }
+    },
+    "forces": [
+      "Le contrat : le 5e coup sur la cible fait 60 %",
+      "Omertà coupe les spéciaux de l'adversaire jusqu'à 2 s",
+      "Bonne remontée (11,5 m) et rapide (10 m/s)"
+    ],
+    "faiblesses": [
+      "Smashs moyens (smash avant dès 82 %)"
+    ],
+    "conseils": [
+      "Omertà sur un adversaire hors du terrain : pendant 1 s, plus de B haut pour revenir",
+      "Contrat, puis enchaîne 5 coups rapides"
+    ]
   },
   "skanky": {
     "resume": "8BALLES, la diagonale du vide : il parle sans s'arrêter, fraude le train, roule en skate au lieu de courir et danse la funk de Lyon.",
@@ -1396,7 +1460,20 @@
       "s": "Fraude : il saute le portique, puis le train passe derrière lui et fauche ceux qui sont sur la voie (10 %, KO dès 285 %, jusqu'à 13 m). Le train arrive tard (frame 50).",
       "u": "Le TER de 6 h 12 : il monte avec le train, qui frappe fort sur son passage (40,2 % mesurés contre une cible immobile, KO dès 310 %) : 7,6 m de haut, 12,1 m de côté. Chute sans défense après.",
       "d": "Funk de Lyon : tant que [X] est tenu, il danse et ceux qui sont autour dansent avec lui (12 % en le tenant)."
-    }
+    },
+    "forces": [
+      "Le TER de 6 h 12 : un des B haut les plus forts (40 % sur une cible immobile)",
+      "Ses mots restent en l'air comme plateformes",
+      "Funk de Lyon fait danser autour de lui"
+    ],
+    "faiblesses": [
+      "Ses smashs tuent tard (smash avant dès 94 %)",
+      "Remontée courte (7,6 m)"
+    ],
+    "conseils": [
+      "Tape dans tes mots pour les envoyer sur l'adversaire",
+      "Fraude : le train passe derrière toi, place l'adversaire sur la voie"
+    ]
   },
   "lofille": {
     "resume": "Beats tranquilles : lente (6,8 m/s), elle endort, ralentit et plane. Le stream 24/7 : immobile 1 s, elle se soigne de 1 % toutes les 1,25 s et charge son beat ; dès qu'elle bouge, ça s'arrête.",
@@ -1405,7 +1482,20 @@
       "s": "Avion en papier : il plane loin, le stick l'oriente un peu, et fait un petit coup (5 %, jusqu'à 9 m).",
       "u": "Feuille volante : assise sur une feuille de cahier, elle monte puis plane lentement (7,4 %) : 10,5 m de haut, 15 m de côté. Bas pour lâcher la feuille. Chute sans défense après.",
       "d": "Pluie sur la vitre : un nuage de 4,5 s au-dessus de la zone devant elle ; la pluie ralentit à moitié vitesse ceux qui sont dessous et les mouille (1 % toutes les 45 frames, sans recul). Un à la fois."
-    }
+    },
+    "forces": [
+      "Elle se soigne en restant immobile",
+      "Le beat endort, la pluie ralentit",
+      "Bonne remontée de côté (15 m) avec la feuille qui plane"
+    ],
+    "faiblesses": [
+      "Lente (6,8 m/s)",
+      "Ses smashs tuent tard (smash avant dès 94 %)"
+    ],
+    "conseils": [
+      "Reste immobile 1 s quand tu peux : soin et beat chargé",
+      "Beat qui endort, puis smash"
+    ]
   },
   "antwan": {
     "resume": "L'intankable : le plus léger du jeu (76) et un des plus lents au sol (6,2 m/s), mais cinq sauts en l'air et une forme d'abeille qui vole partout.",
@@ -1414,7 +1504,20 @@
       "s": "LE CUT : une coupure de montage, l'image saute ; il disparaît et réapparaît environ 4,4 m plus loin en frappant (9 %, KO dès 258 %). Une fois par saut.",
       "u": "L'abeille s'envole : ailes d'abeille, il monte en bourdonnant, plusieurs petits coups qui emportent, le dernier repousse (12 %, KO dès 276 %) : 7,1 m de haut, 12,2 m de côté. Chute sans défense après.",
       "d": "En abeille : 6 s en abeille toute petite (dure à toucher) qui vole librement partout ; [A] pique dans la direction du stick. Une seule tape le refait tomber en humain ; [X] + bas pour redevenir humain quand il veut. Une fois par saut, puis 1,5 s d'attente."
-    }
+    },
+    "forces": [
+      "Cinq sauts en l'air",
+      "L'abeille vole partout et est dure à toucher",
+      "LE CUT traverse l'adversaire"
+    ],
+    "faiblesses": [
+      "Le plus léger du jeu (76) : il meurt très tôt",
+      "Un des plus lents au sol (6,2 m/s)"
+    ],
+    "conseils": [
+      "Reste en l'air : tes cinq sauts sont ta meilleure défense",
+      "En abeille, évite tout coup : une seule tape te refait humain"
+    ]
   },
   "anbuu": {
     "resume": "Le lick interdit et les saintes 808 : un perso de magie léger (84) qui flotte comme Mewtwo. Le lick complet : chaque coup qui touche joue une note ; les 7 sans être touché, et le coup suivant est divin (+25 %).",
@@ -1423,7 +1526,21 @@
       "s": "Confusion : une lévitation qui soulève l'adversaire juste devant lui (6 %).",
       "u": "Envol : ses petites ailes d'ange l'emportent (8,4 %, KO dès 261 %) : 7 m de haut, 11,5 m de côté. Chute sans défense après.",
       "d": "Sainte 808 : une enceinte sacrée tombe du ciel devant lui, très bassy (17 %, jusqu'à 6 m), mais elle arrive tard (frame 41)."
-    }
+    },
+    "forces": [
+      "Rapide (11 m/s)",
+      "Le lick complet : 7 notes sans être touché, le coup suivant fait +25 %",
+      "Sainte 808 : 17 %"
+    ],
+    "faiblesses": [
+      "Léger (84)",
+      "Coups normaux un peu lents (jab en 4 frames) et smashs qui tuent tard (smash bas dès 106 %)",
+      "Remontée courte (7 m)"
+    ],
+    "conseils": [
+      "Touche sans te faire toucher pour compléter le lick",
+      "Garde le coup divin pour le smash qui tue"
+    ]
   },
   "bagarri": {
     "resume": "Le late-show, léger (84) : tous ses coups font +12 %. Son bureau arrête les projectiles, et à côté de lui, un invité absent du match surgit et lance son spécial.",
@@ -1432,7 +1549,20 @@
       "s": "Le jeu coolos : un buzzer surgit entre lui et l'adversaire le plus proche, « 3, 2, 1… », puis il reste actif 2,5 s : le premier qui le frappe gagne. Lui : un coup gratuit en confettis. L'adversaire : MAX BAGARRI prend un gage de 8 %. Le robot ne frappe pas le buzzer : 0 % mesuré.",
       "u": "Le canon à confettis : un canon le propulse et le souffle frappe dessous (12,7 %) : 8,5 m de haut. Chute sans défense après.",
       "d": "Le bureau : posé 12 s, c'est une plateforme qui arrête les projectiles adverses (il casse après 18 % de coups, puis 3 s avant un autre). B bas près du bureau : l'invité chicos, un bagarreur absent du match tiré au hasard, surgit 1 s et lance une version simplifiée de son spécial."
-    }
+    },
+    "forces": [
+      "Tous ses coups font +12 % : smash avant 25 %, smash haut 24 %",
+      "Le bureau arrête les projectiles adverses",
+      "L'invité chicos : un spécial d'un autre perso"
+    ],
+    "faiblesses": [
+      "Léger (84)",
+      "Le jeu coolos peut se retourner contre lui (8 % de gage)"
+    ],
+    "conseils": [
+      "Pose le bureau entre toi et un perso à projectiles",
+      "Jeu coolos seulement si tu es plus près du buzzer que l'adversaire"
+    ]
   },
   "shark": {
     "resume": "Tralalero Tralala : un requin sur trois pattes en Nike, aux morsures sanglantes, qui plonge dans la plateforme pour surgir sous ses victimes.",
@@ -1441,7 +1571,20 @@
       "s": "Sprint en Nike : il fonce devant lui (9 %, KO dès 248 %, jusqu'à 9 m). Une fois par saut.",
       "u": "Saut du grand blanc : un grand saut (6,3 %) : 11,8 m de haut. Chute sans défense après.",
       "d": "Aileron : il plonge dans la plateforme, nage dessous et surgit sous sa victime (14 %, KO dès 136 %), mais il met du temps à sortir (frame 113)."
-    }
+    },
+    "forces": [
+      "Bonne remontée (11,8 m)",
+      "Aérien arrière à 23,3 %, aérien bas à 21,1 %",
+      "L'aileron surgit sous la victime (KO dès 136 %)"
+    ],
+    "faiblesses": [
+      "Lent au sol (7,5 m/s)",
+      "L'aileron met longtemps à sortir"
+    ],
+    "conseils": [
+      "Méga-morsure sur un adversaire à plus de 100 % : il le secoue",
+      "Aileron quand l'adversaire ne bouge plus"
+    ]
   },
   "merylle": {
     "resume": "Shatta : des tresses qui fouettent loin, une chaîne dorée qui attache l'adversaire puis le fait tourner comme un marteau, et 6 s de colère à +20 %.",
@@ -1450,7 +1593,20 @@
       "s": "La chaîne-marteau : la chaîne dorée part à 3,8 m, frappe et reste attachée 4 s : l'adversaire ne peut pas s'éloigner de plus de 4,2 m. B côté de nouveau : elle le fait tourner autour d'elle (il cogne ceux qu'il rencontre), puis le lâche vers le stick ou sur un autre adversaire. 8 % mesurés pour le premier coup. Une fois par saut.",
       "u": "Tresses-hélice : ses tresses tournent comme une hélice et la font monter (4,8 %) : 10,1 m de haut. Chute sans défense après.",
       "d": "Sourcils froncés : 6 s de colère où ses coups font +20 %."
-    }
+    },
+    "forces": [
+      "Tresse fouet : 11 %, KO dès 158 %, à 3 m",
+      "La chaîne-marteau attache l'adversaire 4 s",
+      "Sourcils froncés : +20 % pendant 6 s"
+    ],
+    "faiblesses": [
+      "Remontée moyenne (10,1 m)",
+      "Smashs moyens (smash avant dès 82 %)"
+    ],
+    "conseils": [
+      "Attache, puis fais tourner l'adversaire et lance-le dans le vide",
+      "Sourcils froncés avant d'aller chercher le KO"
+    ]
   },
   "kaariz": {
     "resume": "Tout en or : un des plus lourds du jeu (126). Il ramasse des lingots : avec 1 à 3 lingots sur lui il est plus lourd, plus lent et frappe plus fort ; à 3, une super armure pour les 3 prochains coups. Chaque coup reçu (hors armure) en fait tomber un, que tout le monde peut voler.",
@@ -1459,7 +1615,20 @@
       "s": "Le zoo : il charge sur un bison (11,5 m/s au sol, 10 en l'air ; environ 6 m en l'air, de quoi revenir) : 10 %, KO dès 241 %. Un coup sur lui le fait tomber du bison, 20 % plus loin ; un bouclier arrête le bison et l'étourdit 30 frames. Une fois par saut.",
       "u": "Le puits de pétrole : un geyser d'or noir le propulse et frappe en sortant (9,1 %) : 8,9 m de haut. Chute sans défense après.",
       "d": "Le lingot : un lingot géant tombe du ciel devant lui (19 %, KO dès 204 %) et reste 8 s au sol ; n'importe quel coup l'envoie glisser, et il le ramasse en marchant dessus."
-    }
+    },
+    "forces": [
+      "Le plus lourd du jeu (126, à égalité)",
+      "Avec 3 lingots : super armure et coups plus forts",
+      "Le lingot : 19 %, KO dès 204 %"
+    ],
+    "faiblesses": [
+      "Chaque coup reçu fait tomber un lingot que l'adversaire peut voler",
+      "Remontée moyenne (8,9 m)"
+    ],
+    "conseils": [
+      "Ramasse vite tes lingots tombés",
+      "Or noir près du bord : l'adversaire glisse et tombe"
+    ]
   },
   "billi": {
     "resume": "Sucré au sucre, léger (84) : il mange des donuts sur son canapé pour gonfler (jusqu'à 2 tailles de plus : plus lourd, plus fort, plus lent). Gros, son B devient une boule qui roule sur les autres.",
@@ -1468,7 +1637,20 @@
       "s": "Tête baissée : « COMMENT ÇA MON REUF ?? », il fonce tête la première (15 m/s) et rebondit sur ce qu'il percute (11 %, KO dès 172 %). Une fois par saut.",
       "u": "Le canapé volant : assis sur son canapé, il décolle, dirigé, et ce qu'il percute prend des petits coups (14,8 %, KO dès 263 %) : 9,1 m de haut. Chute sans défense après.",
       "d": "Le canapé : posé devant lui (10 s, cassé par 16 % de coups). B bas tout près : il s'y assoit et mange des donuts (1 % de soin toutes les 0,5 s), sans défense, et chaque donut le fait gonfler. Un adversaire projeté contre le canapé tombe assis dedans 1 s."
-    }
+    },
+    "forces": [
+      "Cinq sauts en l'air",
+      "Gros, il devient plus lourd et plus fort, et son B roule sur les autres",
+      "Smash bas à 25,5 %"
+    ],
+    "faiblesses": [
+      "Léger (84) tant qu'il n'a pas gonflé",
+      "Coups normaux un peu lents (jab en 4 frames)"
+    ],
+    "conseils": [
+      "Mange sur le canapé quand l'adversaire est loin : chaque donut le fait gonfler",
+      "Projette l'adversaire contre le canapé : il tombe assis 1 s"
+    ]
   },
   "_hashes": {
     "mistery": {
