@@ -24,6 +24,10 @@ concurrency: measure
 jobs:
   measure:
     runs-on: ubuntu-latest
+    # the bot token is stored as a secret of the "DISCORD_BOT_TOKEN" environment (not a repository secret)
+    environment:
+      name: DISCORD_BOT_TOKEN
+      deployment: false
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5

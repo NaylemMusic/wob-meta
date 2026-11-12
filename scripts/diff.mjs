@@ -60,7 +60,8 @@ if ((process.argv[1] || '').endsWith('diff.mjs')) { // run as a script (not impo
   const notes = fs.existsSync('data/patchnotes.json') ? JSON.parse(fs.readFileSync('data/patchnotes.json', 'utf8')) : [];
   if (oldF && fs.existsSync(oldF)) {
     const n = diff(JSON.parse(fs.readFileSync(oldF, 'utf8')), B);
-    if (n.added.length || n.removed.length || Object.keys(n.chars).length) notes.unshift(n); // newest first
+    // every new version gets a note, even with no stat change: the official Discord text needs one to attach to
+    if (n.from !== n.to && !notes.some((x) => x.to === n.to)) notes.unshift(n); // newest first
   }
   fs.writeFileSync('data/patchnotes.json', JSON.stringify(notes));
   fs.writeFileSync('data/latest.json', JSON.stringify({ commit: B.commit, measuredAt: B.measuredAt, file: `${B.commit}.json` }));
