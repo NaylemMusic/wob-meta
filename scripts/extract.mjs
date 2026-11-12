@@ -129,7 +129,23 @@ function measureBest(charId, id, M, opt = {}) {
 // fly it three ways (stick up, sideways, diagonal) for up to 5 s and keep the best height and the best sideways distance
 function measureRecovery(charId) {
   let best = null;
-  for (const [mx, my] of [[0, 0], [0, 1], [1, 0], [0.7, 0.7]]) {
+  // the last ones steer down then up: a projectile you bring back onto yourself (JOLAVERT's rocket) launches you upward
+  const downUp = (d) => (t) => (t < d ? [0, -1] : [0, 1]);
+  // a rocket of his own in flight (JOLAVERT): steer it below him, then up through him, so it launches him upward
+  // two U-turns the same way round (it turns at a fixed rate): up, round and down beside him, round again and up through him
+  const comeBack = (t, W, A) => {
+    const e = W.entities.find((x) => !x.dead && x.owner === A.slot && x.custom === 'jvPK');
+    if (!e) return [0, 1];
+    const turn = [Math.cos(e.ang2 + Math.PI / 2), Math.sin(e.ang2 + Math.PI / 2)];
+    const ph = A.mv.ph || 0, s = Math.sin(e.ang2);
+    if (ph === 0) { if (s < -0.98) A.mv.ph = 1; return turn; } // first U-turn: heading down
+    if (ph === 1) { if (e.y < A.y + 0.7) A.mv.ph = 2; return [0, -1]; } // straight down to his height
+    if (ph === 2) { if (s > 0.98) A.mv.ph = 3; return turn; } // second U-turn: heading up again
+    if (Math.abs(A.x - e.x) < 0.6) return [0, 1]; // right under him: straight up (the launch goes the way it flies)
+    const d = Math.hypot(A.x - e.x, A.y + 1 - e.y) || 1;
+    return [(A.x - e.x) / d, (A.y + 1 - e.y) / d]; // up through him
+  };
+  for (const [mx, my] of [[0, 0], [0, 1], [1, 0], [0.7, 0.7], [downUp(14)], [downUp(20)], [comeBack]]) {
     const r = flyRecovery(charId, mx, my);
     if (!r) return best;
     best = best ? { up: Math.max(best.up, r.up), side: Math.max(best.side, r.side) } : r;
@@ -146,8 +162,8 @@ function flyRecovery(charId, mx, my) {
   const x0 = A.x, y0 = A.y;
   if (!startMove(A, W, 'sp_u')) return null;
   let up = 0, side = 0;
-  const stick = { 0: { mx, my, held: 0, pressed: 0 } };
-  for (let t = 0; t < 300; t++) { W.step(stick); up = Math.max(up, A.y - y0); side = Math.max(side, Math.abs(A.x - x0)); if (A.grounded && t > 5) break; }
+  const stickAt = (t) => { const [x, y] = typeof mx === 'function' ? mx(t, W, A) : [mx, my]; return { 0: { mx: x, my: y, held: 0, pressed: 0 } }; };
+  for (let t = 0; t < 300; t++) { W.step(stickAt(t)); up = Math.max(up, A.y - y0); side = Math.max(side, Math.abs(A.x - x0)); if (A.grounded && t > 5) break; }
   return { up: Math.round(up * 10) / 10, side: Math.round(side * 10) / 10 };
 }
 

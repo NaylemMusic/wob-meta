@@ -241,7 +241,7 @@
     "speciaux": {
       "n": "Le 23 : un gros « 23 » vert lancé en cloche qui rebondit sur le sol et sur ceux qu'il touche (8 %, jusqu'à 13 m). Un à la fois.",
       "s": "Glissade : une glissade basse qui fauche et fait décoller la victime, un bon début de combo (9 %, sort en 6 frames). En l'air, il plonge en biais puis glisse. Une fois par saut.",
-      "u": "Fusée verte : il flotte et dirige une fusée au stick (12,5 m/s, 1,3 s au plus). S'il la ramène sur lui (après 12 frames), elle le lance comme une fusée humaine à 24 m/s (environ 9,5 m), et un ennemi sur sa route prend de lourds dégâts. Ratée (elle touche quelqu'un, le sol, ou s'éteint) : il tombe. Le robot n'arrive pas à la piloter : remontée non mesurée.",
+      "u": "Fusée verte : il flotte et dirige une fusée au stick (12,5 m/s, 1,3 s au plus). S'il la ramène sur lui (après 12 frames), elle le lance comme une fusée humaine dans le sens où elle allait, et un ennemi sur sa route prend de lourds dégâts. Pour remonter, il faut qu'elle revienne par en dessous : deux demi-tours dans le même sens, puis droit sur lui. Fait ainsi par le robot : 5,9 m de haut. Ratée (elle touche quelqu'un, le sol, ou s'éteint) : il tombe.",
       "d": "Jeune et frais : 3 % soignés d'un coup, puis 6 s plus rapide (×1,25) et un tiers de recul en moins quand on le touche. Recharge 15 s."
     }
   },
