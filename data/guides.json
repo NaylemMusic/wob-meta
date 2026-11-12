@@ -732,5 +732,113 @@
       "u": "La corde : FOLI monte et BIGO grimpe à la corde (5,8 %). Seul, ce n'est qu'un petit saut : 2,6 m mesurés, la pire remontée du jeu sans FOLI. Chute sans défense après.",
       "d": "Changer de frère : le joueur dirige l'autre frère, et celui qu'il quitte devient le suiveur."
     }
+  },
+  "terracide": {
+    "resume": "Le sale gosse : tous ses coups font +12 %. Son B bas ouvre des boosters de cartes au hasard (terrains, potes, pièges, mandales…) ; 5 KO sur ses terrains et le prochain booster donne LA LÉGENDAIRE.",
+    "speciaux": {
+      "n": "La carte lancée, au hasard : commune (3 %), rare (6 %) ou HOLO, qui traverse tout, même les boucliers, et éjecte. De 3,4 à 10,1 % sur nos essais.",
+      "s": "Le vol : il fonce la main tendue et pique ce que l'adversaire a lancé ou posé (projectile, invocation, piège), qui devient à lui et repart sur son ancien maître. Sur un adversaire, il lui fait les poches (3 %, il en regagne 3). Une fois par saut.",
+      "u": "Le château de cartes : il pousse sous lui et le propulse (6,6 m), puis s'écroule sur ceux d'en dessous (11,2 %). Chute sans défense après.",
+      "d": "Le booster : sans carte, il en ouvre un (1 s, punissable) et garde une carte au hasard ; avec une carte, B bas la joue. TERRAIN pour 8 s (boue qui ralentit, trampoline, ou glace où un adversaire frappé part ×1,4 plus loin), POTE (LAINQUE surgit et frappe), PIÈGE (le prochain coup reçu est renvoyé), MANDALE (prochain coup ×1,3, ×1,5 ou ×1,8)… et une fois par match peut-être LA LÉGENDAIRE (4 % de chances)."
+    }
+  },
+  "sgouizi": {
+    "resume": "Le froussard du grand prix : rapide (11,7 m/s), une voiture de course, et un faux lui-même piégé avec lequel il peut échanger sa place.",
+    "speciaux": {
+      "n": "Le cri : un cri de jeu d'horreur, tout ce qui est devant lui recule, même sous un bouclier (presque pas de dégâts : 3 %).",
+      "s": "La voiture de course : il traverse au volant d'une petite voiture (19 m/s, 34 frames) : 10 %, KO dès 210 %. Saut pour en sauter. Une fois par saut.",
+      "u": "Le sursaut : un fantôme lui fait BOUH et il sursaute si haut qu'il remonte, dirigé au stick, en cognant autour (9,8 %, KO dès 214 %) : 10,6 m de haut, 13 m de côté. Chute sans défense après.",
+      "d": "L'imposteur : il pose un faux lui (8 s) et glisse en arrière. Celui qui frappe le faux le voit exploser en confettis et reste sonné 1,3 s. Rappuyer B bas : L'ÉCHANGE, il prend la place du faux (une fois par faux, intouchable 8 frames)."
+    }
+  },
+  "naka": {
+    "resume": "Personne comprend : légère (88) et lente (7 m/s), elle inverse les commandes de ses adversaires et les fait danser.",
+    "speciaux": {
+      "n": "Personne comprend : une bulle de charabia (4 %) ; la victime est sonnée un instant, puis ses commandes gauche et droite sont inversées de 1,2 à 2 s selon ses %.",
+      "s": "La danse qui avance : un pas de danse qui avance ; la victime touchée danse avec elle, étourdie 46 frames (6 %). Une fois par saut.",
+      "u": "La note qui monte : une note aiguë tenue la soulève et l'onde frappe en dessous (10,4 %, KO dès 175 %) : 11 m de haut. Chute sans défense après.",
+      "d": "Les copines : deux danseuses fantômes apparaissent de chaque côté et frappent autour d'elle (14 %)."
+    }
+  },
+  "frizz": {
+    "resume": "Ère glaciaire : rapide (11,2 m/s). Il gèle ses adversaires dans des blocs de glace, puis les frappe pour les faire glisser comme des pierres de curling.",
+    "speciaux": {
+      "n": "FREEZE : un tir de glace (4 %, jusqu'à 9 m) ; au sol, la victime est prise dans un bloc : 1,1 s à 0 %, 2,25 s à 100 %, 2,85 s à 150 % (elle en sort plus vite en se débattant). Un coup ou la chope de FRIZZ pousse le bloc : LE CURLING, il glisse loin (2,5 s au plus) et percute les autres. En l'air, seulement les dégâts. Un tir à la fois.",
+      "s": "Dash gelé : il traverse vite, intouchable pendant le trajet (7 %), et laisse une traînée de givre de 5 s où l'on glisse et tombe (45 frames au sol). Une fois par saut.",
+      "u": "Pilier de glace : un pilier le monte et frappe vers le haut (6,5 %, KO dès 218 %) : 11,9 m de haut. Chute sans défense après.",
+      "d": "Contre-gel : frappé pendant la fenêtre, il pare et gèle l'attaquant dans le même bloc que FREEZE ; un projectile repart vers son lanceur."
+    }
+  },
+  "bosslady": {
+    "resume": "La patronne, légère (91) : elle donne des ordres à ses adversaires et se soigne en dansant. Remontée excellente.",
+    "speciaux": {
+      "n": "Couronne lancée : sa couronne part devant elle (7 %, jusqu'à 9 m). Une seule à la fois, avec un temps de recharge.",
+      "s": "Les ordres, selon le stick : ASSIS ! (étourdi 45 frames à 100 %), SAUTE ! (l'adversaire saute et perd son saut en l'air) ou RECULE ! (il recule en marchant, même hors du bord). 5 % mesurés.",
+      "u": "Quartier de lune : assise sur un quartier de lune, elle s'envole (13 %) : 13,3 m de haut, 14,6 m de côté. Chute sans défense après.",
+      "d": "Danse : tant que [X] est tenu, elle danse et se soigne de 3 % par seconde."
+    }
+  },
+  "omfu": {
+    "resume": "GOTNOTIME, le catcheur DJ : lourd (113) et très puissant, mais lent (7,3 m/s) et avec une remontée très courte. Ses cordes du ring empêchent les KO sur les côtés.",
+    "speciaux": {
+      "n": "Prise de catch : il attrape et promène l'ennemi au-dessus de sa tête ; [A] : une claque, [A] + côté : un body slam. Il attrape aussi au vol ce qui revient des cordes. Le robot n'a pas fait de prise, d'où 0 %.",
+      "s": "Scratch-onde : une onde sonore de ses platines (14 %, jusqu'à 9 m).",
+      "u": "Platines-trampoline : il rebondit sur ses platines, [X] pour rebondir encore (9 %). Seulement 4 m d'un rebond : une des remontées les plus courtes. Chute sans défense après.",
+      "d": "Les cordes du ring : 8 s où personne ne peut être éjecté par les côtés ; un adversaire envoyé dans les cordes rebondit et revient vers lui (à 15 m/s)."
+    }
+  },
+  "lena": {
+    "resume": "L'icône : une traîne de gala qui tue tôt, un parfum qui ralentit, et une cabine d'essayage qui lui donne une tenue au hasard pour 10 s.",
+    "speciaux": {
+      "n": "Nuage de parfum : un nuage reste 2 s devant elle ; qui y est au sol avance à moitié vitesse de 0,5 s (0 %) à 0,8 s (100 %). Une fois par nuage, un à la fois. Pas de dégâts.",
+      "s": "La traîne du gala : une immense traîne balaie le sol devant elle, très longue portée (environ 5 m) mais lente (14 %, KO dès 105 %). Une fois par saut.",
+      "u": "Les marches du gala : des marches blanches apparaissent sous ses pas et elle les monte (6,5 %) : 8,9 m de haut. Chute sans défense après.",
+      "d": "La cabine d'essayage : elle disparaît derrière un paravent et ressort environ 3 m plus loin (vers le stick) en frappant (8 à 10 %), avec une tenue au hasard pour 10 s : sport (×1,22 vitesse, coups ×0,92), gala (coups +18 %), pyjama (soigne 1 % toutes les 50 frames, coups ×0,9) ou vintage (plus lente, coups ×1,12, encaisse les petits coups). Puis 5 s avant la suivante."
+    }
+  },
+  "les": {
+    "resume": "Omertà : un mafieux qui coupe les spéciaux de ses adversaires et met un contrat sur leur tête : 5 coups sur la cible, et le 5e fait 60 %.",
+    "speciaux": {
+      "n": "Omertà : « chut », une onde (2 %) ; la victime ne peut plus faire de spéciaux pendant 2 s au plus (son B haut lui est rendu après 1 s).",
+      "s": "La berline noire : une voiture de mafieux passe en trombe devant lui (12 %, KO dès 193 %, jusqu'à 13 m).",
+      "u": "L'aigle : un aigle doré l'attrape par les mains et l'emporte, un peu dirigeable (6 %) : 11,5 m de haut. Chute sans défense après.",
+      "d": "Le contrat : il désigne l'ennemi le plus proche (4,5 m au plus), une cible visible par tous pendant 10 s. Chaque coup sur la cible remplit un cran ; au 5e, CONTRAT REMPLI : ce coup fait 60 % et éjecte modérément."
+    }
+  },
+  "skanky": {
+    "resume": "8BALLES, la diagonale du vide : il parle sans s'arrêter, fraude le train, roule en skate au lieu de courir et danse la funk de Lyon.",
+    "speciaux": {
+      "n": "Tchatche : ses mots restent en l'air 5 s comme des plateformes (8 au plus) ; tape dedans pour les envoyer sur l'adversaire. Sans frappe dans les mots, le robot n'a rien mesuré.",
+      "s": "Fraude : il saute le portique, puis le train passe derrière lui et fauche ceux qui sont sur la voie (10 %, KO dès 285 %, jusqu'à 13 m). Le train arrive tard (frame 50).",
+      "u": "Le TER de 6 h 12 : il monte avec le train, qui frappe fort sur son passage (40,2 % mesurés contre une cible immobile, KO dès 310 %) : 7,6 m de haut, 12,1 m de côté. Chute sans défense après.",
+      "d": "Funk de Lyon : tant que [X] est tenu, il danse et ceux qui sont autour dansent avec lui (12 % en le tenant)."
+    }
+  },
+  "lofille": {
+    "resume": "Beats tranquilles : lente (6,8 m/s), elle endort, ralentit et plane. Le stream 24/7 : immobile 1 s, elle se soigne de 1 % toutes les 1,25 s et charge son beat ; dès qu'elle bouge, ça s'arrête.",
+    "speciaux": {
+      "n": "Beat tranquille : une note lente (3,2 m/s) qui flotte 2,5 s devant elle (2 %) ; touchée, la victime s'endort 1 s à 100 % (un coup la réveille). Le stream la rend plus grosse et le sommeil plus long. Une à la fois.",
+      "s": "Avion en papier : il plane loin, le stick l'oriente un peu, et fait un petit coup (5 %, jusqu'à 9 m).",
+      "u": "Feuille volante : assise sur une feuille de cahier, elle monte puis plane lentement (7,4 %) : 10,5 m de haut, 15 m de côté. Bas pour lâcher la feuille. Chute sans défense après.",
+      "d": "Pluie sur la vitre : un nuage de 4,5 s au-dessus de la zone devant elle ; la pluie ralentit à moitié vitesse ceux qui sont dessous et les mouille (1 % toutes les 45 frames, sans recul). Un à la fois."
+    }
+  },
+  "antwan": {
+    "resume": "L'intankable : le plus léger du jeu (76) et le plus lent au sol (6,2 m/s), mais cinq sauts en l'air et une forme d'abeille qui vole partout.",
+    "speciaux": {
+      "n": "Le dard : un dard d'abeille lancé droit devant (5 %, jusqu'à 13 m). Un à la fois.",
+      "s": "LE CUT : une coupure de montage, l'image saute ; il disparaît et réapparaît environ 4,4 m plus loin en frappant (9 %, KO dès 258 %). Une fois par saut.",
+      "u": "L'abeille s'envole : ailes d'abeille, il monte en bourdonnant, plusieurs petits coups qui emportent, le dernier repousse (12 %, KO dès 276 %) : 7,1 m de haut, 12,2 m de côté. Chute sans défense après.",
+      "d": "En abeille : 6 s en abeille toute petite (dure à toucher) qui vole librement partout ; [A] pique dans la direction du stick. Une seule tape le refait tomber en humain ; [X] + bas pour redevenir humain quand il veut. Une fois par saut, puis 1,5 s d'attente."
+    }
+  },
+  "anbuu": {
+    "resume": "Le lick interdit et les saintes 808 : un perso de magie léger (84) qui flotte comme Mewtwo. Le lick complet : chaque coup qui touche joue une note ; les 7 sans être touché, et le coup suivant est divin (+25 %).",
+    "speciaux": {
+      "n": "Le Lick : il joue, les notes partent devant lui (7 %, jusqu'à 9 m, sort en 7 frames).",
+      "s": "Confusion : une lévitation qui soulève l'adversaire juste devant lui (6 %).",
+      "u": "Envol : ses petites ailes d'ange l'emportent (8,4 %, KO dès 261 %) : 7 m de haut, 11,5 m de côté. Chute sans défense après.",
+      "d": "Sainte 808 : une enceinte sacrée tombe du ciel devant lui, très bassy (17 %, jusqu'à 6 m), mais elle arrive tard (frame 41)."
+    }
   }
 }
