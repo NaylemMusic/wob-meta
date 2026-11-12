@@ -10,6 +10,8 @@ const base = `../cache/${commit}/src/sim/`;
 const { CHARS, CHAR_ORDER } = await import(base + 'chars/index.js');
 const { World } = await import(base + 'world.js');
 const { startMove } = await import(base + 'fighter.js');
+// the Smash Ultimate character each fighter moves like: the first fighters are listed in ARCHETYPE, the stars carry `arch`
+const { ARCHETYPE = {} } = await import(base + 'chars/archetypes.js').catch(() => ({}));
 
 const REF = 'mistery';
 const NORMALS = ['jab1', 'ftilt', 'utilt', 'dtilt', 'smash', 'usmash', 'dsmash', 'dashattack', 'nair', 'fair', 'bair', 'uair', 'dair'];
@@ -249,7 +251,7 @@ for (const id of only.length ? only : CHAR_ORDER) {
   const U = C.ult || {};
   const grab = C.moves && C.moves.grab && C.moves.grab.hits && C.moves.grab.hits[0];
   out.chars[id] = {
-    name: C.name, title: C.title, color: C.color, arch: C.arch, stats, moves, specials,
+    name: C.name, title: C.title, color: C.color, arch: ARCHETYPE[id] || C.arch || null, stats, moves, specials,
     specialsInfo: C.specialsInfo || null, // the creator's names for B, side B, up B, down B
     ult: U.name ? { name: U.name, sub: U.sub || null, dmg: Math.round(((U.final && U.final.dmg) || 0) + (U.notes || 0) * (U.noteDmg || 0)) || null } : null,
     recovery: C.recovery || null, grabStartup: grab ? grab.f[0] : null,
