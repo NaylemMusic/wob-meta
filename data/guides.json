@@ -354,5 +354,113 @@
       "u": "La scène qui monte : une scène hydraulique le soulève et la caisse en bas frappe (10,4 %, sort en 3 frames) : 8,8 m de haut. Chute sans défense après.",
       "d": "OBJECTIF ATTEINT ! : confettis et une onde qui repousse ceux qui collent. Cagnotte pleine : elle est vidée et donne 6 s de coups +15 %, puis 6 s d'attente. Les paliers à 25, 50 et 75 % lancent des défis (« 3 coups en 5 s », « un smash »…) ; réussis, ils donnent un soin de 10 %, 6 s de vitesse ×1,25 ou une pluie de pièces."
     }
+  },
+  "malgha": {
+    "resume": "La conteuse, légère (86) : un petit fantôme l'accompagne et recopie ses coups (un tiers des dégâts), une main de squelette chope de loin, et elle plonge ses adversaires dans le noir.",
+    "speciaux": {
+      "n": "Le petit fantôme part frapper devant elle et revient comme un boomerang (9 %). Pendant ce temps, il ne l'accompagne plus et ne recopie plus ses coups.",
+      "s": "La main du sol : une main de squelette surgit 2,5 m devant elle et attrape. La victime est ramenée jusqu'à elle, puis c'est une chope normale avec ses projections. En l'air, la main griffe.",
+      "u": "Trois petits fantômes la soulèvent (environ 9 m, un peu dirigeable) avec de petits coups autour (3,9 %). Chute sans défense après.",
+      "d": "La veillée : elle souffle la bougie et ses adversaires sont dans le noir pendant 3 s (ils ne voient qu'une petite zone autour d'eux). Elle, elle voit tout. 3 s d'attente avant la suivante."
+    }
+  },
+  "grim": {
+    "resume": "Le critique : tous ses coups font ×1,32. Il gagne des étoiles en touchant (une par coup, deux par smash, 5 au plus, perdues seulement en perdant une vie) et les dépense dans ses spéciaux.",
+    "speciaux": {
+      "n": "La note : tapé, il lance une étoile ; tenu, toutes ses étoiles en éventail ; les cinq d'un coup = CHEF-D'ŒUVRE !, une grosse étoile qui éjecte. Sans étoile : ZÉRO ÉTOILE, il reste planté là (punissable). Le robot l'a lancé sans étoile, d'où 1,3 %.",
+      "s": "Le gros plan (coûte 1 étoile) : un projecteur éblouit la victime devant lui, un court étourdissement. Raté ou sans étoile, il reste ouvert (punissable).",
+      "u": "Le fauteuil éjectable : un fauteuil de cinéma l'éjecte (7,8 m de haut, il suit un peu le stick), puis retombe et frappe (9,5 %). Chute sans défense après.",
+      "d": "COUPEZ ! ON LA REFAIT ! (coûte 3 étoiles) : tous ses adversaires, où qu'ils soient, sont rembobinés là où ils étaient 2 s plus tôt, avec leur vitesse d'alors ; leur coup en cours est coupé, leurs % ne bougent pas. Sans étoiles, rien ne se passe (punissable)."
+    }
+  },
+  "celine": {
+    "resume": "La diva, légère (88) et lente au sol (7 m/s), mais avec des spéciaux très forts : un iceberg qui gèle, une tour Eiffel qui tue tôt, une note qui casse les boucliers.",
+    "speciaux": {
+      "n": "Note qui brise le verre : une onde très aiguë qui traverse (5 %) et retire 38 points de bouclier en plus (un bouclier en tient 50) : un bouclier déjà entamé casse.",
+      "s": "La proue : elle fonce devant elle sur une proue de paquebot (12,5 m/s, environ 6,7 m) en gardant sa hauteur, donc aussi un vrai retour par le côté (14,5 %, KO dès 185 %). Si elle n'a attrapé personne à la frame 18, elle s'arrête et reste punissable. 40 frames de recharge. Une fois par saut.",
+      "u": "Tour Eiffel : une tour en strass sort du sol et la monte (environ 10 m), elle frappe en haut (17 %, KO dès 139 %). Chute sans défense après.",
+      "d": "Iceberg : il jaillit devant elle en frappant vers le haut, puis reste 8 s. Il arrête les projectiles adverses ; un adversaire qui le touche est gelé et blessé (35 % mesurés sur 6 s contre une cible immobile). Un coup ou un projectile adverse le casse. La proue le fait éclater, mais depuis le 8 nov. sans dégâts ni gel."
+    }
+  },
+  "funebre": {
+    "resume": "La métalleuse médium, légère (88) et lente au sol : chaque coup qui touche pose une bougie, et son rituel relie les bougies en une étoile qui frappe.",
+    "speciaux": {
+      "n": "Le logo illisible : un logo de métal vole et s'accroche à la cible (5 %, jusqu'à 9 m), qui avance à 60 % de sa vitesse pendant environ 2 s (à 100 %).",
+      "s": "Le stage dive : elle plonge à l'horizontale (12,5 m/s), la foule la porte, emporte ce qu'elle croise puis le jette au loin (12 %, KO dès 151 %). Ratée : 65 frames de lag. Une fois par saut.",
+      "u": "La lévitation : elle monte en silence, puis frappe en haut d'une vague d'ombre : 8,2 m de haut. Le robot n'a pas réussi à toucher avec la vague. Chute sans défense après.",
+      "d": "Le rituel : relie toutes ses bougies (3 au moins, 5 au plus) en une étoile de lumière qui frappe ceux qui sont dedans : 3 petits coups de 2 % puis un dernier de 7 % (3 bougies), 9 % (4) ou 12 % (5). Plus elles sont écartées, plus l'étoile est grande. Une bougie par coup qui touche, au plus une toutes les 0,4 s ; les adversaires les soufflent en les frappant."
+    }
+  },
+  "inox": {
+    "resume": "Le grimpeur, très rapide (12 m/s) : ses coups au sol font ×1,3 mais ses aériens seulement ×0,8. Plus il est haut au-dessus de l'arène, plus il tape fort (jusqu'à +25 % à 7 m).",
+    "speciaux": {
+      "n": "La boule de neige : roulée devant lui (8 m/s), elle grossit sur ses 6 premiers mètres et avale les adversaires qu'elle touche : ils roulent coincés dedans jusqu'à ce qu'elle explose (contre un mur, au bord, ou au bout de 2 s) : 12 %, KO dès 164 %. Une à la fois.",
+      "s": "La corde de rappel : un grappin à 6 m qui attrape l'adversaire et le ramène en chope, même en l'air et même sous le bouclier. Hors du terrain, il s'accroche au bord de loin. Une fois par saut.",
+      "u": "Le piolet planté : il plante le piolet dans le vide et se hisse, deux fois de suite (6,7 m mesurés pour un seul). Chute sans défense après.",
+      "d": "La stalactite : elle tombe du ciel 2,3 m devant lui. Un adversaire au sol est enterré de 0,7 s (0 %) à 1,5 s (dès 150 %) ; en l'air, elle le plante vers le bas ; un bouclier la brise. Ratée, il reste planté."
+    }
+  },
+  "saucegod": {
+    "resume": "Le crooner de la rue, avec deux modes (B bas pour changer) : SUCRÉ, coups plus doux et 1 % soigné par coup qui touche ; GHETTO, coups plus forts mais un peu plus lent. Après un mode bien tenu, le premier coup qui touche dans les 3 s est LE DROP.",
+    "speciaux": {
+      "n": "Sucré : la lettre d'amour, une enveloppe lente qui suit l'adversaire et l'attire un peu (5 %, jusqu'à 13 m). Ghetto : la chaîne en or, un coup de fouet à mi-distance.",
+      "s": "Sucré : le slow, une prise dansée de courte portée (il l'attrape, danse 24 frames, le lance ; stick en arrière pour le lancer derrière), 10 %, KO dès 184 %. Ratée : du lag. Ghetto : le lowrider se cabre (0,4 s), fait deux bonds et n'écrase qu'en retombant ; un seul coup adverse le casse et SAUCE GOD reste figé tant qu'il saute.",
+      "u": "Sucré : un nuage de fumée rose le porte, il se dirige bien (6,6 m de haut). Ghetto : le saut hydraulique, deux rebonds sur son lowrider. Chute sans défense après.",
+      "d": "Change de mode, sucré ↔ ghetto (à la frame 10). Après un mode bien tenu, le premier coup qui touche dans les 3 s est LE DROP."
+    }
+  },
+  "lagreve": {
+    "resume": "Rapide (11,7 m/s), léger, portée courte, dangereux en combo. Sa jauge de Flow monte quand il enchaîne sans se faire toucher (environ 40 % infligés d'affilée) : pleine, 12 s de BIGLAGREVE MODE, coups +20 % et vitesse ×1,25.",
+    "speciaux": {
+      "n": "Dab : sa waveform fait danser ceux qu'elle touche (environ 0,5 s à 100 %). 25 % mesurés sur 6 s contre une cible immobile : en vrai, on s'échappe avant.",
+      "s": "ERRRRRRRR : un dash qui frappe (7 %, sort en 5 frames) et qui s'enchaîne, une fois de plus en BIGLAGREVE MODE. Très punissable s'il rate. Une fois par saut.",
+      "u": "BOUNCE : trois rebonds en l'air (5 %), une remontée courte (5,1 m). Chute sans défense après.",
+      "d": "EMPTY THE BIN : une poubelle qui piège celui qui la touche (environ 1 s à 100 %), puis que n'importe quel coup envoie, comme la borne d'incendie de Pac-Man (6 %)."
+    }
+  },
+  "inocasa": {
+    "resume": "Casablanca by night : un perso rapide (10 m/s) qui ralentit ses adversaires et frappe plus fort pendant son refrain.",
+    "speciaux": {
+      "n": "Auto-Tune : une note déformée qui ondule devant lui (4 %, jusqu'à 9 m). Touchée, la victime est ralentie à 55 % de sa vitesse pendant 2 s.",
+      "s": "Tacle glissé : il glisse pieds devant et fauche ; ceux qu'il touche partent en l'air (9 %, sort en 6 frames). Une fois par saut.",
+      "u": "Note aiguë : une note géante pousse sous ses pieds et le soulève (6 %) : 10,1 m de haut. Chute sans défense après.",
+      "d": "Le refrain : il chante 6 s, et pendant ce temps tous ses coups font +20 %. Chaque coup qui touche ajoute 1 s (10 s au plus). Fini : 6 s avant le suivant."
+    }
+  },
+  "chaye": {
+    "resume": "Jolie garce : une diva qui charme, envoie une voiture de sport et contre les attaques.",
+    "speciaux": {
+      "n": "Bisou rouge : des lèvres rouges qui volent (3 %, jusqu'à 9 m). La victime charmée marche lentement vers elle, de 0,45 à 0,9 s selon ses %.",
+      "s": "Le bolide rouge : une voiture de sport rouge passe en trombe devant elle (11 %, KO dès 227 %, jusqu'à 13 m), après un claquement de doigts (sort en 24 frames).",
+      "u": "Talons-fusées : ses talons crachent du feu et elle s'envole, un peu dirigeable (15,8 %, KO dès 269 %) : 11,7 m de haut. Chute sans défense après.",
+      "d": "Contre de diva : si on la frappe pendant la fenêtre, elle gifle l'attaquant avec 1,3 fois les dégâts du coup reçu (entre 9 et 24 %) ; un projectile repart. Réussi : le temps ralentit."
+    }
+  },
+  "kerrian": {
+    "resume": "Bagarreur de rue lourd (120) et diabétique : il perd 15 % toutes les 30 s de combat, et son insuline les lui rend. La flemme : les coups de moins de 5 % qui poussent peu ne le font pas reculer.",
+    "speciaux": {
+      "n": "Insuline : il se soigne de 15 % (15 s entre deux injections). Si elle n'est pas prête, il lance la seringue à la place. Pas de dégâts mesurés : c'est un soin.",
+      "s": "Hot Coffee : un café brûlant jeté devant lui (12 %, courte portée).",
+      "u": "Hollow Dash : un dash nerveux vers le haut, deux fois, qui lui coûte 2 % chacun. Remontée très courte (4,2 m), une des pires du jeu. Chute sans défense après.",
+      "d": "Fourchette géante : un gros coup de fourchette (14 %, KO dès 170 %)."
+    }
+  },
+  "valdingo": {
+    "resume": "Le monde creux : un kit plein de pièges, de la note qui fait danser au tunnel d'Agartha qui fait ressortir l'ennemi la tête en bas.",
+    "speciaux": {
+      "n": "Note fausse : une note désaccordée part en tanguant (environ 6,5 m) ; touchée, la victime danse jusqu'à 0,75 s (à 100 %). Une note à la fois, recharge 4 s.",
+      "s": "Roulade bizarre : il roule en boule devant lui, percute et rebondit sur qui il touche (11 %, KO dès 187 %). Une fois par saut.",
+      "u": "La tête-ballon : sa tête gonfle et l'emporte (6,5 %) : 9,8 m de haut, puis elle se dégonfle et il retombe. Chute sans défense après.",
+      "d": "AGARTHA : il plonge sous terre, file à 16 m/s jusque sous l'ennemi le plus proche (13 m au plus) et l'envoie en l'air en ressortant (13 %, KO dès 174 %). Les deux trous restent 6 s : un ennemi qui marche dessus tombe dedans et ressort par l'autre, la tête en bas. Sa bosse de terre se frappe : un coup adverse le déterre, blessé."
+    }
+  },
+  "aboueb": {
+    "resume": "Le basketteur aux cheveux-fouet : presque tous ses coups se donnent avec la chevelure (bonne allonge). Son vrai panier transforme ses projections en dunks.",
+    "speciaux": {
+      "n": "Réflecteur magique : maintenu, il renvoie les projectiles. Il frappe à peine (3 %) : c'est une défense.",
+      "s": "Boucles-grappin : ses boucles attrapent l'ennemi et le ramènent (6 %). Une fois par saut.",
+      "u": "Ballon géant : un ballon de basket géant l'emporte (17,3 %, KO dès 191 %) : 14 m de haut et 23,6 m de côté, une des meilleures remontées. Chute sans défense après.",
+      "d": "Le vrai panier : posé au bord de l'arène pour 20 s. Un ennemi qu'il projette dans l'arceau prend un DUNK, éjecté très fort vers le haut. Panier posé, B bas tire le ballon en cloche vers l'arceau : à 3 paniers marqués, son prochain coup est un DUNK GÉANT."
+    }
   }
 }
