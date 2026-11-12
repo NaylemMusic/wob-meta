@@ -1,11 +1,14 @@
 name: Surveille les patchs de World of Bagarre
 
-# Toutes les heures : si worldofbagarre.com sert une nouvelle version (/v/<commit>/), on mesure tous les persos
-# dans un conteneur sans réseau (le code du jeu y tourne isolé), on compare à la version d'avant et on publie
-# data/<commit>.json, data/latest.json et data/patchnotes.json (lus par nds-tournament.fr).
+# Toutes les 10 minutes :
+# 1. si worldofbagarre.com sert une nouvelle version (/v/<commit>/), on mesure tous les persos dans un conteneur sans
+#    réseau (le code du jeu y tourne isolé) et on compare à la version d'avant → data/patchnotes.json ;
+# 2. on lit le salon « update » du Discord du jeu (suivi dans le serveur NDS) et on accroche chaque message officiel
+#    à notre patch note du même patch (section « Patch note officiel ») ;
+# 3. on publie si quelque chose a changé (lu par nds-tournament.fr).
 on:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:
     inputs:
       test:
@@ -40,11 +43,18 @@ jobs:
           PREV=$(node -e "try{console.log('data/'+require('./data/latest.json').file)}catch(e){}")
           node scripts/diff.mjs "$PREV" "data/$C.json"
           node -e "const d=require('./data/$C.json');console.log('persos mesurés :',Object.keys(d.chars).length)"
+      - name: Patch note officiel (Discord)
+        if: ${{ !inputs.test }}
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_UPDATE_CHANNEL: ${{ vars.DISCORD_UPDATE_CHANNEL }}
+        run: node scripts/discord.mjs
       - name: Publie
-        if: steps.v.outputs.new == 'true' && !inputs.test
+        if: ${{ !inputs.test }}
         run: |
+          git add data
+          if git diff --cached --quiet; then echo "rien de nouveau"; exit 0; fi
           git config user.name "wob-meta-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          git commit -m "Patch ${{ steps.v.outputs.commit }}"
+          git commit -m "Mise à jour ${{ steps.v.outputs.commit }}"
           git push
