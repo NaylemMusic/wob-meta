@@ -102,6 +102,29 @@ function measureSpecial(charId, id) {
   return { dmg: best.dmg, startup: best.first, range, ko };
 }
 
+// up B in the air from a standstill, 4 m above the middle of the stage: how high and how far it carries (m)
+function measureRecovery(charId) {
+  const W = new World({ stage: 'training', roster: [{ slot: 0, char: charId }, { slot: 1, char: REF }], rules: { mode: 'stock', stocks: 3, minigames: false, ult: false, hazards: false }, seed: 1 });
+  W.phase = 'play';
+  for (let t = 0; t < 40; t++) W.step({});
+  const A = W.fighters[0], V = W.fighters[1], m = W.stage.main();
+  V.x = m.cx + 30; // out of the way
+  A.x = m.cx; A.y += 4; A.vx = A.vy = 0; A.grounded = false; A.facing = Math.PI / 2;
+  const x0 = A.x, y0 = A.y;
+  if (!startMove(A, W, 'sp_u')) return null;
+  let up = 0, side = 0;
+  for (let t = 0; t < 120; t++) { W.step({}); up = Math.max(up, A.y - y0); side = Math.max(side, Math.abs(A.x - x0)); if (A.grounded && t > 5) break; }
+  return { up: Math.round(up * 10) / 10, side: Math.round(side * 10) / 10 };
+}
+
+// what a special's sheet says about it (the rest is code: onFrame / onStart / onEnd)
+const specialFlags = (M) => ({
+  dur: M.dur ?? null, iasa: M.iasa ?? null,
+  hasHits: !!(M.hits && M.hits.length), code: typeof M.onFrame === 'function',
+  oneOut: !!M.oneOut || undefined, airOnce: !!M.airOnce || undefined, helpless: !!M.helpless || undefined,
+  poke: !!M.poke || undefined, charge: M.charge ? M.charge.max ?? true : undefined, upUses: M.upUses || undefined, whiffLag: M.whiffLag || undefined,
+});
+
 // the leading // comment block of src/sim/chars/<id>.js or stars/<id>.js, as plain text (null if none)
 import fs from 'node:fs';
 function aboutText(id) {
@@ -133,7 +156,8 @@ for (const id of only.length ? only : CHAR_ORDER) {
     };
   }
   const specials = {};
-  for (const k of SPECIALS) if (C.moves && C.moves[k]) specials[k] = measureSpecial(id, k);
+  for (const k of SPECIALS) if (C.moves && C.moves[k]) specials[k] = { ...measureSpecial(id, k), ...specialFlags(C.moves[k]) };
+  if (specials.sp_u) specials.sp_u.recovery = measureRecovery(id);
   const U = C.ult || {};
   const grab = C.moves && C.moves.grab && C.moves.grab.hits && C.moves.grab.hits[0];
   out.chars[id] = {

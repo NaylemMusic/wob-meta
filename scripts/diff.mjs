@@ -34,9 +34,11 @@ export function diff(A, B) {
     }
     for (const sp of new Set([...Object.keys(a.specials || {}), ...Object.keys(b.specials || {})])) {
       const sa = (a.specials || {})[sp] || {}, sb = (b.specials || {})[sp] || {};
-      for (const k of ['startup', 'dmg', 'ko', 'range']) {
+      for (const k of ['startup', 'dmg', 'ko', 'range', 'iasa', 'dur']) {
         if (!same(sa[k], sb[k])) changes.push({ what: sp, key: k, old: sa[k] ?? null, new: sb[k] ?? null, v: verdict(k, sa[k] ?? null, sb[k] ?? null) });
       }
+      const ra = (sa.recovery || {}).up ?? null, rb = (sb.recovery || {}).up ?? null;
+      if (!same(ra, rb)) changes.push({ what: sp, key: 'recovery', old: ra, new: rb, v: verdict('range', ra, rb) }); // higher = better
     }
     // texts (names of the specials, passive "p", ultimate, the creator's description): shown as they are, no verdict
     const ia = a.specialsInfo || {}, ib = b.specialsInfo || {};

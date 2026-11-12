@@ -65,6 +65,18 @@ Clés toujours présentes : `jab1` `jab2` `jab3` (+ `jab4`/`jab5` parfois), `fti
 | `whiffLag` | images en plus si le coup rate |
 | `cdOwn` | délai de recharge propre (images) |
 
+## Les spéciaux en particulier (`sp_n`, `sp_s`, `sp_u`, `sp_d`)
+
+Sur les 300 spéciaux des 75 persos :
+
+- **299 sont du code** (`onFrame`, souvent avec `onStart` / `onEnd`) : ils lancent des projectiles, posent des objets, invoquent, changent d'état. **124** ont aussi des zones de frappe lisibles (`hits`), les **177** autres n'en ont aucune : tout passe par le code.
+- Ce qu'ils posent sur le terrain sont des **entités** (`src/sim/entities.js` → `ENTITIES`, 180 sortes : `proj` projectile, `ring`, `cloud`, `puddle` flaque, `minion` invocation, `boomerang`, `marker`…). Chaque perso peut ajouter les siennes (`ENTITIES.mysFrozen = { … }` dans son fichier) avec leur propre `onHitFighter`. Les outils communs sont dans `kit.js` (`shoot`, `fwd`…) et `W.spawn(kind, props)`, `W.addHit({ dmg, ang, kbb, kbg, … })` pour frapper depuis le code.
+- **Pas de délai de recharge** (le tableau `SPECIAL_TUNING` n'est plus lu pour les délais, comme dans Ultimate) : la limite, c'est `oneOut` (pas de nouvelle copie tant que la précédente est sur le terrain) et `airOnce` (une fois par saut). `poke: true` = projectile plafonné à `POKE` (3 %, faible éjection).
+- **B haut** : `helpless` (chute sans défense après), `upUses` (plusieurs utilisations en l'air), `airCtrl` (contrôle pendant la montée).
+- Les **noms** et le **passif** sont dans `specialsInfo` (`n`, `s`, `u`, `d`, `p`).
+
+Le robot les **lance vraiment** dans la simulation (`startMove(perso, monde, 'sp_x')`) et relève : dégâts sur 6 s, image de la première touche, portée max (1 à 13 m), KO %, plus ce que la fiche dit (`dur`, `iasa`, `oneOut`, `airOnce`, `helpless`, `poke`, `charge`, `upUses`) et, pour le B haut, **la hauteur gagnée** en partant immobile en l'air. Limites : une seule pression (rien de maintenu ni chargé), aucun pilotage (le balai d'EPEKTASE, la fusée de JOLAVERT montent peu sans être dirigés), le hasard (dé de LIDRA) tiré toujours pareil.
+
 ## Une zone de frappe (`hits[]`) — fabriquée par `hb(f0, f1, at, r, dmg, ang, kbb, kbg, extra)`
 
 | Champ | Sens |
