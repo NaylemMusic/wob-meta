@@ -362,7 +362,20 @@
       "s": "La main du sol : une main de squelette surgit 2,5 m devant elle et attrape. La victime est ramenée jusqu'à elle, puis c'est une chope normale avec ses projections. En l'air, la main griffe.",
       "u": "Trois petits fantômes la soulèvent (environ 9 m, un peu dirigeable) avec de petits coups autour (3,9 %). Chute sans défense après.",
       "d": "La veillée : elle souffle la bougie et ses adversaires sont dans le noir pendant 3 s (ils ne voient qu'une petite zone autour d'eux). Elle, elle voit tout. 3 s d'attente avant la suivante."
-    }
+    },
+    "forces": [
+      "Smash haut à 24 %, smash avant KO dès 74 % (34 % chargé)",
+      "Jab en 3 frames, aérien neutre en 4",
+      "La main du sol chope de loin, et la veillée plonge les adversaires dans le noir 3 s"
+    ],
+    "faiblesses": [
+      "Légère (86) : elle meurt tôt",
+      "Remontée moyenne (9 m)"
+    ],
+    "conseils": [
+      "Lance la veillée avant d'attaquer : l'adversaire ne te voit plus venir",
+      "La main du sol punit ceux qui restent à mi-distance"
+    ]
   },
   "grim": {
     "resume": "Le critique : tous ses coups font ×1,32. Il gagne des étoiles en touchant (une par coup, deux par smash, 5 au plus, perdues seulement en perdant une vie) et les dépense dans ses spéciaux.",
@@ -371,7 +384,20 @@
       "s": "Le gros plan (coûte 1 étoile) : un projecteur éblouit la victime devant lui, un court étourdissement. Raté ou sans étoile, il reste ouvert (punissable).",
       "u": "Le fauteuil éjectable : un fauteuil de cinéma l'éjecte (7,8 m de haut, il suit un peu le stick), puis retombe et frappe (9,5 %). Chute sans défense après.",
       "d": "COUPEZ ! ON LA REFAIT ! (coûte 3 étoiles) : tous ses adversaires, où qu'ils soient, sont rembobinés là où ils étaient 2 s plus tôt, avec leur vitesse d'alors ; leur coup en cours est coupé, leurs % ne bougent pas. Sans étoiles, rien ne se passe (punissable)."
-    }
+    },
+    "forces": [
+      "Tous ses coups font ×1,32 : aérien avant à 28,5 %, smash bas à 19 %",
+      "Smash avant KO dès 64 % (24 % chargé), aérien arrière dès 87 %",
+      "COUPEZ ! renvoie tout le monde 2 s en arrière : de quoi annuler une remontée ou un combo"
+    ],
+    "faiblesses": [
+      "Sans étoile, ses spéciaux ratent et il reste punissable",
+      "Remontée courte (7,8 m)"
+    ],
+    "conseils": [
+      "Gagne des étoiles en touchant (un smash en donne deux) avant de compter sur tes spéciaux",
+      "Garde 3 étoiles pour COUPEZ ! quand l'adversaire vient de se remettre en sécurité"
+    ]
   },
   "celine": {
     "resume": "La diva, légère (88) et lente au sol (7 m/s), mais avec des spéciaux très forts : un iceberg qui gèle, une tour Eiffel qui tue tôt, une note qui casse les boucliers.",
@@ -380,7 +406,20 @@
       "s": "La proue : elle fonce devant elle sur une proue de paquebot (12,5 m/s, environ 6,7 m) en gardant sa hauteur, donc aussi un vrai retour par le côté (14,5 %, KO dès 185 %). Si elle n'a attrapé personne à la frame 18, elle s'arrête et reste punissable. 40 frames de recharge. Une fois par saut.",
       "u": "Tour Eiffel : une tour en strass sort du sol et la monte (environ 10 m), elle frappe en haut (17 %, KO dès 139 %). Chute sans défense après.",
       "d": "Iceberg : il jaillit devant elle en frappant vers le haut, puis reste 8 s. Il arrête les projectiles adverses ; un adversaire qui le touche est gelé et blessé (35 % mesurés sur 6 s contre une cible immobile). Un coup ou un projectile adverse le casse. La proue le fait éclater, mais depuis le 8 nov. sans dégâts ni gel."
-    }
+    },
+    "forces": [
+      "Tour Eiffel (B haut) : 17 % et KO dès 139 %, en remontant",
+      "La note casse presque un bouclier d'un coup",
+      "Smash haut à 25 %"
+    ],
+    "faiblesses": [
+      "Légère (88) et une des plus lentes au sol (7 m/s)",
+      "La proue ratée la laisse punissable"
+    ],
+    "conseils": [
+      "Pose l'iceberg devant toi et joue à distance derrière lui",
+      "Note contre un adversaire qui reste en bouclier, puis attaque le bouclier cassé"
+    ]
   },
   "funebre": {
     "resume": "La métalleuse médium, légère (88) et lente au sol : chaque coup qui touche pose une bougie, et son rituel relie les bougies en une étoile qui frappe.",
@@ -389,7 +428,20 @@
       "s": "Le stage dive : elle plonge à l'horizontale (12,5 m/s), la foule la porte, emporte ce qu'elle croise puis le jette au loin (12 %, KO dès 151 %). Ratée : 65 frames de lag. Une fois par saut.",
       "u": "La lévitation : elle monte en silence, puis frappe en haut d'une vague d'ombre : 8,2 m de haut. Le robot n'a pas réussi à toucher avec la vague. Chute sans défense après.",
       "d": "Le rituel : relie toutes ses bougies (3 au moins, 5 au plus) en une étoile de lumière qui frappe ceux qui sont dedans : 3 petits coups de 2 % puis un dernier de 7 % (3 bougies), 9 % (4) ou 12 % (5). Plus elles sont écartées, plus l'étoile est grande. Une bougie par coup qui touche, au plus une toutes les 0,4 s ; les adversaires les soufflent en les frappant."
-    }
+    },
+    "forces": [
+      "Smash avant KO dès 63 % (25 % chargé), smash haut à 24 %",
+      "Le stage dive emporte l'adversaire et le jette loin (KO dès 151 %)",
+      "Son étoile de 5 bougies frappe fort"
+    ],
+    "faiblesses": [
+      "Légère (88) et lente au sol (7 m/s)",
+      "Remontée courte (8,2 m)"
+    ],
+    "conseils": [
+      "Touche à des endroits différents pour écarter les bougies : plus l'étoile est grande, mieux c'est",
+      "Le logo ralentit : idéal pour rattraper un adversaire qui fuit"
+    ]
   },
   "inox": {
     "resume": "Le grimpeur, très rapide (12 m/s) : ses coups au sol font ×1,3 mais ses aériens seulement ×0,8. Plus il est haut au-dessus de l'arène, plus il tape fort (jusqu'à +25 % à 7 m).",
@@ -398,7 +450,21 @@
       "s": "La corde de rappel : un grappin à 6 m qui attrape l'adversaire et le ramène en chope, même en l'air et même sous le bouclier. Hors du terrain, il s'accroche au bord de loin. Une fois par saut.",
       "u": "Le piolet planté : il plante le piolet dans le vide et se hisse, deux fois de suite (6,7 m mesurés pour un seul). Chute sans défense après.",
       "d": "La stalactite : elle tombe du ciel 2,3 m devant lui. Un adversaire au sol est enterré de 0,7 s (0 %) à 1,5 s (dès 150 %) ; en l'air, elle le plante vers le bas ; un bouclier la brise. Ratée, il reste planté."
-    }
+    },
+    "forces": [
+      "Smash avant KO dès 55 % (18 % chargé à fond), le 2e plus fort du jeu",
+      "Très rapide (12 m/s, 4e du jeu)",
+      "La corde de rappel chope même à travers un bouclier"
+    ],
+    "faiblesses": [
+      "Ses aériens ne font que ×0,8",
+      "Remontée courte (6,7 m), même si le piolet se plante deux fois",
+      "Léger (90)"
+    ],
+    "conseils": [
+      "Reste au sol : c'est là qu'il frappe fort (×1,3)",
+      "Plus haut au-dessus de l'arène, plus il tape fort : les plateformes sont tes amies"
+    ]
   },
   "saucegod": {
     "resume": "Le crooner de la rue, avec deux modes (B bas pour changer) : SUCRÉ, coups plus doux et 1 % soigné par coup qui touche ; GHETTO, coups plus forts mais un peu plus lent. Après un mode bien tenu, le premier coup qui touche dans les 3 s est LE DROP.",
@@ -407,7 +473,20 @@
       "s": "Sucré : le slow, une prise dansée de courte portée (il l'attrape, danse 24 frames, le lance ; stick en arrière pour le lancer derrière), 10 %, KO dès 184 %. Ratée : du lag. Ghetto : le lowrider se cabre (0,4 s), fait deux bonds et n'écrase qu'en retombant ; un seul coup adverse le casse et SAUCE GOD reste figé tant qu'il saute.",
       "u": "Sucré : un nuage de fumée rose le porte, il se dirige bien (6,6 m de haut). Ghetto : le saut hydraulique, deux rebonds sur son lowrider. Chute sans défense après.",
       "d": "Change de mode, sucré ↔ ghetto (à la frame 10). Après un mode bien tenu, le premier coup qui touche dans les 3 s est LE DROP."
-    }
+    },
+    "forces": [
+      "Deux modes à choisir selon la situation : sucré pour durer (1 % soigné par coup), ghetto pour frapper",
+      "LE DROP après un mode bien tenu",
+      "Smash bas à 25 %"
+    ],
+    "faiblesses": [
+      "Remontée courte (6,6 m)",
+      "Le lowrider le fige tant qu'il saute et casse au premier coup"
+    ],
+    "conseils": [
+      "Sucré quand tu es en danger, ghetto quand il faut tuer",
+      "Tiens un mode avant de changer pour préparer LE DROP"
+    ]
   },
   "lagreve": {
     "resume": "Rapide (11,7 m/s), léger, portée courte, dangereux en combo. Sa jauge de Flow monte quand il enchaîne sans se faire toucher (environ 40 % infligés d'affilée) : pleine, 12 s de BIGLAGREVE MODE, coups +20 % et vitesse ×1,25.",
@@ -416,7 +495,21 @@
       "s": "ERRRRRRRR : un dash qui frappe (7 %, sort en 5 frames) et qui s'enchaîne, une fois de plus en BIGLAGREVE MODE. Très punissable s'il rate. Une fois par saut.",
       "u": "BOUNCE : trois rebonds en l'air (5 %), une remontée courte (5,1 m). Chute sans défense après.",
       "d": "EMPTY THE BIN : une poubelle qui piège celui qui la touche (environ 1 s à 100 %), puis que n'importe quel coup envoie, comme la borne d'incendie de Pac-Man (6 %)."
-    }
+    },
+    "forces": [
+      "Rapide (11,7 m/s), jab en 3 frames, tilt bas en 4",
+      "BIGLAGREVE MODE : 12 s à +20 % et ×1,25 vitesse",
+      "Smash haut à 26 %"
+    ],
+    "faiblesses": [
+      "Une des pires remontées du jeu (5,1 m)",
+      "Son dash raté est très punissable",
+      "Portée courte"
+    ],
+    "conseils": [
+      "Enchaîne sans te faire toucher pour remplir le Flow",
+      "Ne t'aventure jamais loin du bord"
+    ]
   },
   "inocasa": {
     "resume": "Casablanca by night : un perso rapide (10 m/s) qui ralentit ses adversaires et frappe plus fort pendant son refrain.",
@@ -425,7 +518,19 @@
       "s": "Tacle glissé : il glisse pieds devant et fauche ; ceux qu'il touche partent en l'air (9 %, sort en 6 frames). Une fois par saut.",
       "u": "Note aiguë : une note géante pousse sous ses pieds et le soulève (6 %) : 10,1 m de haut. Chute sans défense après.",
       "d": "Le refrain : il chante 6 s, et pendant ce temps tous ses coups font +20 %. Chaque coup qui touche ajoute 1 s (10 s au plus). Fini : 6 s avant le suivant."
-    }
+    },
+    "forces": [
+      "Rapide (10 m/s), jab en 3 frames",
+      "Le refrain : +20 % sur tous ses coups, et il dure tant qu'il touche",
+      "Smash bas à 27 %, smash haut à 25 %"
+    ],
+    "faiblesses": [
+      "Ses smashs tuent assez tard sans refrain (smash avant dès 86 %)"
+    ],
+    "conseils": [
+      "Lance le refrain puis enchaîne : chaque coup qui touche le prolonge d'1 s",
+      "Auto-Tune pour ralentir l'adversaire avant de le chasser"
+    ]
   },
   "chaye": {
     "resume": "Jolie garce : une diva qui charme, envoie une voiture de sport et contre les attaques.",
@@ -434,7 +539,20 @@
       "s": "Le bolide rouge : une voiture de sport rouge passe en trombe devant elle (11 %, KO dès 227 %, jusqu'à 13 m), après un claquement de doigts (sort en 24 frames).",
       "u": "Talons-fusées : ses talons crachent du feu et elle s'envole, un peu dirigeable (15,8 %, KO dès 269 %) : 11,7 m de haut. Chute sans défense après.",
       "d": "Contre de diva : si on la frappe pendant la fenêtre, elle gifle l'attaquant avec 1,3 fois les dégâts du coup reçu (entre 9 et 24 %) ; un projectile repart. Réussi : le temps ralentit."
-    }
+    },
+    "forces": [
+      "Bonne remontée (11,7 m) avec ses talons-fusées, qui frappent fort (15,8 %)",
+      "Un contre qui renvoie 1,3 fois les dégâts",
+      "Le bolide rouge touche très loin (13 m)"
+    ],
+    "faiblesses": [
+      "Légère (91)",
+      "Le bolide sort lentement (frame 24)"
+    ],
+    "conseils": [
+      "Contre de diva contre les adversaires qui attaquent sans réfléchir",
+      "Le bisou rouge attire l'adversaire vers toi : enchaîne derrière"
+    ]
   },
   "kerrian": {
     "resume": "Bagarreur de rue lourd (120) et diabétique : il perd 15 % toutes les 30 s de combat, et son insuline les lui rend. La flemme : les coups de moins de 5 % qui poussent peu ne le font pas reculer.",
@@ -443,7 +561,20 @@
       "s": "Hot Coffee : un café brûlant jeté devant lui (12 %, courte portée).",
       "u": "Hollow Dash : un dash nerveux vers le haut, deux fois, qui lui coûte 2 % chacun. Remontée très courte (4,2 m), une des pires du jeu. Chute sans défense après.",
       "d": "Fourchette géante : un gros coup de fourchette (14 %, KO dès 170 %)."
-    }
+    },
+    "forces": [
+      "Lourd (120) et ses petits coups ne le font pas reculer",
+      "Gros coups : smash bas 28 %, smash haut 26 %, aérien arrière 22,3 %",
+      "Fourchette géante : 14 %, KO dès 170 %"
+    ],
+    "faiblesses": [
+      "Il perd 15 % toutes les 30 s (diabète) : il faut gérer l'insuline",
+      "Une des pires remontées du jeu (4,2 m), et chaque dash lui coûte 2 %"
+    ],
+    "conseils": [
+      "Garde l'insuline prête : 15 s de recharge entre deux",
+      "Ne sors jamais loin du terrain"
+    ]
   },
   "valdingo": {
     "resume": "Le monde creux : un kit plein de pièges, de la note qui fait danser au tunnel d'Agartha qui fait ressortir l'ennemi la tête en bas.",
@@ -452,7 +583,20 @@
       "s": "Roulade bizarre : il roule en boule devant lui, percute et rebondit sur qui il touche (11 %, KO dès 187 %). Une fois par saut.",
       "u": "La tête-ballon : sa tête gonfle et l'emporte (6,5 %) : 9,8 m de haut, puis elle se dégonfle et il retombe. Chute sans défense après.",
       "d": "AGARTHA : il plonge sous terre, file à 16 m/s jusque sous l'ennemi le plus proche (13 m au plus) et l'envoie en l'air en ressortant (13 %, KO dès 174 %). Les deux trous restent 6 s : un ennemi qui marche dessus tombe dedans et ressort par l'autre, la tête en bas. Sa bosse de terre se frappe : un coup adverse le déterre, blessé."
-    }
+    },
+    "forces": [
+      "AGARTHA : il surgit sous l'ennemi le plus proche (KO dès 174 %)",
+      "Les trous du tunnel piègent l'adversaire pendant 6 s",
+      "Aérien arrière à 22,1 %, smash haut à 24 %"
+    ],
+    "faiblesses": [
+      "Sa bosse de terre se frappe : un coup le déterre",
+      "Ses smashs tuent assez tard (smash avant dès 86 %)"
+    ],
+    "conseils": [
+      "Place les trous du tunnel là où l'adversaire doit passer",
+      "Note fausse puis smash : la victime danse un instant"
+    ]
   },
   "aboueb": {
     "resume": "Le basketteur aux cheveux-fouet : presque tous ses coups se donnent avec la chevelure (bonne allonge). Son vrai panier transforme ses projections en dunks.",
@@ -461,7 +605,20 @@
       "s": "Boucles-grappin : ses boucles attrapent l'ennemi et le ramènent (6 %). Une fois par saut.",
       "u": "Ballon géant : un ballon de basket géant l'emporte (17,3 %, KO dès 191 %) : 14 m de haut et 23,6 m de côté, une des meilleures remontées. Chute sans défense après.",
       "d": "Le vrai panier : posé au bord de l'arène pour 20 s. Un ennemi qu'il projette dans l'arceau prend un DUNK, éjecté très fort vers le haut. Panier posé, B bas tire le ballon en cloche vers l'arceau : à 3 paniers marqués, son prochain coup est un DUNK GÉANT."
-    }
+    },
+    "forces": [
+      "3e meilleure remontée du jeu (14 m de haut, 23,6 m de côté)",
+      "Smash avant KO dès 68 % (29 % chargé)",
+      "Le vrai panier transforme une projection en dunk"
+    ],
+    "faiblesses": [
+      "Ses coups normaux sortent un peu moins vite (jab en 4 frames)",
+      "Le réflecteur ne frappe presque pas"
+    ],
+    "conseils": [
+      "Pose le panier au bord, puis projette l'adversaire dedans",
+      "Marque 3 paniers avec le ballon pour un DUNK GÉANT"
+    ]
   },
   "lej": {
     "resume": "L'ovni : un kit varié avec un scooter très rapide, un enlèvement par soucoupe et un album surprise totalement au hasard.",
@@ -470,7 +627,20 @@
       "s": "Roue arrière : il traverse sur un scooter en roue arrière, très vite (16 m/s pendant 38 frames) : 18 %, KO dès 268 %. Saut pour descendre. Une fois par saut.",
       "u": "Enlevé par l'ovni : le rayon d'une soucoupe le tire vers le haut, un peu dirigeable, et ceux qui sont dedans prennent des petits coups (13,4 %, KO dès 212 %) : 9,6 m de haut. Chute sans défense après.",
       "d": "Album surprise : quelque chose tombe du ciel entre 1,8 et 6,2 m devant lui, au hasard : un disque d'or (frappe et soigne LE J de 8 %), un vinyle piégé qui explose après 50 frames, une enceinte (4 coups de basse), un fan qui court sur l'adversaire 3,5 s… ou un flop qui lui tombe dessus. De 0 à 23 % sur nos essais, 15 % en moyenne."
-    }
+    },
+    "forces": [
+      "Le scooter : 18 %, très rapide",
+      "Jab en 3 frames, tilt bas en 4",
+      "Smash haut à 25 %"
+    ],
+    "faiblesses": [
+      "L'album surprise peut lui tomber dessus",
+      "Smashs moyens (smash avant dès 82 %)"
+    ],
+    "conseils": [
+      "Utilise l'album à distance, pas au contact : le hasard peut te punir",
+      "La soucoupe revient : lance-la puis avance avec elle"
+    ]
   },
   "lemaiz": {
     "resume": "Le critique : il étourdit, chope à distance à travers le bouclier et fait glisser. Passif Pas classique : le même coup refait contre lui fait −15 % à chaque fois (−45 % au plus), il faut varier.",
@@ -479,7 +649,20 @@
       "s": "L'interview : il tend le micro loin devant lui (de 0,9 à 2,9 m), une chope à distance qui passe le bouclier. La victime répond dans une bulle, puis il l'envoie (10 %, KO dès 183 %). Une fois par saut.",
       "u": "Montée dans les charts : une flèche verte sort devant lui, on la vise au stick, puis elle le propulse dans cette direction (20 m/s) : 8,3 m de haut, 11 m de côté. Chute sans défense après.",
       "d": "LA SAUCE : une flaque (rayon 1,35 m, 7 s) qui fait glisser ceux qui marchent dedans. En l'air, le pot se renverse et elle tombe. Une à la fois."
-    }
+    },
+    "forces": [
+      "Pas classique : chaque coup répété contre lui fait 15 % de moins (jusqu'à −45 %)",
+      "L'interview chope à travers le bouclier",
+      "Smash bas à 25,5 %"
+    ],
+    "faiblesses": [
+      "Plutôt lent (7,9 m/s)",
+      "Remontée courte (8,3 m)"
+    ],
+    "conseils": [
+      "Contre les adversaires qui répètent le même coup, laisse-les s'épuiser",
+      "La sauce au bord fait glisser l'adversaire hors du terrain"
+    ]
   },
   "emve": {
     "resume": "Le streamer rétro, léger (85) : des notes en pixels, un speedrun qui traverse comme un bug et des alertes de dons au hasard.",
@@ -488,7 +671,20 @@
       "s": "Speedrun : il bugue, disparaît 6 frames et traverse l'ennemi comme un bug (environ 4,4 m), en frappant (18 %, KO dès 368 %). Contre un bouclier, il est arrêté net et étourdi 40 frames. Une fois par saut.",
       "u": "Saut de plateforme : un grand saut le poing levé, des pièces à chaque petit coup (14,2 %, KO dès 238 %, sort en 4 frames) : 8,8 m de haut. Chute sans défense après.",
       "d": "Alerte de don : un objet au hasard tombe du ciel sur l'ennemi le plus proche (à 6 m au plus) : enclume, bloc « ? », bombe 8 bits, cartouche géante, ou un cœur qui le soigne de 8 % s'il est dessous. De 2 à 13 % sur nos essais."
-    }
+    },
+    "forces": [
+      "Speedrun : 18 % et passe à travers l'adversaire",
+      "Jab en 3 frames, tilt bas en 4",
+      "Smash haut à 25 %"
+    ],
+    "faiblesses": [
+      "Léger (85)",
+      "Speedrun contre un bouclier : arrêté net et sonné"
+    ],
+    "conseils": [
+      "Ne lance pas le speedrun dans un bouclier",
+      "Les dons tombent sur l'ennemi le plus proche : lance-les quand il est à moins de 6 m"
+    ]
   },
   "lolobiscotto": {
     "resume": "Piment, pastis et petit chat : portée moyenne, rapide et agile, avec une des meilleures remontées du jeu.",
@@ -497,7 +693,20 @@
       "s": "Minou gris : son chat saute sur l'adversaire (jusqu'à 13 m), s'agrippe à sa tête 2 s et griffe toutes les 11 frames (environ 11 %, 12 % mesurés).",
       "u": "Pastis-fusée : une bouteille-fusée l'emporte (17 %, KO dès 273 %) : 12,9 m de haut et 24,8 m de côté. Chute sans défense après.",
       "d": "Flaque de pastis : on glisse dedans (4 %). Elle, elle s'y rafraîchit."
-    }
+    },
+    "forces": [
+      "Jab en 2 frames, un des plus rapides du jeu",
+      "Excellente remontée : 12,9 m de haut, 24,8 m de côté (6e du jeu)",
+      "Smash haut à 27 %, aérien arrière à 21 %"
+    ],
+    "faiblesses": [
+      "Lent au sol (7,8 m/s)",
+      "Ses smashs tuent tard (smash haut dès 105 %)"
+    ],
+    "conseils": [
+      "Mange trois piments avant d'aller chercher le KO : le souffle de feu",
+      "Le chat agrippé griffe 2 s : enchaîne pendant ce temps"
+    ]
   },
   "luidj": {
     "resume": "Tristesse business : un vrai perso de distance, léger (84) mais rapide (11 m/s). Plus il est seul, plus il est fort : personne à moins de 5 m, ses notes de saxo font +40 % ; quelqu'un à moins de 2,5 m, ses coups normaux font 8 % de moins.",
@@ -506,7 +715,20 @@
       "s": "Âme solitaire : son âme sort de son corps (qui reste figé), file 5,4 m devant, traverse l'ennemi en frappant puis revient (12 %, KO dès 330 %). Une fois par saut.",
       "u": "Ballon bleu : un ballon l'emporte (dirigeable), bouscule en montant puis éclate en haut (5,2 %) : 9,2 m de haut. Chute sans défense après.",
       "d": "Ballon de foot : au sol, il devient un ballon et ne prend plus aucun coup pendant 4 s au plus (annulable après 16 frames ; une chope l'attrape quand même). En l'air, il tombe très vite (27 m/s) en ballon, avec de lourds dégâts."
-    }
+    },
+    "forces": [
+      "Rapide (11 m/s)",
+      "Note de saxo tenue : 15,4 %, KO dès 133 %, et +40 % quand il est seul",
+      "Gros smashs : smash bas 26 %, smash haut 23,5 %"
+    ],
+    "faiblesses": [
+      "Léger (84)",
+      "Coups normaux un peu lents (jab en 4 frames) et −8 % quand quelqu'un le colle"
+    ],
+    "conseils": [
+      "Garde 5 m de distance et arrose de notes",
+      "Ballon de foot au sol pour encaisser une rafale sans rien prendre"
+    ]
   },
   "dems": {
     "resume": "Ψ : un perso lent au sol (6,2 m/s) mais avec une téléportation et un double sombre qui rejoue ses coups.",
@@ -515,7 +737,20 @@
       "s": "Δ : un grand triangle lumineux traverse l'écran devant lui (9 %, jusqu'à 13 m). Un seul à la fois.",
       "u": "Téléport : il disparaît et réapparaît 9,6 m plus loin dans la direction du stick, comme Zelda, avec un petit coup à l'arrivée. Chute sans défense après.",
       "d": "Son double sombre : une copie translucide apparaît devant lui et rejoue son prochain coup (et ses enchaînements) juste après lui, à 60 % des dégâts, pendant 2,5 s au plus. Elle attend son coup 5 s, puis s'efface."
-    }
+    },
+    "forces": [
+      "Ψ chargé en Δ : 14 %, KO dès 123 %, jusqu'à 13 m",
+      "Le double sombre rejoue ses coups à 60 %",
+      "Téléport de 9,6 m dans la direction voulue"
+    ],
+    "faiblesses": [
+      "Un des plus lents au sol (6,2 m/s)",
+      "Ses smashs tuent tard (smash avant dès 93 %)"
+    ],
+    "conseils": [
+      "Charge le Ψ jusqu'au Δ (0,6 s) avant de le lâcher",
+      "Invoque le double juste avant ton smash : il frappe deux fois"
+    ]
   },
   "tices": {
     "resume": "L'Alsacien : rapide des poings et des pieds, des flammekueches, du rhum qui fait cracher du feu et des pets. Son combo phare : poser du gaz puis l'allumer au rhum.",
@@ -524,7 +759,20 @@
       "s": "Rhum, puis feu : il boit et crache du feu (25,6 % mesurés). Le feu fait exploser le gaz de sa prout-mine : 15 % et une bonne éjection. Une fois par saut.",
       "u": "Pet-propulsion : il s'envole sur un pet (23,4 %, KO dès 140 %) : 9,6 m de haut. Chute sans défense après.",
       "d": "Prout-mine : un nuage de gaz (rayon 2 m) qui reste 8 s, deux au plus. Le rhum (B côté) le fait exploser."
-    }
+    },
+    "forces": [
+      "Jab et aérien neutre en 3 frames",
+      "Pet-propulsion : 23,4 %, KO dès 140 %",
+      "Le combo gaz + rhum : 15 % et une bonne éjection"
+    ],
+    "faiblesses": [
+      "Ses smashs tuent tard (smash bas dès 117 %)",
+      "Plutôt lent (7,9 m/s)"
+    ],
+    "conseils": [
+      "Pose la prout-mine là où l'adversaire va passer, puis allume-la au rhum",
+      "La flammekueche ralentit : lance-la avant de charger"
+    ]
   },
   "cellier": {
     "resume": "Le testeur en colère, lourd (120) mais lent (7,3 m/s), avec trois sauts en l'air comme le Roi DaDiDou. Sa course hurlante encaisse un coup sans broncher.",
@@ -533,7 +781,20 @@
       "s": "« MAIS ILS ONT PRIS DE LA DROGUE !!?? » : il fonce en hurlant (13 m/s pendant 30 frames) et encaisse un coup sans broncher pendant la course (13 %, KO dès 139 %). Une fois par saut.",
       "u": "La cartouche-ressort : il saute sur une cartouche géante qui le propulse (6 %) : 7,1 m de haut, une remontée courte. Chute sans défense après.",
       "d": "La console qui plante : posée 6 s. Les adversaires à moins de 3,2 m « laguent » : de temps en temps, leur image saute et ils se retrouvent 50 cm en arrière, figés 4 frames. Elle plante après 15 % de coups ; cassée, 4 s avant d'en reposer une."
-    }
+    },
+    "forces": [
+      "Lourd (120) avec trois sauts en l'air",
+      "Smash avant KO dès 69 % (28 % chargé), aérien avant à 25 %",
+      "Sa course hurlante encaisse un coup (KO dès 139 %)"
+    ],
+    "faiblesses": [
+      "Lent (7,3 m/s)",
+      "Remontée courte (7,1 m), heureusement ses sauts aident"
+    ],
+    "conseils": [
+      "Pose la console au milieu : elle fait laguer tout le monde autour",
+      "Fonce avec MAIS ILS ONT PRIS DE LA DROGUE quand l'adversaire attaque"
+    ]
   },
   "micron": {
     "resume": "Le président : billets, poudre de perlimpinpin, ascension jupitérienne et le 49.3 qui impose une loi aux adversaires.",
@@ -542,7 +803,19 @@
       "s": "Poudre de perlimpinpin : un nuage lancé devant lui (9 %, jusqu'à 6 m) qui reste un peu plus de 3 s.",
       "u": "Ascension jupitérienne : il monte de 10,8 m (6 %). Chute sans défense après.",
       "d": "49.3 : une loi imposée aux adversaires pendant 6 s, selon le stick : ▲ pas de saut, ◀▶ ralentis à 65 %, ▼ zéro tir (12 %, KO dès 235 % sur l'impact). Elle traverse les boucliers."
-    }
+    },
+    "forces": [
+      "Le 49.3 impose une loi 6 s et traverse les boucliers",
+      "Bonne remontée (10,8 m)",
+      "Aérien arrière à 21 %"
+    ],
+    "faiblesses": [
+      "Ses smashs tuent tard (smash avant dès 93 %)"
+    ],
+    "conseils": [
+      "Loi ▼ zéro tir contre les persos à projectiles, ▲ pas de saut contre ceux qui vivent en l'air",
+      "La pluie de billets sort en 8 frames : bonne pour punir"
+    ]
   },
   "lainque": {
     "resume": "Le randonneur, lent (6,8 m/s) : il fait glisser avec ses peaux de banane, prend des raccourcis jusque dans le vide, et ses pets font tousser ses adversaires.",
@@ -551,7 +824,20 @@
       "s": "Je connais un raccourci : une marche rapide qui traverse l'adversaire en le bousculant. Elle s'arrête au bord, sauf si [X] est tenu : il continue tout droit, même dans le vide, quelques pas en l'air. Tenue : 12 % mesurés.",
       "u": "Le propulseur : un pet le propulse vers le haut et le nuage vert dessous frappe (9,1 %) : 7,3 m de haut. Chute sans défense après.",
       "d": "LAINK A PÉTÉ : 5 s d'odeur. Qui le frappe au corps à corps tousse : ses coups au contact font 30 % de moins, et une chope sur lui rate (le choppeur tousse 30 frames). Tous les 5 pets (B bas et B haut), ALERTE INFO : 5 s d'une vraie zone d'odeur de 3,3 m qui fait tousser, à travers le bouclier."
-    }
+    },
+    "forces": [
+      "Son odeur rend ses adversaires plus faibles au contact (−30 %) et fait rater leurs chopes",
+      "Le raccourci tenu continue dans le vide",
+      "Smash avant KO dès 82 % (40 % chargé)"
+    ],
+    "faiblesses": [
+      "Un des plus lents au sol (6,8 m/s)",
+      "Remontée courte (7,3 m)"
+    ],
+    "conseils": [
+      "Pète dès que l'adversaire veut te coller : il tousse",
+      "Pose des peaux de banane près du bord"
+    ]
   },
   "etoilaisse": {
     "resume": "Le savant, lent au sol (6,2 m/s). Passif QUATRE À LA SUITE : 4 coups différents d'affilée qui touchent sans être touché (la chaîne se perd après 2,5 s), et le 4e fait ×1,3 +4 % et éjecte fort.",
@@ -560,7 +846,21 @@
       "s": "Quatre à la suite : quatre coups rapides en avançant, de plus en plus forts (17,5 %, KO dès 186 %, sort en 5 frames). Raté en entier : 18 frames de lag en plus. Une fois par saut.",
       "u": "BONNE RÉPONSE ! : une colonne de lumière dorée le propulse, dirigée, et bouscule ce qu'elle traverse (19,2 %, KO dès 241 %) : 8,1 m de haut. Chute sans défense après.",
       "d": "Face-à-face : une question apparaît entre lui et l'ennemi le plus proche (3,8 m au plus) : l'ennemi est figé environ 1 s, puis il frappe d'un gros livre (11 %, KO dès 171 %). Un bouclier levé renvoie la question. Recharge 7 s."
-    }
+    },
+    "forces": [
+      "QUATRE À LA SUITE : le 4e coup différent fait ×1,3 +4 % et éjecte fort",
+      "Face-à-face fige l'adversaire environ 1 s",
+      "Gros smashs : smash bas 26,5 %, smash haut 23,5 %"
+    ],
+    "faiblesses": [
+      "Le plus lent au sol du jeu (6,2 m/s, à égalité)",
+      "Ses coups normaux sortent un peu lentement (jab en 4 frames)",
+      "Quatre à la suite raté : très punissable"
+    ],
+    "conseils": [
+      "Varie : 4 coups différents d'affilée, sans te faire toucher entre",
+      "Face-à-face puis smash : l'adversaire ne bouge plus"
+    ]
   },
   "cabalito": {
     "resume": "Le chef, un peu lourd (104) : ses coups se font à la poêle, qui cuit sur sa plaque chauffante et devient de plus en plus forte.",
@@ -569,7 +869,20 @@
       "s": "Poêle brûlante : un coup de poêle chauffée au rouge qui brûle 3 s (14,3 %, KO dès 343 %). Si la poêle cuit sur la plaque, B côté la reprend. Une fois par saut.",
       "u": "La cloche du chef : la cloche de plat s'envole et l'emporte (15,8 %, KO dès 268 %) : 11,1 m de haut. Chute sans défense après.",
       "d": "Plaque chauffante : posée au sol, elle brûle et fait sauter ceux qui marchent dessus. La poêle y cuit par paliers (CRU, BLEU, SAIGNANT, À POINT, CRAMÉ), de plus en plus forte ; laissée jusqu'à BRÛLÉ, elle repart à zéro. B bas la reprend. Pendant la cuisson, il se bat à mains nues (×0,85)."
-    }
+    },
+    "forces": [
+      "Un peu lourd (104), bonne remontée (11,1 m)",
+      "La poêle cuite frappe de plus en plus fort",
+      "Fines herbes endort 1,25 s"
+    ],
+    "faiblesses": [
+      "Pendant la cuisson, il se bat à mains nues (×0,85)",
+      "Lent (7,8 m/s)"
+    ],
+    "conseils": [
+      "Laisse cuire jusqu'à À POINT ou CRAMÉ, mais reprends avant BRÛLÉ",
+      "Fines herbes puis smash sur l'adversaire endormi"
+    ]
   },
   "lamelo": {
     "resume": "Feat avec tout le monde : rapide (11,8 m/s), ses coups normaux sur le temps de la musique font +15 %, et sa chorale récompense les enchaînements.",
@@ -578,7 +891,20 @@
       "s": "Le pas glissé : il glisse en dansant (environ 3,3 m), emporte celui qu'il touche puis le renvoie (9,4 %). Personne attrapé à la frame 19 : 57 frames de lag au sol. En l'air, il garde sa hauteur : un vrai retour par le côté. Une fois par saut.",
       "u": "La note qui monte : il se pend à une double croche géante qui l'emporte (19,9 %, KO dès 132 %) : 8,6 m de haut. Chute sans défense après.",
       "d": "La chorale : un chœur gospel chante 5 s derrière lui ; chaque coup qui touche pendant ce temps monte d'un ton, +5 % de dégâts à chaque fois, jusqu'à +30 %. Puis 5 s d'attente."
-    }
+    },
+    "forces": [
+      "Smash avant KO dès 67 % (27 % chargé), smash haut dès 77 % (34 %)",
+      "Rapide (11,8 m/s, 5e du jeu)",
+      "La note qui monte : 19,9 %, KO dès 132 %"
+    ],
+    "faiblesses": [
+      "Le pas glissé raté coûte 57 frames",
+      "Remontée moyenne (8,6 m)"
+    ],
+    "conseils": [
+      "Lance la chorale et enchaîne : jusqu'à +30 %",
+      "Frappe sur le temps de la musique : +15 % sur tes coups normaux"
+    ]
   },
   "parmesan": {
     "resume": "Un bloc de parmesan armé d'une râpe : il se râpe lui-même pour attaquer. Plus il râpe, plus il rapetisse (jusqu'à 55 % de sa taille) : plus rapide, mais plus léger à éjecter. Il repousse avec le temps.",
@@ -587,7 +913,20 @@
       "s": "Copeau-boomerang : un copeau lancé qui revient (12 %).",
       "u": "Râpe-hélico : sa râpe tourne et l'emporte (2,3 %) : 6,9 m de haut, 11,1 m de côté. Chute sans défense après.",
       "d": "Saupoudrage : il saupoudre du fromage au sol (4 %) ; il y repousse plus vite. 6 tas au plus, 10 s chacun."
-    }
+    },
+    "forces": [
+      "Aérien arrière à 25,4 %, aérien bas à 23 %",
+      "Smash avant KO dès 73 % (32 % chargé), smash bas dès 84 %",
+      "Plus il rapetisse, plus il est rapide"
+    ],
+    "faiblesses": [
+      "Plus il rapetisse, plus il est léger à éjecter",
+      "Remontée courte (6,9 m)"
+    ],
+    "conseils": [
+      "Râpe quand tu peux te le permettre, puis repousse dans le saupoudrage",
+      "Petit, va vite chercher l'adversaire ; gros, encaisse"
+    ]
   },
   "gazzz": {
     "resume": "Que de la basse : un des plus lourds du jeu (124) mais lent (7,3 m/s), avec une remontée très courte. Son enceinte DRILL FR double ses dégâts au drop.",
@@ -596,7 +935,20 @@
       "s": "CELINE 3X : trois frappes en avançant (coup d'épaule, revers, gros coup de pied), en rappuyant pour chacune ; le bon rythme donne une explosion de basse sur la troisième. Une fois par saut.",
       "u": "Bass Boost : une enceinte le propulse avec un BOOM, l'onde frappe vers le bas (9 %, KO dès 233 %). Seulement 4,8 m de haut : une des pires remontées. Chute sans défense après.",
       "d": "DRILL FR : il pose une enceinte qui compte 8 temps (120 bpm, 4 s). Au drop : une onde imparable (6 %) et 2 s où ses coups font ×2. Elle peut être cassée avant."
-    }
+    },
+    "forces": [
+      "Un des plus lourds (124)",
+      "Smash haut à 34 %, un des plus gros du jeu ; smash avant KO dès 68 %",
+      "Voix de basse tenue : KO dès 75 %"
+    ],
+    "faiblesses": [
+      "Une des pires remontées du jeu (4,8 m)",
+      "Lent (7,3 m/s)"
+    ],
+    "conseils": [
+      "Pose DRILL FR et attends le drop : 2 s de coups ×2",
+      "Ne quitte jamais le terrain"
+    ]
   },
   "requin": {
     "resume": "Rescapé des rues, un peu lourd (106) : il marque sa cible avec son foulard, fonce dessus, et peut se changer en chèvre avec un tout autre moveset.",
@@ -605,7 +957,20 @@
       "s": "Rescapé des rues : il avance en zigzag vers sa cible (17 m/s, jusqu'à environ 11 m, il va chercher celui que le foulard a marqué) puis donne un gros coup d'épaule (15 %, KO dès 86 %). S'il ne touche rien, il reste planté là (punissable). Une fois par saut.",
       "u": "Bass Jump : une enceinte explose sous ses pieds, frappe autour et le propulse (8 %) : 9,2 m de haut. Chute sans défense après.",
       "d": "La chèvre : un pouf de fumée et il devient une chèvre avec tout un autre moveset (coups de tête, ruades, cornes ; B Bêêêêh, B côté la charge, B haut l'envol). B bas de nouveau pour redevenir REQUIN (après 40 frames)."
-    }
+    },
+    "forces": [
+      "Rescapé des rues : 15 %, KO dès 86 %, et il va chercher sa cible marquée",
+      "Un peu lourd (106)",
+      "La chèvre : un deuxième moveset complet"
+    ],
+    "faiblesses": [
+      "Rescapé des rues raté le laisse planté",
+      "Smashs moyens (smash avant dès 84 %)"
+    ],
+    "conseils": [
+      "Marque d'abord avec le foulard, puis fonce : le zigzag va vers elle",
+      "Change en chèvre quand le moveset humain ne passe plus"
+    ]
   },
   "feelbad": {
     "resume": "L'imposteur : ses coups normaux dans le dos de l'adversaire font ×1,2, et il peut voler l'apparence et tout le kit de son adversaire.",
@@ -614,7 +979,20 @@
       "s": "La trappe d'aération : il plonge dans une trappe, file sous terre, intouchable, et ressort environ 5 m plus loin en frappant vers le haut, « SUS » (11 %, KO dès 223 %). Une fois par saut.",
       "u": "L'oiseau de poche : un gros oiseau rond l'emporte, un peu dirigeable, et ses battements d'ailes frappent ceux qui sont dessus (6,8 %, KO dès 152 %) : 10,7 m de haut. Chute sans défense après.",
       "d": "L'imposteur : il prend l'apparence et tout le kit (coups, spéciaux, déplacements) de l'adversaire le plus proche. Il redevient lui-même après un spécial volé, au bout de 6 s, ou s'il est éjecté (« DÉMASQUÉ ! »), puis 2,5 s avant de recommencer."
-    }
+    },
+    "forces": [
+      "×1,2 sur ses coups normaux dans le dos",
+      "L'imposteur vole tout le kit adverse pendant 6 s",
+      "Bonne remontée (10,7 m)"
+    ],
+    "faiblesses": [
+      "Smashs moyens (smash avant dès 82 %)",
+      "La capsule se casse d'un coup"
+    ],
+    "conseils": [
+      "Contre un perso fort, vole son kit et utilise son meilleur spécial",
+      "La trappe d'aération pour passer derrière et frapper dans le dos"
+    ]
   },
   "pprod": {
     "resume": "L'ingé son geek, le deuxième plus léger du jeu (81) : un PC qui explose, une chaise turbo, et Ctrl+Z pour revenir en arrière.",
@@ -623,7 +1001,20 @@
       "s": "Vieux PC : il lance un vieux PC qui explose (15 %, KO dès 275 %).",
       "u": "Chaise turbo : sa chaise gamer l'emporte (18,4 %) : 8,7 m de haut, 14,2 m de côté. Chute sans défense après.",
       "d": "Ctrl+Z : il sauvegarde sa position ; rappuie dans les 5 s pour y revenir. Sinon, il sort une pizza. 15 s de recharge."
-    }
+    },
+    "forces": [
+      "Compilation : 20 % jusqu'à 9 m",
+      "Ctrl+Z pour revenir à une position sûre",
+      "Bonne portée de côté avec la chaise (14,2 m)"
+    ],
+    "faiblesses": [
+      "Le 2e plus léger du jeu (81)",
+      "Ses smashs tuent tard (smash avant dès 78 %)"
+    ],
+    "conseils": [
+      "Sauvegarde avec Ctrl+Z avant de prendre un risque",
+      "Reste à distance et laisse les bugs travailler"
+    ]
   },
   "pelka": {
     "resume": "Le regard noir, un peu lourd (106) : un crochet tournant qui tue tôt, un échafaudage qui reste comme une plateforme, et 5 s sans reculer.",
@@ -632,7 +1023,20 @@
       "s": "Crochet tournant : un revers en tournant puis le gros crochet (16 %, KO dès 108 %). Une fois par saut.",
       "u": "Échafaudage : il grimpe sur un échafaudage, les tubes frappent autour et un coup de coude en haut (9,1 %) : 9,4 m de haut. Monté depuis le sol, il reste 8 s comme plateforme (4,6 m de haut au plus) ; bas + [A] dessus, il s'écroule sur ceux qui sont dessous. Chute sans défense après.",
       "d": "Mentalité : 5 s où il ne recule plus sous les coups (il prend les dégâts, pas le recul : tilts, aériens, jabs, smashs à bas %). Un coup plus fort, une chope ou un étourdissement la cassent. 10 s de recharge."
-    }
+    },
+    "forces": [
+      "Smash avant KO dès 72 % (32 % chargé)",
+      "Crochet tournant : 16 %, KO dès 108 %",
+      "Mentalité : 5 s sans reculer sous les petits coups"
+    ],
+    "faiblesses": [
+      "Le regard noir fait peu de dégâts",
+      "Une chope ou un gros coup casse la Mentalité"
+    ],
+    "conseils": [
+      "Mentalité, puis échange coup pour coup : tu ne recules pas, l'adversaire si",
+      "Monte l'échafaudage depuis le sol pour te faire une plateforme"
+    ]
   },
   "mola": {
     "resume": "J'sors la bécane : un peu lourd (105), une bécane qu'on pilote comme Wario et un micro qui étourdit.",
@@ -641,7 +1045,20 @@
       "s": "La bécane : il fonce en la dirigeant (13,5 m/s, 1,6 s au plus) : 16 %, jusqu'à 13 m. Saut pour la quitter (après 30 frames), elle continue seule. Ratée : 22 frames de plus ; arrêtée par un bouclier : étourdi 40 frames. Une fois par saut.",
       "u": "Nuage de fumée : il s'assoit en tailleur sur sa fumée et s'envole (13 %) : 12,8 m de haut. Chute sans défense après.",
       "d": "Le micro qui reste : un micro tombe devant lui pour 6 s. Passer devant le fait chanter : des notes à 4 % qui étourdissent."
-    }
+    },
+    "forces": [
+      "Excellente remontée (12,8 m, 7e du jeu)",
+      "La bécane se dirige et touche loin (16 %)",
+      "Un peu lourd (105)"
+    ],
+    "faiblesses": [
+      "La bécane arrêtée par un bouclier : sonné 40 frames",
+      "Smashs moyens (smash avant dès 78 %)"
+    ],
+    "conseils": [
+      "Saute de la bécane avant d'arriver sur un bouclier",
+      "Pose le micro là où l'adversaire va passer : il étourdit"
+    ]
   },
   "meluche": {
     "resume": "L'insoumis, le plus lourd du jeu (126, avec GIMSOU et KAARIZ) : un hologramme de lui-même qui sert de relais, une carapace qui encaisse, et un pupitre à frapper.",
@@ -650,7 +1067,20 @@
       "s": "La tortue sagace : il rentre dans une carapace et fonce, plusieurs petits coups puis le dernier éjecte (21,4 %, KO dès 233 %). Les petits coups ne l'arrêtent pas. Personne attrapé à la frame 20 : 54 frames de lag. Une fois par saut.",
       "u": "Téléportation : il réapparaît 9 m plus loin dans la direction du stick ; un hologramme posé, il s'y téléporte (il est consommé). Le robot l'a mesuré à 9,2 m. Chute sans défense après.",
       "d": "Le pupitre : il tombe devant lui (10 %, KO dès 370 %) puis reste 10 s ; n'importe quel coup l'envoie, et celui qui frappe en devient le propriétaire, comme la borne de Pac-Man. Un seul à la fois."
-    }
+    },
+    "forces": [
+      "Le plus lourd du jeu (126, à égalité)",
+      "La tortue sagace : 21,4 %, encaisse les petits coups",
+      "Smash bas à 28 %"
+    ],
+    "faiblesses": [
+      "La tortue ratée coûte 54 frames",
+      "Remontée moyenne (9,2 m), sauf avec un hologramme posé"
+    ],
+    "conseils": [
+      "Pose un hologramme près du bord : il te servira de point de retour",
+      "Cri à deux avec l'hologramme pour étourdir des deux côtés"
+    ]
   },
   "ronare": {
     "resume": "Le gardien : bassiste et DJ, très rapide (12,5 m/s), avec un jack qui branche l'adversaire et le ramène.",
@@ -659,7 +1089,20 @@
       "s": "Jack : lancé dans la direction voulue (jusqu'à 3,4 m), il branche l'adversaire pour 8 s et le ramène contre lui, avec un court étourdissement (5 %). Une fois par saut.",
       "u": "Vinyle volant : assis en tailleur sur un vinyle, il monte (17,3 %, KO dès 191 %) : 13,8 m de haut, une des meilleures remontées. Chute sans défense après.",
       "d": "Platine : une platine sous ses pieds, l'onde étourdit (4 %). Si l'adversaire est branché par le jack, le disque saute et il recule d'un pas (1,7 m)."
-    }
+    },
+    "forces": [
+      "Le 2e plus rapide du jeu (12,5 m/s)",
+      "Smash haut à 34 %, un des plus gros du jeu",
+      "4e meilleure remontée (13,8 m)"
+    ],
+    "faiblesses": [
+      "Le jack fait peu de dégâts : il sert à ramener",
+      "Smash bas tue tard (dès 119 %)"
+    ],
+    "conseils": [
+      "Jack, puis ramène l'adversaire dans ton smash haut",
+      "Platine sur un adversaire branché : il recule d'un pas"
+    ]
   },
   "hortchy": {
     "resume": "Hyperpop : la plus rapide du jeu (18,8 m/s en course). Une boule à la Sonic qu'on dirige et une attaque guidée en l'air.",
@@ -668,7 +1111,20 @@
       "s": "Le glitch : elle se bugge, disparaît 4 frames et réapparaît 4,6 m plus loin en frappant (8 %), en laissant un fantôme qui fait mal 2 s (deux au plus). Une fois par saut.",
       "u": "Le ressort : un ressort l'envoie haut (21 m/s) puis elle retombe en boule (6,5 %) : 10,6 m de haut. En l'air, le ressort tombe et frappe. Chute sans défense après.",
       "d": "LE DROP : les basses saturent, une onde part des deux côtés et repousse (8 %)."
-    }
+    },
+    "forces": [
+      "La plus rapide du jeu, de loin (18,8 m/s)",
+      "La boule se dirige et se charge (jusqu'à 22 m/s)",
+      "Le glitch laisse des fantômes qui font mal"
+    ],
+    "faiblesses": [
+      "Légère (89)",
+      "Ses smashs tuent tard (smash avant dès 98 %)"
+    ],
+    "conseils": [
+      "Utilise ta vitesse pour harceler, puis sors quand ça chauffe",
+      "En l'air, l'attaque guidée rattrape un adversaire à moins de 10 m"
+    ]
   },
   "oxmo": {
     "resume": "Le poète, léger (84) mais rapide (11 m/s) : un cactus qu'il arrose pour en faire un mur, et une plume qui rend son prochain coup ×1,5.",
@@ -677,7 +1133,20 @@
       "s": "L'opéra : il prend son souffle, puis une note part devant lui et pousse fort, même à travers un bouclier (5 %).",
       "u": "Le carrosse fantôme : un carrosse l'emporte, dirigeable, et ceux qu'il emporte prennent des petits coups (16 %, KO dès 205 %) : 12,5 m de haut. Chute sans défense après.",
       "d": "La plume : il écrit en l'air ; son prochain coup qui touche dans les 6 s fait ×1,5. Perdu au KO."
-    }
+    },
+    "forces": [
+      "Excellente remontée (12,5 m, 8e du jeu) avec le carrosse",
+      "Le cactus arrosé devient un mur qui arrête les projectiles",
+      "La plume : prochain coup ×1,5"
+    ],
+    "faiblesses": [
+      "Léger (84)",
+      "Coups normaux lents (jab en 5 frames)"
+    ],
+    "conseils": [
+      "Plume, puis ton smash le plus fort",
+      "Arrose le cactus pour le faire grossir avant de l'arracher avec un smash"
+    ]
   },
   "bagarra": {
     "resume": "La bâtisseuse, un peu lourde (105) et lente (7,4 m/s) : elle construit des murs et des plateformes avec ses blocs, et son rugissement fait lâcher le bord.",
@@ -686,7 +1155,20 @@
       "s": "La valse : elle danse en traversant l'écran (9,5 m/s, environ 7 m) et emporte qui elle croise comme une cavalière, puis la révérence (13 %, KO dès 263 %). Une fois par saut.",
       "u": "Les blocs : 5 blocs sous ses pieds la font monter (6,8 m) ; un bloc tombe sur la tête de qui est dessous. Les 3 premiers restent 15 s, solides : murs et plateformes (6 à elle au plus), cassés par 12 % de coups adverses. Chute sans défense après.",
       "d": "Le rugissement : une onde de 2,7 m qui repousse tout autour (3 %) et fait lâcher le bord à qui s'y accroche à moins de 4,5 m."
-    }
+    },
+    "forces": [
+      "Ses blocs restent 15 s : murs et plateformes",
+      "Le rugissement fait lâcher le bord",
+      "Un peu lourde (105), smash haut à 27 %"
+    ],
+    "faiblesses": [
+      "Lente (7,4 m/s)",
+      "Remontée courte (6,8 m)"
+    ],
+    "conseils": [
+      "Construis un mur au bord pour bloquer le retour de l'adversaire",
+      "Rugissement quand l'adversaire s'accroche au bord"
+    ]
   },
   "dondada": {
     "resume": "Une main lave l'autre : un rappeur aux enchaînements récompensés (TECHNIQUE !, MULTISYLLABIQUE !, INSOLENT !) et un battle qui enferme son adversaire 5 s.",
@@ -695,7 +1177,19 @@
       "s": "Le flow : il glisse en avant et frappe en rythme, deux coups qui emportent puis le troisième envoie (12 %, KO dès 299 %). Une fois par saut.",
       "u": "Une main lave l'autre : deux mains géantes dorées le hissent l'une après l'autre, puis se frottent sous lui pour le dernier coup (19,9 %, KO dès 186 %) : 11,5 m de haut. Chute sans défense après.",
       "d": "Le battle : il défie l'ennemi le plus proche (7 m au plus) dans un cercle de rap pendant 5 s, dont personne ne sort. Celui qui a pris le moins de coups gagne (plus rapide ×1,25 pendant 6 s) ; l'autre est clashé (12 % et une éjection modérée). Égalité : personne. 5 s avant le suivant."
-    }
+    },
+    "forces": [
+      "Jab en 2 frames, un des plus rapides du jeu",
+      "Une main lave l'autre : 19,9 %, KO dès 186 %, et une bonne remontée (11,5 m)",
+      "Le battle enferme l'adversaire 5 s"
+    ],
+    "faiblesses": [
+      "Ses smashs tuent très tard (smash avant dès 103 %)"
+    ],
+    "conseils": [
+      "Battle seulement si tu es sûr de toucher plus que l'autre",
+      "Enchaîne vite : TECHNIQUE ! dès 4 coups"
+    ]
   },
   "janjan": {
     "resume": "Le beatmaker : il enregistre les projectiles adverses pour les renvoyer, rejoue ses coups en boucle, et sa boîte à rythmes refrappe toute seule.",
@@ -704,7 +1198,20 @@
       "s": "La boucle : il frappe, et la boucle rejoue le coup deux fois en écho au même endroit, toutes les 15 frames ; le dernier éjecte (13 %). Une fois par saut.",
       "u": "Le kick : une grosse caisse sous ses pieds le propulse, un peu dirigeable (17,6 %) : 7,8 m de haut. Chute sans défense après.",
       "d": "La boîte à rythmes : posée pour 8 s, elle rejoue son dernier coup à chaque temps (toutes les 40 frames), à 55 % des dégâts, tournée vers l'adversaire le plus proche (7 m au plus). Une à la fois, cassée par 12 % de coups, puis 3 s d'attente."
-    }
+    },
+    "forces": [
+      "La boîte à rythmes refrappe à sa place toutes les 40 frames",
+      "Le sample renvoie les projectiles 25 % plus fort",
+      "Smash avant à 25 %"
+    ],
+    "faiblesses": [
+      "Remontée courte (7,8 m)",
+      "Smashs qui tuent tard (smash avant dès 94 %)"
+    ],
+    "conseils": [
+      "Pose la boîte, puis place un coup fort : elle le rejouera",
+      "Contre un perso à projectiles, attends et sample"
+    ]
   },
   "morreyyy": {
     "resume": "Le Duc, un des plus lourds du jeu (124), gabarit Ganondorf : boxe anglaise et MMA, un pitbull qui écrase et une cage pour un duel.",
@@ -713,7 +1220,20 @@
       "s": "Pitbull : il se transforme, saisit l'ennemi, saute et l'écrase, comme la Koopa Klaw de Bowser (23,9 %, KO dès 115 %). Raté, il est punissable.",
       "u": "Uppercut sauté : il attrape en montant puis écrase, comme le Dark Dive de Ganondorf (17,2 %) : 8,9 m de haut. Chute sans défense après.",
       "d": "L'Octogone express : une cage tombe autour de lui et d'un adversaire tout proche (2,3 m au plus) : 6 s de duel où l'on rebondit sur le grillage, et ses coups y font ×1,15."
-    }
+    },
+    "forces": [
+      "Un des plus lourds (124)",
+      "Smash avant KO dès 67 % (27 % chargé), smash bas 29 %",
+      "Pitbull : 23,9 %, KO dès 115 %"
+    ],
+    "faiblesses": [
+      "Remontée moyenne (8,9 m)",
+      "Le pitbull raté est punissable"
+    ],
+    "conseils": [
+      "L'Octogone sur un adversaire collé : ses coups y font ×1,15",
+      "Pitbull près du bord pour l'écraser hors du terrain"
+    ]
   },
   "nymano": {
     "resume": "Il pleure, il ride, il sample : léger (84), toujours triste. Ses larmes font glisser, et sa tristesse pleine déclenche une crise où tout glisse.",
@@ -722,7 +1242,20 @@
       "s": "Skate : il fonce sur sa planche (9 %, KO dès 264 %, jusqu'à 9 m). Une fois par saut.",
       "u": "Ollie géant : un énorme ollie (10 %, KO dès 236 %) : 6,6 m de haut, 10 m de côté. Chute sans défense après.",
       "d": "Flaque de larmes : une flaque où l'on glisse (4 %). Quand sa tristesse est pleine, la crise : 3 s où tout le monde glisse et où il va ×1,45 plus vite."
-    }
+    },
+    "forces": [
+      "Smash avant KO dès 74 % (33 % chargé)",
+      "Aérien arrière à 21,8 %",
+      "La SP-404 endort tout le monde à moins de 4 m"
+    ],
+    "faiblesses": [
+      "Léger (84)",
+      "Remontée courte (6,6 m)"
+    ],
+    "conseils": [
+      "Tiens la SP-404 quand l'adversaire est proche, puis smash sur le dormeur",
+      "Les larmes font glisser : joue autour de tes flaques"
+    ]
   },
   "bigo": {
     "resume": "Le duo inséparable, façon Ice Climbers : on dirige BIGO, et FOLI le suit en rejouant ses commandes. FOLI a ses propres % et revient 12 s après avoir été éjecté. Seul, BIGO frappe moins loin et moins fort (dégâts ×0,62).",
@@ -731,7 +1264,20 @@
       "s": "La toupie à deux : les deux frères tournent ensemble et frappent (14,3 %). Une fois par saut.",
       "u": "La corde : FOLI monte et BIGO grimpe à la corde (5,8 %). Seul, ce n'est qu'un petit saut : 2,6 m mesurés, la pire remontée du jeu sans FOLI. Chute sans défense après.",
       "d": "Changer de frère : le joueur dirige l'autre frère, et celui qu'il quitte devient le suiveur."
-    }
+    },
+    "forces": [
+      "À deux, chaque coup frappe deux fois",
+      "Smash haut à 24 %",
+      "La toupie à deux : 14,3 %"
+    ],
+    "faiblesses": [
+      "Sans FOLI, la pire remontée du jeu (2,6 m) et des dégâts ×0,62",
+      "Lent (7,5 m/s)"
+    ],
+    "conseils": [
+      "Protège FOLI : sans lui, tout ton kit s'effondre",
+      "Change de frère pour sauver celui qui est en danger"
+    ]
   },
   "terracide": {
     "resume": "Le sale gosse : tous ses coups font +12 %. Son B bas ouvre des boosters de cartes au hasard (terrains, potes, pièges, mandales…) ; 5 KO sur ses terrains et le prochain booster donne LA LÉGENDAIRE.",
@@ -740,7 +1286,20 @@
       "s": "Le vol : il fonce la main tendue et pique ce que l'adversaire a lancé ou posé (projectile, invocation, piège), qui devient à lui et repart sur son ancien maître. Sur un adversaire, il lui fait les poches (3 %, il en regagne 3). Une fois par saut.",
       "u": "Le château de cartes : il pousse sous lui et le propulse (6,6 m), puis s'écroule sur ceux d'en dessous (11,2 %). Chute sans défense après.",
       "d": "Le booster : sans carte, il en ouvre un (1 s, punissable) et garde une carte au hasard ; avec une carte, B bas la joue. TERRAIN pour 8 s (boue qui ralentit, trampoline, ou glace où un adversaire frappé part ×1,4 plus loin), POTE (LAINQUE surgit et frappe), PIÈGE (le prochain coup reçu est renvoyé), MANDALE (prochain coup ×1,3, ×1,5 ou ×1,8)… et une fois par match peut-être LA LÉGENDAIRE (4 % de chances)."
-    }
+    },
+    "forces": [
+      "Tous ses coups font +12 %",
+      "Smash avant KO dès 73 % (32 % chargé)",
+      "Le vol retourne les projectiles et pièges adverses contre eux"
+    ],
+    "faiblesses": [
+      "Remontée courte (6,6 m)",
+      "Ouvrir un booster prend 1 s (punissable)"
+    ],
+    "conseils": [
+      "Ouvre les boosters quand l'adversaire est loin",
+      "Une carte MANDALE juste avant ton smash"
+    ]
   },
   "sgouizi": {
     "resume": "Le froussard du grand prix : rapide (11,7 m/s), une voiture de course, et un faux lui-même piégé avec lequel il peut échanger sa place.",
@@ -749,7 +1308,20 @@
       "s": "La voiture de course : il traverse au volant d'une petite voiture (19 m/s, 34 frames) : 10 %, KO dès 210 %. Saut pour en sauter. Une fois par saut.",
       "u": "Le sursaut : un fantôme lui fait BOUH et il sursaute si haut qu'il remonte, dirigé au stick, en cognant autour (9,8 %, KO dès 214 %) : 10,6 m de haut, 13 m de côté. Chute sans défense après.",
       "d": "L'imposteur : il pose un faux lui (8 s) et glisse en arrière. Celui qui frappe le faux le voit exploser en confettis et reste sonné 1,3 s. Rappuyer B bas : L'ÉCHANGE, il prend la place du faux (une fois par faux, intouchable 8 frames)."
-    }
+    },
+    "forces": [
+      "Rapide (11,7 m/s)",
+      "La voiture de course (19 m/s) pour traverser ou revenir",
+      "Le faux lui sonne 1,3 s celui qui le frappe"
+    ],
+    "faiblesses": [
+      "Léger (92)",
+      "Le cri ne fait presque pas de dégâts"
+    ],
+    "conseils": [
+      "Pose le faux, puis échange de place quand l'adversaire fonce dessus",
+      "Le cri repousse même à travers le bouclier : utile au bord"
+    ]
   },
   "naka": {
     "resume": "Personne comprend : légère (88) et lente (7 m/s), elle inverse les commandes de ses adversaires et les fait danser.",
@@ -758,7 +1330,19 @@
       "s": "La danse qui avance : un pas de danse qui avance ; la victime touchée danse avec elle, étourdie 46 frames (6 %). Une fois par saut.",
       "u": "La note qui monte : une note aiguë tenue la soulève et l'onde frappe en dessous (10,4 %, KO dès 175 %) : 11 m de haut. Chute sans défense après.",
       "d": "Les copines : deux danseuses fantômes apparaissent de chaque côté et frappent autour d'elle (14 %)."
-    }
+    },
+    "forces": [
+      "Inverse les commandes de l'adversaire jusqu'à 2 s",
+      "Smash haut à 26 %, smash bas à 24 %",
+      "Bonne remontée (11 m)"
+    ],
+    "faiblesses": [
+      "Légère (88) et lente au sol (7 m/s)"
+    ],
+    "conseils": [
+      "Bulle de charabia près du bord : l'adversaire inversé risque de sauter dans le vide",
+      "Les copines frappent des deux côtés : idéal quand on t'encercle"
+    ]
   },
   "frizz": {
     "resume": "Ère glaciaire : rapide (11,2 m/s). Il gèle ses adversaires dans des blocs de glace, puis les frappe pour les faire glisser comme des pierres de curling.",
