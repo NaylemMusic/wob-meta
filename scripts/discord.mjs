@@ -1,11 +1,17 @@
 // Reads the game's "update" channel (followed into the NDS server) and attaches each official message to our patch note.
 // env: DISCORD_BOT_TOKEN (secret), DISCORD_UPDATE_CHANNEL (channel id). Without them: does nothing.
 // data/official.json keeps { lastId, pending: [messages not attached yet] }.
-// Rule: a message goes to the measured patch note closest in time within 48 h; if our note does not exist yet, it waits
-// in `pending` and is attached on a later run, once the robot has measured the patch.
+// Rule: a message goes to the first patch note measured after it (see EARLY_MS), within 48 h; if our note does not exist
+// yet, it waits in `pending` and is attached on a later run, once the robot has measured the patch.
 import fs from 'node:fs';
 
 const WINDOW_MS = 48 * 3600 * 1000;
+
+// The announcement says « en ligne d'ici quelques minutes »: its version goes live around or AFTER it. So a message
+// belongs to the note closest in time among those measured at most EARLY_MS before it (the robot may catch the version a
+// little before the post), within WINDOW_MS; until one exists, it waits in pending (12 Nov 2026: it went to the previous
+// version otherwise). Every run redistributes all the messages, so a later, closer note takes it back.
+const EARLY_MS = 20 * 60 * 1000;
 
 // pure: attach pending messages to notes (newest first). Returns { notes, pending }
 export function attach(notes, pending) {
@@ -15,8 +21,8 @@ export function attach(notes, pending) {
     let best = null, bestGap = Infinity;
     for (const n of notes) {
       if (n.initial) continue;
-      const gap = Math.abs(Date.parse(n.date) - t);
-      if (gap <= WINDOW_MS && gap < bestGap) { best = n; bestGap = gap; }
+      const at = Date.parse(n.date), gap = Math.abs(at - t);
+      if (at >= t - EARLY_MS && at - t <= WINDOW_MS && gap < bestGap) { best = n; bestGap = gap; }
     }
     if (best) {
       best.official = best.official || [];
@@ -54,7 +60,10 @@ if ((process.argv[1] || '').endsWith('discord.mjs')) {
     console.log('messages officiels nouveaux :', msgs.length);
   } else console.log('Discord non configuré (DISCORD_BOT_TOKEN / DISCORD_UPDATE_CHANNEL) : rien à lire');
   const notes = fs.existsSync('data/patchnotes.json') ? JSON.parse(fs.readFileSync('data/patchnotes.json', 'utf8')) : [];
-  const res = attach(notes, state.pending);
+  // redistribute everything each run (a newer note may be the right home of a message attached earlier)
+  const all = [...state.pending];
+  for (const n of notes) { all.push(...(n.official || [])); delete n.official; }
+  const res = attach(notes, all);
   state.pending = res.pending;
   fs.writeFileSync('data/patchnotes.json', JSON.stringify(res.notes));
   fs.writeFileSync('data/official.json', JSON.stringify(state));
