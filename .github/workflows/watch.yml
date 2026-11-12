@@ -7,6 +7,11 @@ on:
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:
+    inputs:
+      test:
+        description: 'Mesurer quand même la version actuelle, sans rien publier (pour vérifier le robot)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -28,14 +33,15 @@ jobs:
           echo "commit=$C" >> "$GITHUB_OUTPUT"
           if [ -f "data/$C.json" ]; then echo "new=false" >> "$GITHUB_OUTPUT"; else echo "new=true" >> "$GITHUB_OUTPUT"; fi
       - name: Mesure (conteneur sans réseau)
-        if: steps.v.outputs.new == 'true'
+        if: steps.v.outputs.new == 'true' || inputs.test
         run: |
           C=${{ steps.v.outputs.commit }}
           docker run --rm --network none --read-only --cap-drop ALL --memory 2g -v "$PWD:/w:ro" -w /w/scripts node:22-alpine node extract.mjs "$C" > "data/$C.json"
           PREV=$(node -e "try{console.log('data/'+require('./data/latest.json').file)}catch(e){}")
           node scripts/diff.mjs "$PREV" "data/$C.json"
+          node -e "const d=require('./data/$C.json');console.log('persos mesurés :',Object.keys(d.chars).length)"
       - name: Publie
-        if: steps.v.outputs.new == 'true'
+        if: steps.v.outputs.new == 'true' && !inputs.test
         run: |
           git config user.name "wob-meta-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
