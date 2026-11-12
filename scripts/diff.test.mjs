@@ -17,4 +17,7 @@ assert.equal(diff(A, A).added.length + Object.keys(diff(A, A).chars).length, 0, 
 const K1 = { commit: 'a', chars: { x: { name: 'X', stats: {}, moves: { smash: { ko: 70, koFull: 30 } } } } }, K2 = { commit: 'b', chars: { x: { name: 'X', stats: {}, moves: { smash: { ko: 70, koFull: 25 } } } } };
 assert.equal(diff(K1, K2).chars.x.changes[0].v, 1, 'charged smash kills earlier = buff');
 assert.equal(Object.keys(diff({ commit: 'a', chars: { x: { name: 'X', stats: {}, moves: { smash: { ko: 70 } } } } }, K1).chars).length, 0, 'koFull missing in the old file is not a change');
+const H1 = { commit: 'a', chars: { x: { name: 'X', stats: {}, moves: {}, specials: { sp_d: { dmg: 0, hash: 'aaa' } } } } }, H2 = { commit: 'b', chars: { x: { name: 'X', stats: {}, moves: {}, specials: { sp_d: { dmg: 0, hash: 'bbb' } } } } };
+assert.deepEqual(diff(H1, H2).chars.x.changes.map((ch) => ch.what + '.' + ch.key), ['sp_d.code'], 'special code changed, same numbers = flagged');
+assert.equal(Object.keys(diff(H1, H1).chars).length, 0, 'same code = nothing');
 console.log('diff OK');

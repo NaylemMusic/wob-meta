@@ -177,6 +177,33 @@ const specialFlags = (M) => ({
 
 // the leading // comment block of src/sim/chars/<id>.js or stars/<id>.js, as plain text (null if none)
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
+
+// fingerprint of a special's code: the move itself (its functions' source) plus the top-level pieces of the fighter's
+// file it names (constants, helper functions, ENTITIES.x it spawns). A patch that touches any of them changes it.
+// shortcut: helpers from shared files (kit.js, entities.js…) are not followed, upgrade if a patch slips through that way
+const fileChunks = {};
+function chunksOf(id) {
+  if (fileChunks[id]) return fileChunks[id];
+  const out = [];
+  for (const f of [`chars/${id}.js`, `chars/stars/${id}.js`]) {
+    const p = new URL(base + f, import.meta.url);
+    if (!fs.existsSync(p)) continue;
+    let cur = null;
+    for (const l of fs.readFileSync(p, 'utf8').split('\n')) {
+      const m = /^(?:export\s+)?(?:const|let|function|class)\s+([A-Za-z_$][\w$]*)|^ENTITIES\.([\w$]+)\s*=/.exec(l);
+      if (m) { cur = { names: [m[1] || m[2]], text: '' }; out.push(cur); const more = /^(?:const|let)\s+(.*?)=/.exec(l); if (more) cur.names.push(...[...l.matchAll(/(?:^|,)\s*(?:const|let)?\s*([A-Z_][A-Z0-9_]*)\s*=/g)].map((x) => x[1])); }
+      else if (/^\S/.test(l) && !/^[}\])]/.test(l)) cur = null; // another top-level statement ends the piece
+      if (cur) cur.text += l.replace(/\s*\/\/.*$/, '') + '\n'; // comments don't count
+    }
+  }
+  return (fileChunks[id] = out);
+}
+function codeHash(id, M) {
+  const src = JSON.stringify(M, (k, v) => (typeof v === 'function' ? v.toString() : v));
+  const used = chunksOf(id).filter((c) => c.names.some((n) => new RegExp(`\\b${n}\\b`).test(src))).map((c) => c.text);
+  return createHash('sha1').update(src + used.join('')).digest('hex').slice(0, 10);
+}
 function aboutText(id) {
   for (const f of [`chars/${id}.js`, `chars/stars/${id}.js`]) {
     const p = new URL(base + f, import.meta.url);
@@ -217,7 +244,7 @@ for (const id of only.length ? only : CHAR_ORDER) {
     };
   }
   const specials = {};
-  for (const k of SPECIALS) if (C.moves && C.moves[k]) specials[k] = { ...measureBest(id, k, C.moves[k]), ...specialFlags(C.moves[k]) };
+  for (const k of SPECIALS) if (C.moves && C.moves[k]) specials[k] = { ...measureBest(id, k, C.moves[k]), ...specialFlags(C.moves[k]), hash: codeHash(id, C.moves[k]) };
   if (specials.sp_u) specials.sp_u.recovery = measureRecovery(id);
   const U = C.ult || {};
   const grab = C.moves && C.moves.grab && C.moves.grab.hits && C.moves.grab.hits[0];

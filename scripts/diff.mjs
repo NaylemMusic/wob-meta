@@ -38,6 +38,8 @@ export function diff(A, B) {
       for (const k of ['startup', 'dmg', 'ko', 'range', 'iasa', 'dur']) {
         if (!same(sa[k], sb[k])) changes.push({ what: sp, key: k, old: sa[k] ?? null, new: sb[k] ?? null, v: verdict(k, sa[k] ?? null, sb[k] ?? null) });
       }
+      // its code changed (even if no measured number moved): its notes must be tested again
+      if (sa.hash && sb.hash && sa.hash !== sb.hash) changes.push({ what: sp, key: 'code', old: sa.hash, new: sb.hash, v: 0 });
       const ra = (sa.recovery || {}).up ?? null, rb = (sb.recovery || {}).up ?? null;
       if (!same(ra, rb)) changes.push({ what: sp, key: 'recovery', old: ra, new: rb, v: verdict('range', ra, rb) }); // higher = better
     }
