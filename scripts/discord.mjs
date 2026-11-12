@@ -30,10 +30,16 @@ export function attach(notes, pending) {
 // a Discord message → what we keep (text + the text of its embeds; a crossposted announcement keeps its content)
 export function keep(msg) {
   if (msg.type) return null; // only normal messages (type 0): skips "channel followed" notices (type 12) and other system messages
-  const parts = [msg.content || ''];
-  for (const e of msg.embeds || []) parts.push([e.title, e.description].filter(Boolean).join('\n'));
+  // a forwarded message (Discord "Transférer") carries the original in message_snapshots: keep its text and its date
+  const srcs = [msg, ...(msg.message_snapshots || []).map((s) => s.message || {})];
+  const parts = [];
+  for (const m of srcs) {
+    parts.push(m.content || '');
+    for (const e of m.embeds || []) parts.push([e.title, e.description].filter(Boolean).join('\n'));
+  }
   const text = parts.filter((s) => s && s.trim()).join('\n\n').trim();
-  return text ? { id: msg.id, date: msg.timestamp, text } : null;
+  const date = (srcs[1] && srcs[1].timestamp) || msg.timestamp;
+  return text ? { id: msg.id, date, text } : null;
 }
 
 if ((process.argv[1] || '').endsWith('discord.mjs')) {
