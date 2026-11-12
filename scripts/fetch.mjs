@@ -8,7 +8,8 @@ const SITE = 'https://worldofbagarre.com/';
 const entries = process.argv.slice(2).length ? process.argv.slice(2) : ['src/sim/chars/index.js', 'src/sim/world.js'];
 
 const html = await (await fetch(SITE, { cache: 'no-store' })).text();
-const commit = (html.match(/v\/([0-9a-f]{7,40})\/src\/main\.js/) || [])[1];
+// WOB_COMMIT=<commit> fetches an older version instead (the site keeps serving them): to measure a version a run missed
+const commit = process.env.WOB_COMMIT || (html.match(/v\/([0-9a-f]{7,40})\/src\/main\.js/) || [])[1];
 if (!commit) throw new Error('version introuvable sur ' + SITE);
 const base = `${SITE}v/${commit}/`;
 const out = path.join('cache', commit);

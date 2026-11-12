@@ -53,6 +53,12 @@ jobs:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_UPDATE_CHANNEL: ${{ vars.DISCORD_UPDATE_CHANNEL }}
         run: node scripts/discord.mjs
+      - name: Annonce le patch sur Discord
+        if: ${{ !inputs.test }}
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_PATCH_CHANNEL: ${{ vars.DISCORD_PATCH_CHANNEL }}
+        run: node scripts/announce.mjs
       - name: Publie
         if: ${{ !inputs.test }}
         run: |
