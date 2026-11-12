@@ -456,7 +456,7 @@
     "speciaux": {
       "n": "La boule de neige : roulée devant lui (8 m/s), elle grossit sur ses 6 premiers mètres et avale les adversaires qu'elle touche : ils roulent coincés dedans jusqu'à ce qu'elle explose (contre un mur, au bord, ou au bout de 2 s) : 12 %, KO dès 164 %. Une à la fois.",
       "s": "La corde de rappel : un grappin à 6 m qui attrape l'adversaire et le ramène en chope, même en l'air et même sous le bouclier. Hors du terrain, il s'accroche au bord de loin. Une fois par saut.",
-      "u": "Le piolet planté : il plante le piolet dans le vide et se hisse, deux fois de suite (6,7 m mesurés pour un seul). Chute sans défense après.",
+      "u": "Le piolet planté : il plante le piolet dans le vide et se hisse, deux fois de suite (6,7 m pour un seul, 12,5 m avec les deux). Chute sans défense après.",
       "d": "La stalactite : elle tombe du ciel 2,3 m devant lui. Un adversaire au sol est enterré de 0,7 s (0 %) à 1,5 s (dès 150 %) ; en l'air, elle le plante vers le bas ; un bouclier la brise. Ratée, il reste planté."
     },
     "forces": [
@@ -466,7 +466,7 @@
     ],
     "faiblesses": [
       "Ses aériens ne font que ×0,8",
-      "Remontée courte (6,7 m), même si le piolet se plante deux fois",
+      "Remontée correcte seulement en plantant le piolet deux fois (12,5 m ; 6,7 m pour un seul)",
       "Léger (90)"
     ],
     "conseils": [
@@ -501,7 +501,7 @@
     "speciaux": {
       "n": "Dab : sa waveform fait danser ceux qu'elle touche (environ 0,5 s à 100 %). 25 % mesurés sur 6 s contre une cible immobile : en vrai, on s'échappe avant.",
       "s": "ERRRRRRRR : un dash qui frappe (7 %, sort en 5 frames) et qui s'enchaîne, une fois de plus en BIGLAGREVE MODE. Très punissable s'il rate. Une fois par saut. Depuis le 12 nov. au soir : raté au sol (un bouclier compte comme raté), on trébuche et reste à terre 22 frames + son temps mort, 10 de plus à chaque raté d'affilée (jusqu'à +30), puis on se relève sans invincibilité.",
-      "u": "BOUNCE : trois rebonds en l'air (5 %), une remontée courte (5,1 m). Chute sans défense après.",
+      "u": "BOUNCE : jusqu'à trois rebonds en l'air en rappuyant (5 %) : 5,1 m pour un, 8 m en enchaînant. Chute sans défense après.",
       "d": "EMPTY THE BIN : une poubelle qui piège celui qui la touche (environ 1 s à 100 %), puis que n'importe quel coup envoie, comme la borne d'incendie de Pac-Man (6 %)."
     },
     "forces": [
@@ -510,7 +510,7 @@
       "Smash haut à 26 %"
     ],
     "faiblesses": [
-      "Une des pires remontées du jeu (5,1 m)",
+      "Remontée courte (8 m en enchaînant les BOUNCE)",
       "Son dash raté est très punissable",
       "Portée courte"
     ],
@@ -569,7 +569,7 @@
     "speciaux": {
       "n": "Insuline : il se soigne de 15 % (15 s entre deux injections). Si elle n'est pas prête, il lance la seringue à la place. Pas de dégâts mesurés : c'est un soin.",
       "s": "Hot Coffee : un café brûlant jeté devant lui (12 %, courte portée).",
-      "u": "Hollow Dash : un dash nerveux vers le haut, deux fois, qui lui coûte 2 % chacun. Remontée très courte (4,2 m), une des pires du jeu. Chute sans défense après.",
+      "u": "Hollow Dash : un dash nerveux vers le haut, deux fois en rappuyant, qui lui coûte 2 % chacun : 4,2 m pour un, 7,2 m avec les deux. Chute sans défense après.",
       "d": "Fourchette géante : un gros coup de fourchette (14 %, KO dès 170 %)."
     },
     "forces": [
@@ -579,7 +579,7 @@
     ],
     "faiblesses": [
       "Il perd 15 % toutes les 30 s (diabète) : il faut gérer l'insuline",
-      "Une des pires remontées du jeu (4,2 m), et chaque dash lui coûte 2 %"
+      "Remontée courte (7,2 m avec les deux dashs), et chaque dash lui coûte 2 %"
     ],
     "conseils": [
       "Garde l'insuline prête : 15 s de recharge entre deux",
@@ -1410,7 +1410,7 @@
     "speciaux": {
       "n": "Prise de catch : il attrape et promène l'ennemi au-dessus de sa tête ; [A] : une claque, [A] + côté : un body slam. Il attrape aussi au vol ce qui revient des cordes. Le robot n'a pas fait de prise, d'où 0 %.",
       "s": "Scratch-onde : une onde sonore de ses platines (14 %, jusqu'à 9 m).",
-      "u": "Platines-trampoline : il rebondit sur ses platines, [X] pour rebondir encore (9 %). Seulement 4 m d'un rebond : une des remontées les plus courtes. Chute sans défense après.",
+      "u": "Platines-trampoline : il rebondit sur ses platines, [X] pour rebondir encore (9 %). 4 m d'un rebond, 6,3 m en rebondissant encore : une des remontées les plus courtes. Chute sans défense après.",
       "d": "Les cordes du ring : 8 s où personne ne peut être éjecté par les côtés ; un adversaire envoyé dans les cordes rebondit et revient vers lui (à 15 m/s)."
     },
     "forces": [
@@ -1419,7 +1419,7 @@
       "Lourd (113)"
     ],
     "faiblesses": [
-      "Une des pires remontées du jeu (4 m d'un rebond)",
+      "Une des remontées les plus courtes (6,3 m en rebondissant deux fois)",
       "Lent (7,3 m/s) et coups normaux un peu lents (5 frames au mieux)"
     ],
     "conseils": [

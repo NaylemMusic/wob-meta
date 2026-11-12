@@ -147,7 +147,9 @@ function measureRecovery(charId) {
     const d = Math.hypot(A.x - e.x, A.y + 1 - e.y) || 1;
     return [(A.x - e.x) / d, (A.y + 1 - e.y) / d]; // up through him
   };
-  for (const [mx, my] of [[0, 0], [0, 1], [1, 0], [0.7, 0.7], [downUp(14)], [downUp(20)], [comeBack]]) {
+  // stick up and the special pressed again at frame `at` (ANYME's fan throws then, NYSOS lets go of his crow…)
+  const upPress = (at) => (t) => [0, 1, t === at ? 2 : 0]; // 2 = BTN.X
+  for (const [mx, my] of [[0, 0], [0, 1], [1, 0], [0.7, 0.7], [downUp(14)], [downUp(20)], [comeBack], [upPress(15)], [upPress(35)], [upPress(60)]]) {
     const r = flyRecovery(charId, mx, my);
     if (!r) return best;
     best = best ? { up: Math.max(best.up, r.up), side: Math.max(best.side, r.side) } : r;
@@ -164,7 +166,7 @@ function flyRecovery(charId, mx, my) {
   const x0 = A.x, y0 = A.y;
   if (!startMove(A, W, 'sp_u')) return null;
   let up = 0, side = 0;
-  const stickAt = (t) => { const [x, y] = typeof mx === 'function' ? mx(t, W, A) : [mx, my]; return { 0: { mx: x, my: y, held: 0, pressed: 0 } }; };
+  const stickAt = (t) => { const [x, y, p = 0] = typeof mx === 'function' ? mx(t, W, A) : [mx, my]; return { 0: { mx: x, my: y, held: p, pressed: p } }; };
   for (let t = 0; t < 300; t++) { W.step(stickAt(t)); up = Math.max(up, A.y - y0); side = Math.max(side, Math.abs(A.x - x0)); if (A.grounded && t > 5) break; }
   return { up: Math.round(up * 10) / 10, side: Math.round(side * 10) / 10 };
 }
