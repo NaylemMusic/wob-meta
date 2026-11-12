@@ -570,5 +570,113 @@
       "u": "La cloche du chef : la cloche de plat s'envole et l'emporte (15,8 %, KO dès 268 %) : 11,1 m de haut. Chute sans défense après.",
       "d": "Plaque chauffante : posée au sol, elle brûle et fait sauter ceux qui marchent dessus. La poêle y cuit par paliers (CRU, BLEU, SAIGNANT, À POINT, CRAMÉ), de plus en plus forte ; laissée jusqu'à BRÛLÉ, elle repart à zéro. B bas la reprend. Pendant la cuisson, il se bat à mains nues (×0,85)."
     }
+  },
+  "lamelo": {
+    "resume": "Feat avec tout le monde : rapide (11,8 m/s), ses coups normaux sur le temps de la musique font +15 %, et sa chorale récompense les enchaînements.",
+    "speciaux": {
+      "n": "Mélodie : une ligne de notes vertes qui ondule devant lui (8,5 m/s) et touche plusieurs fois (4,4 %). Une à la fois.",
+      "s": "Le pas glissé : il glisse en dansant (environ 3,3 m), emporte celui qu'il touche puis le renvoie (9,4 %). Personne attrapé à la frame 19 : 57 frames de lag au sol. En l'air, il garde sa hauteur : un vrai retour par le côté. Une fois par saut.",
+      "u": "La note qui monte : il se pend à une double croche géante qui l'emporte (19,9 %, KO dès 132 %) : 8,6 m de haut. Chute sans défense après.",
+      "d": "La chorale : un chœur gospel chante 5 s derrière lui ; chaque coup qui touche pendant ce temps monte d'un ton, +5 % de dégâts à chaque fois, jusqu'à +30 %. Puis 5 s d'attente."
+    }
+  },
+  "parmesan": {
+    "resume": "Un bloc de parmesan armé d'une râpe : il se râpe lui-même pour attaquer. Plus il râpe, plus il rapetisse (jusqu'à 55 % de sa taille) : plus rapide, mais plus léger à éjecter. Il repousse avec le temps.",
+    "speciaux": {
+      "n": "Râpage frénétique : maintenu, il se râpe et le fromage tombe en tas (20,8 %, KO dès 299 % en le tenant ; 5 % d'un appui). Il rapetisse en le faisant.",
+      "s": "Copeau-boomerang : un copeau lancé qui revient (12 %).",
+      "u": "Râpe-hélico : sa râpe tourne et l'emporte (2,3 %) : 6,9 m de haut, 11,1 m de côté. Chute sans défense après.",
+      "d": "Saupoudrage : il saupoudre du fromage au sol (4 %) ; il y repousse plus vite. 6 tas au plus, 10 s chacun."
+    }
+  },
+  "gazzz": {
+    "resume": "Que de la basse : un des plus lourds du jeu (124) mais lent (7,3 m/s), avec une remontée très courte. Son enceinte DRILL FR double ses dégâts au drop.",
+    "speciaux": {
+      "n": "Voix de basse : un appui, un petit coup rapide ; tenue jusqu'à 48 frames, un grondement à courte portée qui éjecte fort (18 %, KO dès 75 %).",
+      "s": "CELINE 3X : trois frappes en avançant (coup d'épaule, revers, gros coup de pied), en rappuyant pour chacune ; le bon rythme donne une explosion de basse sur la troisième. Une fois par saut.",
+      "u": "Bass Boost : une enceinte le propulse avec un BOOM, l'onde frappe vers le bas (9 %, KO dès 233 %). Seulement 4,8 m de haut : une des pires remontées. Chute sans défense après.",
+      "d": "DRILL FR : il pose une enceinte qui compte 8 temps (120 bpm, 4 s). Au drop : une onde imparable (6 %) et 2 s où ses coups font ×2. Elle peut être cassée avant."
+    }
+  },
+  "requin": {
+    "resume": "Rescapé des rues, un peu lourd (106) : il marque sa cible avec son foulard, fonce dessus, et peut se changer en chèvre avec un tout autre moveset.",
+    "speciaux": {
+      "n": "Le foulard bleu : jeté devant lui, il flotte, étourdit qui il touche (3 %) et le marque pendant 6 s.",
+      "s": "Rescapé des rues : il avance en zigzag vers sa cible (17 m/s, jusqu'à environ 11 m, il va chercher celui que le foulard a marqué) puis donne un gros coup d'épaule (15 %, KO dès 86 %). S'il ne touche rien, il reste planté là (punissable). Une fois par saut.",
+      "u": "Bass Jump : une enceinte explose sous ses pieds, frappe autour et le propulse (8 %) : 9,2 m de haut. Chute sans défense après.",
+      "d": "La chèvre : un pouf de fumée et il devient une chèvre avec tout un autre moveset (coups de tête, ruades, cornes ; B Bêêêêh, B côté la charge, B haut l'envol). B bas de nouveau pour redevenir REQUIN (après 40 frames)."
+    }
+  },
+  "feelbad": {
+    "resume": "L'imposteur : ses coups normaux dans le dos de l'adversaire font ×1,2, et il peut voler l'apparence et tout le kit de son adversaire.",
+    "speciaux": {
+      "n": "Capsule de capture : lancée en cloche (6 %), elle enferme l'ennemi environ 1 s, puis il ressort sonné. Un coup la casse avant. [X] près d'elle : il la ramasse et la relance. Une à la fois.",
+      "s": "La trappe d'aération : il plonge dans une trappe, file sous terre, intouchable, et ressort environ 5 m plus loin en frappant vers le haut, « SUS » (11 %, KO dès 223 %). Une fois par saut.",
+      "u": "L'oiseau de poche : un gros oiseau rond l'emporte, un peu dirigeable, et ses battements d'ailes frappent ceux qui sont dessus (6,8 %, KO dès 152 %) : 10,7 m de haut. Chute sans défense après.",
+      "d": "L'imposteur : il prend l'apparence et tout le kit (coups, spéciaux, déplacements) de l'adversaire le plus proche. Il redevient lui-même après un spécial volé, au bout de 6 s, ou s'il est éjecté (« DÉMASQUÉ ! »), puis 2,5 s avant de recommencer."
+    }
+  },
+  "pprod": {
+    "resume": "L'ingé son geek, le deuxième plus léger du jeu (81) : un PC qui explose, une chaise turbo, et Ctrl+Z pour revenir en arrière.",
+    "speciaux": {
+      "n": "Compilation : il code et des bugs sortent du PC pour sauter sur les adversaires (20 %, jusqu'à 9 m).",
+      "s": "Vieux PC : il lance un vieux PC qui explose (15 %, KO dès 275 %).",
+      "u": "Chaise turbo : sa chaise gamer l'emporte (18,4 %) : 8,7 m de haut, 14,2 m de côté. Chute sans défense après.",
+      "d": "Ctrl+Z : il sauvegarde sa position ; rappuie dans les 5 s pour y revenir. Sinon, il sort une pizza. 15 s de recharge."
+    }
+  },
+  "pelka": {
+    "resume": "Le regard noir, un peu lourd (106) : un crochet tournant qui tue tôt, un échafaudage qui reste comme une plateforme, et 5 s sans reculer.",
+    "speciaux": {
+      "n": "Le regard noir : un éclair sort de ses yeux et file droit devant (6 %) ; celui qu'il touche recule.",
+      "s": "Crochet tournant : un revers en tournant puis le gros crochet (16 %, KO dès 108 %). Une fois par saut.",
+      "u": "Échafaudage : il grimpe sur un échafaudage, les tubes frappent autour et un coup de coude en haut (9,1 %) : 9,4 m de haut. Monté depuis le sol, il reste 8 s comme plateforme (4,6 m de haut au plus) ; bas + [A] dessus, il s'écroule sur ceux qui sont dessous. Chute sans défense après.",
+      "d": "Mentalité : 5 s où il ne recule plus sous les coups (il prend les dégâts, pas le recul : tilts, aériens, jabs, smashs à bas %). Un coup plus fort, une chope ou un étourdissement la cassent. 10 s de recharge."
+    }
+  },
+  "mola": {
+    "resume": "J'sors la bécane : un peu lourd (105), une bécane qu'on pilote comme Wario et un micro qui étourdit.",
+    "speciaux": {
+      "n": "Clavier MIDI : il joue, les notes partent devant lui (8 %, jusqu'à 9 m), comme le B d'Epektase.",
+      "s": "La bécane : il fonce en la dirigeant (13,5 m/s, 1,6 s au plus) : 16 %, jusqu'à 13 m. Saut pour la quitter (après 30 frames), elle continue seule. Ratée : 22 frames de plus ; arrêtée par un bouclier : étourdi 40 frames. Une fois par saut.",
+      "u": "Nuage de fumée : il s'assoit en tailleur sur sa fumée et s'envole (13 %) : 12,8 m de haut. Chute sans défense après.",
+      "d": "Le micro qui reste : un micro tombe devant lui pour 6 s. Passer devant le fait chanter : des notes à 4 % qui étourdissent."
+    }
+  },
+  "meluche": {
+    "resume": "L'insoumis, le plus lourd du jeu (126, avec GIMSOU et KAARIZ) : un hologramme de lui-même qui sert de relais, une carapace qui encaisse, et un pupitre à frapper.",
+    "speciaux": {
+      "n": "Hologramme : B pose un hologramme devant lui (10 s, un coup adverse le fait buguer). B de nouveau : lui et l'hologramme crient « LA RÉPUBLIQUE, C'EST MOI ! », un cône devant chacun qui étourdit 48 frames ; puis l'hologramme disparaît.",
+      "s": "La tortue sagace : il rentre dans une carapace et fonce, plusieurs petits coups puis le dernier éjecte (21,4 %, KO dès 233 %). Les petits coups ne l'arrêtent pas. Personne attrapé à la frame 20 : 54 frames de lag. Une fois par saut.",
+      "u": "Téléportation : il réapparaît 9 m plus loin dans la direction du stick ; un hologramme posé, il s'y téléporte (il est consommé). Le robot l'a mesuré à 9,2 m. Chute sans défense après.",
+      "d": "Le pupitre : il tombe devant lui (10 %, KO dès 370 %) puis reste 10 s ; n'importe quel coup l'envoie, et celui qui frappe en devient le propriétaire, comme la borne de Pac-Man. Un seul à la fois."
+    }
+  },
+  "ronare": {
+    "resume": "Le gardien : bassiste et DJ, très rapide (12,5 m/s), avec un jack qui branche l'adversaire et le ramène.",
+    "speciaux": {
+      "n": "Vinyles : des disques lancés qui repoussent un peu (10 %).",
+      "s": "Jack : lancé dans la direction voulue (jusqu'à 3,4 m), il branche l'adversaire pour 8 s et le ramène contre lui, avec un court étourdissement (5 %). Une fois par saut.",
+      "u": "Vinyle volant : assis en tailleur sur un vinyle, il monte (17,3 %, KO dès 191 %) : 13,8 m de haut, une des meilleures remontées. Chute sans défense après.",
+      "d": "Platine : une platine sous ses pieds, l'onde étourdit (4 %). Si l'adversaire est branché par le jack, le disque saute et il recule d'un pas (1,7 m)."
+    }
+  },
+  "hortchy": {
+    "resume": "Hyperpop : la plus rapide du jeu (18,8 m/s en course). Une boule à la Sonic qu'on dirige et une attaque guidée en l'air.",
+    "speciaux": {
+      "n": "La boule : elle se roule en boule et charge tant que [X] est tenu (32 frames au plus), puis fonce de 11 m/s (tapé) à 22 m/s (chargée) ; on la dirige et on la freine au stick, 2,5 s au plus ; [A] ou saut pour en sortir. Chargée : 10,3 %, KO dès 218 %. En l'air : une attaque guidée sur un ennemi à moins de 10 m, après une demi-seconde d'avertissement.",
+      "s": "Le glitch : elle se bugge, disparaît 4 frames et réapparaît 4,6 m plus loin en frappant (8 %), en laissant un fantôme qui fait mal 2 s (deux au plus). Une fois par saut.",
+      "u": "Le ressort : un ressort l'envoie haut (21 m/s) puis elle retombe en boule (6,5 %) : 10,6 m de haut. En l'air, le ressort tombe et frappe. Chute sans défense après.",
+      "d": "LE DROP : les basses saturent, une onde part des deux côtés et repousse (8 %)."
+    }
+  },
+  "oxmo": {
+    "resume": "Le poète, léger (84) mais rapide (11 m/s) : un cactus qu'il arrose pour en faire un mur, et une plume qui rend son prochain coup ×1,5.",
+    "speciaux": {
+      "n": "Le cactus : lancé en cloche, il pique en vol puis reste planté 12 s (un seul). B encore à moins de 7 m : l'arrosoir, il grandit (petit, moyen, grand, géant) et dure 10 s de plus. Planté, c'est un mur qui pique toutes les 0,75 s et arrête les projectiles ; un de ses smashs dedans l'arrache et l'envoie. 10 % mesurés.",
+      "s": "L'opéra : il prend son souffle, puis une note part devant lui et pousse fort, même à travers un bouclier (5 %).",
+      "u": "Le carrosse fantôme : un carrosse l'emporte, dirigeable, et ceux qu'il emporte prennent des petits coups (16 %, KO dès 205 %) : 12,5 m de haut. Chute sans défense après.",
+      "d": "La plume : il écrit en l'air ; son prochain coup qui touche dans les 6 s fait ×1,5. Perdu au KO."
+    }
   }
 }
