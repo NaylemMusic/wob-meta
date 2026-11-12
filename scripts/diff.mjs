@@ -54,7 +54,7 @@ export function diff(A, B) {
   return note;
 }
 
-if (import.meta.url === `file://${process.argv[1].replace(/\\/g, '/')}` || process.argv[1].endsWith('diff.mjs')) {
+if ((process.argv[1] || '').endsWith('diff.mjs')) { // run as a script (not imported)
   const [oldF, newF] = process.argv.slice(2);
   const B = JSON.parse(fs.readFileSync(newF, 'utf8'));
   const notes = fs.existsSync('data/patchnotes.json') ? JSON.parse(fs.readFileSync('data/patchnotes.json', 'utf8')) : [];
