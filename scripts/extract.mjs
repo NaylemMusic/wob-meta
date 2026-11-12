@@ -102,6 +102,19 @@ function measureSpecial(charId, id) {
   return { dmg: best.dmg, startup: best.first, range, ko };
 }
 
+// the leading // comment block of src/sim/chars/<id>.js or stars/<id>.js, as plain text (null if none)
+import fs from 'node:fs';
+function aboutText(id) {
+  for (const f of [`chars/${id}.js`, `chars/stars/${id}.js`]) {
+    const p = new URL(base + f, import.meta.url);
+    if (!fs.existsSync(p)) continue;
+    const lines = [];
+    for (const l of fs.readFileSync(p, 'utf8').split('\n')) { if (!l.startsWith('//')) break; lines.push(l.replace(/^\/\/\s?/, '')); }
+    return lines.join('\n').trim() || null;
+  }
+  return null;
+}
+
 const out = { commit, measuredAt: new Date().toISOString(), reference: REF, chars: {} };
 for (const id of only.length ? only : CHAR_ORDER) {
   const C = CHARS[id];
@@ -121,7 +134,15 @@ for (const id of only.length ? only : CHAR_ORDER) {
   }
   const specials = {};
   for (const k of SPECIALS) if (C.moves && C.moves[k]) specials[k] = measureSpecial(id, k);
-  out.chars[id] = { name: C.name, title: C.title, color: C.color, arch: C.arch, stats, moves, specials };
+  const U = C.ult || {};
+  const grab = C.moves && C.moves.grab && C.moves.grab.hits && C.moves.grab.hits[0];
+  out.chars[id] = {
+    name: C.name, title: C.title, color: C.color, arch: C.arch, stats, moves, specials,
+    specialsInfo: C.specialsInfo || null, // the creator's names for B, side B, up B, down B
+    ult: U.name ? { name: U.name, sub: U.sub || null, dmg: Math.round(((U.final && U.final.dmg) || 0) + (U.notes || 0) * (U.noteDmg || 0)) || null } : null,
+    recovery: C.recovery || null, grabStartup: grab ? grab.f[0] : null,
+    about: aboutText(id), // the comment the creator wrote at the top of the fighter's file
+  };
   process.stderr.write(id + ' ');
 }
 process.stdout.write(JSON.stringify(out));

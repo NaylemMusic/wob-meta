@@ -38,6 +38,12 @@ export function diff(A, B) {
         if (!same(sa[k], sb[k])) changes.push({ what: sp, key: k, old: sa[k] ?? null, new: sb[k] ?? null, v: verdict(k, sa[k] ?? null, sb[k] ?? null) });
       }
     }
+    // texts (names of the specials, passive "p", ultimate, the creator's description): shown as they are, no verdict
+    const ia = a.specialsInfo || {}, ib = b.specialsInfo || {};
+    for (const k of new Set([...Object.keys(ia), ...Object.keys(ib)])) if (!same(ia[k], ib[k])) changes.push({ what: 'texte', key: k === 'p' ? 'passif' : 'sp_' + k, old: ia[k] ?? null, new: ib[k] ?? null, v: 0 });
+    for (const k of ['name', 'sub']) if (!same((a.ult || {})[k], (b.ult || {})[k])) changes.push({ what: 'ultime', key: k, old: (a.ult || {})[k] ?? null, new: (b.ult || {})[k] ?? null, v: 0 });
+    if (!same((a.ult || {}).dmg, (b.ult || {}).dmg)) changes.push({ what: 'ultime', key: 'dmg', old: (a.ult || {}).dmg ?? null, new: (b.ult || {}).dmg ?? null, v: verdict('dmg', (a.ult || {}).dmg ?? null, (b.ult || {}).dmg ?? null) });
+    if (!same(a.about, b.about) && a.about !== undefined) changes.push({ what: 'texte', key: 'description', old: a.about ?? null, new: b.about ?? null, v: 0 });
     if (changes.length) {
       const score = changes.reduce((s, c) => s + c.v, 0);
       note.chars[id] = { name: b.name, verdict: score > 0 ? 'buff' : score < 0 ? 'nerf' : 'ajusté', changes };
