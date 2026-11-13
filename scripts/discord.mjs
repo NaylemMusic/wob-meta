@@ -5,6 +5,9 @@
 // yet, it waits in `pending` and is attached on a later run, once the robot has measured the patch.
 import fs from 'node:fs';
 
+// a network error (timeout, connection reset) is treated like an HTTP error: logged, never fails the robot
+const netErr = (e) => ({ ok: false, status: 'réseau ' + e.message, text: async () => '' });
+
 const WINDOW_MS = 48 * 3600 * 1000;
 
 // The announcement says « en ligne d'ici quelques minutes »: its version goes live around or AFTER it. So a message
@@ -53,7 +56,7 @@ if ((process.argv[1] || '').endsWith('discord.mjs')) {
   const state = fs.existsSync('data/official.json') ? JSON.parse(fs.readFileSync('data/official.json', 'utf8')) : { lastId: null, pending: [] };
   if (token && channel) {
     const url = `https://discord.com/api/v10/channels/${channel}/messages?limit=50${state.lastId ? `&after=${state.lastId}` : ''}`;
-    const r = await fetch(url, { headers: { Authorization: `Bot ${token}`, 'User-Agent': 'wob-meta (github actions)' } });
+    const r = await fetch(url, { headers: { Authorization: `Bot ${token}`, 'User-Agent': 'wob-meta (github actions)' } }).catch(netErr);
     if (!r.ok) { console.error('Discord :', r.status, (await r.text()).slice(0, 200)); process.exit(0); } // never fail the robot for Discord
     const msgs = (await r.json()).sort((a, b) => (BigInt(a.id) < BigInt(b.id) ? -1 : 1));
     for (const m of msgs) { const k = keep(m); if (k) state.pending.push(k); state.lastId = m.id; }

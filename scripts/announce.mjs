@@ -3,6 +3,9 @@
 // data/announced.json keeps { last: <commit of the last note announced> } so a note is never posted twice.
 import fs from 'node:fs';
 
+// a network error (timeout, connection reset) is treated like an HTTP error: logged, never fails the robot
+const netErr = (e) => ({ ok: false, status: 'réseau ' + e.message, text: async () => '' });
+
 const SITE = 'https://nds-tournament.fr/patchnotes/';
 const TAG = { buff: '▲ buff', nerf: '▼ nerf', 'ajusté': '● ajusté' };
 
@@ -35,7 +38,7 @@ if ((process.argv[1] || '').endsWith('announce.mjs')) {
     method: 'POST',
     headers: { Authorization: `Bot ${token}`, 'Content-Type': 'application/json', 'User-Agent': 'wob-meta (github actions)' },
     body: JSON.stringify({ content: message(n, chars), allowed_mentions: { parse: [] } }),
-  });
+  }).catch(netErr);
   if (!r.ok) { console.error('Discord :', r.status, (await r.text()).slice(0, 200)); process.exit(0); } // never fail the robot for Discord
   fs.writeFileSync('data/announced.json', JSON.stringify({ last: n.to }));
   console.log('annoncé :', n.to);
