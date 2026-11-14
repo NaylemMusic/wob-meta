@@ -13,8 +13,10 @@ export function archive(history, oldG, newG, namesOf = () => null, now = new Dat
     if (id.startsWith('_') || !newG[id]) continue;
     if (JSON.stringify(oldG[id]) === JSON.stringify(newG[id])) continue;
     const list = out[id] ? [...out[id]] : [];
-    if (list.some((e) => e.version === oldG._version && JSON.stringify(e.guide) === JSON.stringify(oldG[id]))) continue; // already kept
-    list.unshift({ version: oldG._version || null, until: newG._version || null, archivedAt: now, names: namesOf(oldG._version, id), guide: oldG[id] });
+    // a fighter's guide can carry its own _version (rewritten alone after a patch), else the file's
+    const v = oldG[id]._version || oldG._version || null, until = newG[id]._version || newG._version || null;
+    if (list.some((e) => e.version === v && JSON.stringify(e.guide) === JSON.stringify(oldG[id]))) continue; // already kept
+    list.unshift({ version: v, until, archivedAt: now, names: namesOf(v, id), guide: oldG[id] });
     out[id] = list;
   }
   return out;

@@ -95,26 +95,31 @@
     }
   },
   "pandrezz": {
-    "resume": "Un rockeur barbu beaucoup trop fort. Il charge des kamehameha à mains nues et appelle ses potes CD-Man et Vinylman.",
+    "_version": "773b9891ac683ed721b5f2af9e6d446dc5b34196",
+    "resume": "Un rockeur barbu beaucoup trop fort. Il charge des kamehameha à mains nues et appelle ses potes CD-Man et Vinylman, un seul à la fois.",
     "forces": [
-      "Pandrezz-ha (B maintenu) : 25 % et KO dès 79 %, un des projectiles les plus forts du jeu",
+      "Pandrezz-ha (B maintenu) : 25 % et KO dès 79 % chargé à fond, un des projectiles les plus forts du jeu",
       "Coups rapides : jab, aérien neutre et aérien avant sortent en 5 frames",
       "Smash haut et bas KO dès 55 % chargés",
-      "Bonne remontée (11,1 m) avec le Pandrezz-ha fusée"
+      "Bonne remontée (11,1 m) avec le Pandrezz-ha fusée, qu'on oriente au stick"
     ],
     "faiblesses": [
-      "Le Pandrezz-ha doit être maintenu longtemps : d'un seul appui il ne fait que 3,5 %",
+      "Le Pandrezz-ha doit être maintenu longtemps : d'un seul appui il ne fait que 3,5 % et ne porte qu'à 1,6 m (8 m au plus, chargé)",
+      "Un bouclier n'encaisse que le premier coup du Pandrezz-ha : l'adversaire le lâche et punit Pandrezz coincé à la fin du rayon. Une parade parfaite lui renvoie le rayon, plus fort",
+      "CD-Man et Vinylman ne viennent qu'un à la fois, avec 2 s de repos ; CD-Man vise droit devant, sans suivre personne",
       "Son smash avant (en code) fait peu de dégâts"
     ],
     "conseils": [
-      "Charge le Pandrezz-ha de loin, lâche-le quand l'adversaire atterrit ou remonte",
+      "Charge le Pandrezz-ha de loin (8 m au plus) et lâche-le quand l'adversaire atterrit ou remonte ; jamais contre un bouclier levé",
+      "Appelle CD-Man face à l'adversaire : il lance ses trois CD tout droit, à 2 s, 4 s et à son départ, de quoi couvrir une zone pendant 6 s",
+      "Vinylman tombe à 2,4 m devant toi : appelle-le sur un adversaire au sol, pas de loin",
       "Pour tuer au corps à corps, préfère le smash haut ou bas"
     ],
     "speciaux": {
-      "n": "Le Pandrezz-ha : un kamehameha à mains nues qu'il faut maintenir pour le charger. Chargé : 25 % et KO dès 79 %, un des projectiles les plus forts du jeu. D'un seul appui : à peine 3,5 %.",
-      "s": "Appelle CD-Man, qui lance ses disques (12 %, jusqu'à 13 m). CD-Man se repose 1,5 s avant de pouvoir revenir.",
-      "u": "Le Pandrezz-ha fusée : il se propulse avec son rayon (21,3 %, KO dès 147 %) : 11,1 m de haut, 13 m de côté. Chute sans défense après.",
-      "d": "Appelle Vinylman, qui tombe du ciel et scratche tout le monde (23 %). Vinylman se repose 2 s avant de pouvoir revenir."
+      "n": "Le Pandrezz-ha : un kamehameha à mains nues qu'il faut maintenir pour le charger. Chargé à fond : 25 %, KO dès 79 %, jusqu'à 8 m. D'un seul appui : à peine 3,5 % et 1,6 m. Un bouclier n'en prend que le premier coup ; une parade parfaite le renvoie sur Pandrezz, 25 % plus fort.",
+      "s": "Appelle CD-Man (nerfé le 14 nov.) : il reste 6 s et lance trois CD dorés tout droit, là où Pandrezz regardait (5 % chacun), à 2 s, 4 s et à son départ. Il peut être cassé (8 PV), puis se repose 2 s avant de revenir. Jamais en même temps que Vinylman.",
+      "u": "Le Pandrezz-ha fusée : le rayon tiré vers le bas le propulse dans la direction du stick (11,1 m de haut, 13 m de côté). Le rayon ne touche personne : c'est son corps qui emporte ceux qu'il croise et les éjecte en haut (21,3 %, KO dès 147 %). Chute sans défense après, mais il peut s'accrocher au bord.",
+      "d": "Appelle Vinylman (nerfé le 14 nov.) : il tombe du ciel à 2,4 m devant Pandrezz (onde de choc de 1,8 m, 9 %), tourne comme un disque sur la platine (petits coups tout près, 0,75 m) puis lâche les basses (7 %, 1 m) : 20 % s'il prend tout. Il peut être cassé (11 PV), puis se repose 2 s. Jamais en même temps que CD-Man."
     }
   },
   "bido": {
