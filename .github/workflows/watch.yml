@@ -38,7 +38,8 @@ jobs:
         run: |
           C=$(node scripts/fetch.mjs)
           echo "commit=$C" >> "$GITHUB_OUTPUT"
-          if [ -f "data/$C.json" ]; then echo "new=false" >> "$GITHUB_OUTPUT"; else echo "new=true" >> "$GITHUB_OUTPUT"; fi
+          # site injoignable (C vide) : rien à mesurer cette fois-ci, le passage suivant réessaie
+          if [ -z "$C" ] || [ -f "data/$C.json" ]; then echo "new=false" >> "$GITHUB_OUTPUT"; else echo "new=true" >> "$GITHUB_OUTPUT"; fi
       - name: Mesure (conteneur sans réseau)
         if: steps.v.outputs.new == 'true' || inputs.test
         run: |

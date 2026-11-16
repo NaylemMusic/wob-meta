@@ -7,7 +7,20 @@ import path from 'node:path';
 const SITE = 'https://worldofbagarre.com/';
 const entries = process.argv.slice(2).length ? process.argv.slice(2) : ['src/sim/chars/index.js', 'src/sim/world.js'];
 
-const html = await (await fetch(SITE, { cache: 'no-store' })).text();
+// a network hiccup (reset, timeout, 5xx) is retried a few times before giving up (16 nov. 2026 : deux échecs isolés)
+async function get(url, opts = {}) {
+  for (let i = 0; ; i++) {
+    try {
+      const r = await fetch(url, { ...opts, signal: AbortSignal.timeout(20000) });
+      if (r.status < 500 || i >= 2) return r;
+    } catch (e) { if (i >= 2) throw e; }
+    await new Promise((ok) => setTimeout(ok, 5000 * (i + 1)));
+  }
+}
+
+// the site itself unreachable: print nothing and stop quietly, the workflow skips this run (the next one, 10 min later, retries)
+let html;
+try { html = await (await get(SITE, { cache: 'no-store' })).text(); } catch (e) { console.error('site injoignable :', e.message); process.exit(0); }
 // WOB_COMMIT=<commit> fetches an older version instead (the site keeps serving them): to measure a version a run missed
 const commit = process.env.WOB_COMMIT || (html.match(/v\/([0-9a-f]{7,40})\/src\/main\.js/) || [])[1];
 if (!commit) throw new Error('version introuvable sur ' + SITE);
@@ -24,7 +37,7 @@ while (queue.length) {
   let txt;
   if (fs.existsSync(dest)) txt = fs.readFileSync(dest, 'utf8');
   else {
-    const r = await fetch(base + f);
+    const r = await get(base + f);
     if (!r.ok) { console.error('MANQUANT', f, r.status); continue; }
     txt = await r.text();
     fs.mkdirSync(path.dirname(dest), { recursive: true });
